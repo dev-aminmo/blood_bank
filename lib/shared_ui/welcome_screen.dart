@@ -26,13 +26,16 @@ class WelcomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: height * 0.06,
+                height: height * 0.07,
               ),
               SharedUI.drawButton(width, height, buttonText1),
+              SizedBox(
+                height: height * 0.02,
+              ),
               SharedUI.drawButton(width, height, buttonText2,
                   bgColor: SharedUI.white, textColor: SharedUI.red),
               SizedBox(
-                height: height * 0.1,
+                height: height * 0.07,
               ),
             ],
           ),
