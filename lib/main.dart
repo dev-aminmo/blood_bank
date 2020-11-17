@@ -1,3 +1,5 @@
+import 'package:blood_app/screens/login_signup.dart';
+import 'package:blood_app/screens/on_boarding.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,8 +42,6 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
-    );
+    return Login_Signup();
   }
 }
