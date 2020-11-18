@@ -62,17 +62,14 @@ class SharedUI {
     return SizedBox(
       width: width * 0.85,
       height: height * 0.1,
-      child: Flexible(
-        child: RaisedButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-          child: Text(
-            text,
-            style: textStyle(textColor),
-          ),
-          color: bgColor,
-          onPressed: () {},
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+        child: Text(
+          text,
+          style: textStyle(textColor),
         ),
+        color: bgColor,
+        onPressed: () {},
       ),
     );
   }
