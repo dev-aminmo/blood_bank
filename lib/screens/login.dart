@@ -1,7 +1,6 @@
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -23,6 +22,7 @@ class _LoginState extends State<Login> {
         height: height,
         width: width,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: height * 0.15,
@@ -62,36 +62,8 @@ class _LoginState extends State<Login> {
                           'OR',
                           style: SharedUI.textStyle(SharedUI.red),
                         ),
-                        SizedBox(
-                          width: width * 0.85,
-                          height: height * 0.1,
-                          child: RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                    width: 1.5, color: Color(0xffCBD5E0)),
-                                borderRadius: BorderRadius.circular(40)),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                SvgPicture.asset(
-                                  'assets/icons/google_icon.svg',
-                                  width: 25,
-                                  height: 25,
-                                ),
-                                Text(
-                                  'Log in with google',
-                                  style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      fontWeight: FontWeight.w400,
-                                      color: SharedUI.red,
-                                      fontSize: 22),
-                                ),
-                              ],
-                            ),
-                            color: SharedUI.white,
-                            onPressed: () {},
-                          ),
-                        ),
+                        SharedUI.drawGoogleButton(
+                            width, height, 'Log in with google'),
                         SizedBox(
                           height: height * 0.01,
                         ),
@@ -100,7 +72,7 @@ class _LoginState extends State<Login> {
                   )
                 ],
               ),
-            ))
+            )),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SharedUI {
   static const Color red = Color(0xffD22E2B);
@@ -9,6 +10,38 @@ class SharedUI {
         fontWeight: FontWeight.w500,
         color: textColor,
         fontSize: 24);
+  }
+
+  static Widget drawGoogleButton(double width, double height, String text) {
+    return SizedBox(
+      width: width * 0.85,
+      height: height * 0.1,
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+            side: BorderSide(width: 1.5, color: Color(0xffCBD5E0)),
+            borderRadius: BorderRadius.circular(40)),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            SvgPicture.asset(
+              'assets/icons/google_icon.svg',
+              width: width * 0.09,
+              height: width * 0.09,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.w400,
+                  color: SharedUI.red,
+                  fontSize: 22),
+            ),
+          ],
+        ),
+        color: SharedUI.white,
+        onPressed: () {},
+      ),
+    );
   }
 
   static InputDecoration inputDecoration(String hint) {
