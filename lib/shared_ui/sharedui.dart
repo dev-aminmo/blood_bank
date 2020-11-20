@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 class SharedUI {
   static const Color red = Color(0xffD22E2B);
   static const Color white = Colors.white;
+  static const Color gray = Color(0xff8FA0B3);
   static TextStyle textStyle(Color textColor) {
     return TextStyle(
         fontFamily: 'Montserrat',

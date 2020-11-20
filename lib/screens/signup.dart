@@ -22,7 +22,7 @@ class _SignupState extends State<Signup> {
           width: width,
           height: height,
           margin: EdgeInsets.symmetric(horizontal: width * 0.1),
-          child: MySecondForm(),
+          child: MyThirdForm(width, height * 0.8),
         ));
   }
 
@@ -187,6 +187,151 @@ class _MySecondFormState extends State<MySecondForm> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class MyThirdForm extends StatefulWidget {
+  MyThirdForm(this.width, this.height);
+  double width;
+  double height;
+  @override
+  _MyThirdFormState createState() => _MyThirdFormState();
+}
+
+class _MyThirdFormState extends State<MyThirdForm> {
+  String dropdownValue;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Expanded(
+          flex: 3,
+          child: Column(
+            children: [
+              SizedBox(
+                height: widget.height * 0.2,
+              ),
+              DropdownButton<String>(
+                itemHeight: widget.height * 0.15,
+                isExpanded: true,
+                hint: Text(
+                  "Blood Type",
+                  style:
+                      SharedUI.textStyle(SharedUI.gray).copyWith(fontSize: 22),
+                ),
+                value: dropdownValue,
+                icon: Icon(
+                  Icons.expand_more,
+                  color: SharedUI.red,
+                ),
+                iconSize: 24,
+                elevation: 16,
+                style: SharedUI.textStyle(Colors.black).copyWith(fontSize: 20),
+                underline: Container(
+                  height: 2,
+                  color: SharedUI.red,
+                ),
+                onChanged: (String newValue) {
+                  setState(() {
+                    dropdownValue = newValue;
+                  });
+                },
+                items: <String>[
+                  'One',
+                  'Two',
+                ].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+              ),
+              DropdownButton<String>(
+                itemHeight: widget.height * 0.15,
+                isExpanded: true,
+                hint: Text(
+                  "State",
+                  style:
+                      SharedUI.textStyle(SharedUI.gray).copyWith(fontSize: 22),
+                ),
+                value: dropdownValue,
+                icon: Icon(
+                  Icons.expand_more,
+                  color: SharedUI.red,
+                ),
+                iconSize: 24,
+                elevation: 16,
+                style: SharedUI.textStyle(Colors.black).copyWith(fontSize: 20),
+                underline: Container(
+                  height: 2,
+                  color: SharedUI.red,
+                ),
+                onChanged: (String newValue) {
+                  setState(() {
+                    dropdownValue = newValue;
+                  });
+                },
+                items: <String>[
+                  'One',
+                  'Two',
+                ].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+              ),
+              DropdownButton<String>(
+                itemHeight: widget.height * 0.15,
+                isExpanded: true,
+                hint: Text(
+                  "Municipal",
+                  style:
+                      SharedUI.textStyle(SharedUI.gray).copyWith(fontSize: 22),
+                ),
+                value: dropdownValue,
+                icon: Icon(
+                  Icons.expand_more,
+                  color: SharedUI.red,
+                ),
+                iconSize: 24,
+                elevation: 16,
+                style: SharedUI.textStyle(Colors.black).copyWith(fontSize: 20),
+                underline: Container(
+                  height: 2,
+                  color: SharedUI.red,
+                ),
+                onChanged: (String newValue) {
+                  setState(() {
+                    dropdownValue = newValue;
+                  });
+                },
+                items: <String>[
+                  'One',
+                  'Two',
+                ].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+              ),
+              SizedBox(
+                height: widget.height * 0.05,
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+            child: Column(
+          children: [
+            SharedUI.drawButton(widget.width, widget.height, 'Next'),
+          ],
+        ))
+      ],
     );
   }
 }
