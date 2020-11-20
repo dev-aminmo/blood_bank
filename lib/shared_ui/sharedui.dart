@@ -92,7 +92,7 @@ class SharedUI {
     ],
   );
   static Widget drawButton(double width, double height, String text,
-      {Color textColor = white, Color bgColor = red}) {
+      {Color textColor = white, Color bgColor = red, Function event}) {
     return SizedBox(
       width: width * 0.85,
       height: height * 0.1,
@@ -103,7 +103,7 @@ class SharedUI {
           style: textStyle(textColor),
         ),
         color: bgColor,
-        onPressed: () {},
+        onPressed: (event) != null ? event : () {},
       ),
     );
   }
