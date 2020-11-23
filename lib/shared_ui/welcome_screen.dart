@@ -2,11 +2,6 @@ import 'package:blood_app/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 
-class btn {
-  String btn_text1;
-  String btn_text2;
-}
-
 class WelcomeScreen extends StatefulWidget {
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
@@ -23,33 +18,23 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
-    List<Widget> widgets = [
-      SharedUI.drawButton(
-        width,
-        height,
-        _buttonTextAuth[0],
-      ),
-      SizedBox(
-        height: height * 0.02,
-      ),
-      SharedUI.drawButton(
-        width,
-        height,
-        _buttonTextAuth[1],
-        bgColor: SharedUI.white,
-        textColor: SharedUI.red,
-      ),
-      SizedBox(
-        height: height * 0.07,
-      ),
-    ];
 
     return Stack(
       children: [
         SharedUI.myBackgroundImage,
         SizedBox.expand(
-          child: (!_isSeen)
+            child: AnimatedSwitcher(
+          transitionBuilder: (Widget child, Animation<double> animation) {
+            final offsetAnimation =
+                Tween<Offset>(begin: Offset(3, 0), end: Offset(0, 0));
+            return FadeTransition(
+                child: SlideTransition(
+                    child: child, position: offsetAnimation.animate(animation)),
+                opacity: animation);
+          },
+          child: (_isSeen)
               ? Column(
+                  key: ValueKey(_isSeen),
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -99,6 +84,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ],
                 )
               : Column(
+                  key: ValueKey(_isSeen),
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -144,7 +130,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               */
                   ],
                 ),
-        )
+          duration: Duration(milliseconds: 850),
+        ))
         // ExactAssetImage('assets/images/stock.jpg')
       ],
     );

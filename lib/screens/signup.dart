@@ -38,7 +38,7 @@ class _SignupState extends State<Signup> {
                       CircleAvatar(
                           backgroundColor: SharedUI.red,
                           child: AnimatedSwitcher(
-                            duration: Duration(milliseconds: 500),
+                            duration: Duration(milliseconds: 350),
                             child: (_currentStep >= 1)
                                 ? Icon(
                                     Icons.done,
@@ -60,7 +60,7 @@ class _SignupState extends State<Signup> {
                               ? SharedUI.red
                               : SharedUI.gray,
                           child: AnimatedSwitcher(
-                            duration: Duration(milliseconds: 500),
+                            duration: Duration(milliseconds: 350),
                             child: (_currentStep >= 2)
                                 ? Icon(
                                     Icons.done,
