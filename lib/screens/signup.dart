@@ -96,28 +96,9 @@ class _SignupState extends State<Signup> {
                             begin: Offset(5, 0), end: Offset(0, 0));
                         return FadeTransition(
                             child: SlideTransition(
-                              child: child,
-                              position: offsetAnimation.animate(animation),
-                            ),
+                                child: child,
+                                position: offsetAnimation.animate(animation)),
                             opacity: animation);
-                        /* return SizeTransition(
-                        sizeFactor: animation,
-                        child: child,
-                        axisAlignment: (-1.0),
-                        axis: Axis.horizontal,
-                      );*/
-                        /*return SlideTransition(
-                          position: offsetAnimation.animate(animation),
-                          child: ClipRRect(child: child),
-                        );
-*/
-                        /*
-                          return ScaleTransition(
-                      child: child,
-                      scale: animation,
-                    );
-
-                          */
                       },
                       duration: Duration(milliseconds: 850),
                       switchInCurve: Curves.ease,
@@ -135,7 +116,6 @@ class _SignupState extends State<Signup> {
           height,
           width,
           goNext,
-          key: UniqueKey(),
         );
         break;
       case 1:
@@ -143,7 +123,6 @@ class _SignupState extends State<Signup> {
           height,
           width,
           goNext,
-          key: UniqueKey(),
         );
         break;
       case 2:
@@ -151,7 +130,6 @@ class _SignupState extends State<Signup> {
           height,
           width,
           goNext,
-          key: UniqueKey(),
         );
         break;
       default:
@@ -159,7 +137,6 @@ class _SignupState extends State<Signup> {
           height,
           width,
           goNext,
-          key: UniqueKey(),
         );
         break;
     }
