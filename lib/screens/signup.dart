@@ -1,4 +1,5 @@
 import 'package:blood_app/shared_ui/sharedui.dart';
+import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -35,14 +36,19 @@ class _SignupState extends State<Signup> {
                     //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CircleAvatar(
-                        backgroundColor: SharedUI.red,
-                        child: (_currentStep >= 1)
-                            ? Icon(Icons.done)
-                            : Text(
-                                "1",
-                                style: SharedUI.textStyle(SharedUI.white),
-                              ),
-                      ),
+                          backgroundColor: SharedUI.red,
+                          child: AnimatedSwitcher(
+                            duration: Duration(milliseconds: 500),
+                            child: (_currentStep >= 1)
+                                ? Icon(
+                                    Icons.done,
+                                    key: ValueKey<int>(_currentStep),
+                                  )
+                                : Text(
+                                    "1",
+                                    style: SharedUI.textStyle(SharedUI.white),
+                                  ),
+                          )),
                       Flexible(
                         child: Container(
                           height: 2,
@@ -50,15 +56,21 @@ class _SignupState extends State<Signup> {
                         ),
                       ),
                       CircleAvatar(
-                        backgroundColor:
-                            (_currentStep >= 1) ? SharedUI.red : SharedUI.gray,
-                        child: (_currentStep >= 2)
-                            ? Icon(Icons.done)
-                            : Text(
-                                "2",
-                                style: SharedUI.textStyle(SharedUI.white),
-                              ),
-                      ),
+                          backgroundColor: (_currentStep >= 1)
+                              ? SharedUI.red
+                              : SharedUI.gray,
+                          child: AnimatedSwitcher(
+                            duration: Duration(milliseconds: 500),
+                            child: (_currentStep >= 2)
+                                ? Icon(
+                                    Icons.done,
+                                    key: ValueKey<int>(_currentStep),
+                                  )
+                                : Text(
+                                    "2",
+                                    style: SharedUI.textStyle(SharedUI.white),
+                                  ),
+                          )),
                       Flexible(
                         child: Container(
                           height: 2,
@@ -77,7 +89,40 @@ class _SignupState extends State<Signup> {
                       ),
                     ],
                   ),
-                  _getContent(_currentStep, height * 0.9, width, goNext),
+                  AnimatedSwitcher(
+                      transitionBuilder:
+                          (Widget child, Animation<double> animation) {
+                        final offsetAnimation = Tween<Offset>(
+                            begin: Offset(5, 0), end: Offset(0, 0));
+                        return FadeTransition(
+                            child: SlideTransition(
+                              child: child,
+                              position: offsetAnimation.animate(animation),
+                            ),
+                            opacity: animation);
+                        /* return SizeTransition(
+                        sizeFactor: animation,
+                        child: child,
+                        axisAlignment: (-1.0),
+                        axis: Axis.horizontal,
+                      );*/
+                        /*return SlideTransition(
+                          position: offsetAnimation.animate(animation),
+                          child: ClipRRect(child: child),
+                        );
+*/
+                        /*
+                          return ScaleTransition(
+                      child: child,
+                      scale: animation,
+                    );
+
+                          */
+                      },
+                      duration: Duration(milliseconds: 850),
+                      switchInCurve: Curves.ease,
+                      child: _getContent(
+                          _currentStep, height * 0.9, width, goNext)),
                 ],
               ),
             )));
@@ -86,16 +131,36 @@ class _SignupState extends State<Signup> {
   _getContent(int currentStep, double height, double width, Function goNext) {
     switch (currentStep) {
       case 0:
-        return MyFirstForm(height, width, goNext);
+        return MyFirstForm(
+          height,
+          width,
+          goNext,
+          key: UniqueKey(),
+        );
         break;
       case 1:
-        return MySecondForm(height, width, goNext);
+        return MySecondForm(
+          height,
+          width,
+          goNext,
+          key: UniqueKey(),
+        );
         break;
       case 2:
-        return MyThirdForm(height, width, goNext);
+        return MyThirdForm(
+          height,
+          width,
+          goNext,
+          key: UniqueKey(),
+        );
         break;
       default:
-        return MyFirstForm(height, width, goNext);
+        return MyFirstForm(
+          height,
+          width,
+          goNext,
+          key: UniqueKey(),
+        );
         break;
     }
   }
@@ -117,7 +182,8 @@ class MyFirstForm extends StatefulWidget {
   double width;
   Function goNext;
 
-  MyFirstForm(this.height, this.width, this.goNext);
+  MyFirstForm(this.height, this.width, this.goNext, {Key key})
+      : super(key: key);
 
   @override
   _MyFirstFormState createState() => _MyFirstFormState();
@@ -215,7 +281,8 @@ class MySecondForm extends StatefulWidget {
   double width;
   Function goNext;
 
-  MySecondForm(this.height, this.width, this.goNext);
+  MySecondForm(this.height, this.width, this.goNext, {Key key})
+      : super(key: key);
 }
 
 class _MySecondFormState extends State<MySecondForm> {
@@ -305,7 +372,9 @@ class _MySecondFormState extends State<MySecondForm> {
 }
 
 class MyThirdForm extends StatefulWidget {
-  MyThirdForm(this.height, this.width, this.goNext);
+  MyThirdForm(this.height, this.width, this.goNext, {Key key})
+      : super(key: key);
+
   double width;
   double height;
   Function goNext;

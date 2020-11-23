@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({
-    Key key,
-    @required this.height,
-    @required this.width,
-    @required this.buttonText1,
-    @required this.buttonText2,
-  }) : super(key: key);
+  const WelcomeScreen(
+      {Key key,
+      @required this.height,
+      @required this.width,
+      @required this.buttonText1,
+      @required this.buttonText2,
+      this.event2})
+      : super(key: key);
 
   final double height;
   final double width;
   final String buttonText1;
   final String buttonText2;
+  final Function event2;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,9 @@ class WelcomeScreen extends StatelessWidget {
                 height: height * 0.02,
               ),
               SharedUI.drawButton(width, height, buttonText2,
-                  bgColor: SharedUI.white, textColor: SharedUI.red),
+                  bgColor: SharedUI.white,
+                  textColor: SharedUI.red,
+                  event: event2),
               SizedBox(
                 height: height * 0.07,
               ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'signup.dart';
+
 class Profile extends StatefulWidget {
   @override
   _ProfileState createState() => _ProfileState();
@@ -9,7 +11,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.pink,
+      color: Colors.greenAccent,
     );
   }
 }
