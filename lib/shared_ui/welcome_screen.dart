@@ -1,3 +1,4 @@
+import 'package:blood_app/screens/login.dart';
 import 'package:blood_app/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
@@ -41,11 +42,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     SizedBox(
                       height: height * 0.07,
                     ),
-                    SharedUI.drawButton(
-                      width,
-                      height,
-                      _buttonTextAuth[0],
-                    ),
+                    SharedUI.drawButton(width, height, _buttonTextAuth[0],
+                        event: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Login()));
+                    }),
                     SizedBox(
                       height: height * 0.02,
                     ),

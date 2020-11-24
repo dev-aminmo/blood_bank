@@ -1,5 +1,4 @@
-import 'package:blood_app/screens/login_signup.dart';
-import 'package:blood_app/screens/on_boarding.dart';
+import 'package:blood_app/screens/profile.dart';
 import 'package:blood_app/screens/signup.dart';
 import 'package:blood_app/shared_ui/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +45,6 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
-    return WelcomeScreen();
+    return Profile();
   }
 }

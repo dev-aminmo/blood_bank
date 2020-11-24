@@ -12,16 +12,18 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
+  static const Duration duration = Duration(milliseconds: 450);
   double height;
   double width;
   int _currentStep = 0;
+
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.white,
+        backgroundColor: SharedUI.white,
         body: Container(
             width: width,
             height: height,
@@ -38,7 +40,7 @@ class _SignupState extends State<Signup> {
                       CircleAvatar(
                           backgroundColor: SharedUI.red,
                           child: AnimatedSwitcher(
-                            duration: Duration(milliseconds: 350),
+                            duration: duration,
                             child: (_currentStep >= 1)
                                 ? Icon(
                                     Icons.done,
@@ -50,17 +52,33 @@ class _SignupState extends State<Signup> {
                                   ),
                           )),
                       Flexible(
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 2,
+                              color: SharedUI.gray,
+                            ),
+                            AnimatedContainer(
+                              duration: const Duration(seconds: 1),
+                              width: (_currentStep >= 1) ? width / 3 : 0,
+                              height: 2,
+                              color: SharedUI.red,
+                            ),
+                          ],
+                        ),
+                      ),
+                      /*Flexible(
                         child: Container(
                           height: 2,
                           color: SharedUI.red,
                         ),
-                      ),
+                      ),*/
                       CircleAvatar(
                           backgroundColor: (_currentStep >= 1)
                               ? SharedUI.red
                               : SharedUI.gray,
                           child: AnimatedSwitcher(
-                            duration: Duration(milliseconds: 350),
+                            duration: duration,
                             child: (_currentStep >= 2)
                                 ? Icon(
                                     Icons.done,
@@ -72,11 +90,19 @@ class _SignupState extends State<Signup> {
                                   ),
                           )),
                       Flexible(
-                        child: Container(
-                          height: 2,
-                          color: (_currentStep >= 1)
-                              ? SharedUI.red
-                              : SharedUI.gray,
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 2,
+                              color: SharedUI.gray,
+                            ),
+                            AnimatedContainer(
+                              duration: const Duration(seconds: 1),
+                              width: (_currentStep >= 2) ? width / 3 : 0,
+                              height: 2,
+                              color: SharedUI.red,
+                            ),
+                          ],
                         ),
                       ),
                       CircleAvatar(
@@ -503,81 +529,3 @@ class _MyThirdFormState extends State<MyThirdForm> {
     );
   }
 }
-
-/*
-Stepper(
-controlsBuilder: (
-BuildContext context, {
-VoidCallback onStepContinue,
-    VoidCallback onStepCancel,
-}) {
-return Column(
-mainAxisAlignment: MainAxisAlignment.spaceBetween,
-children: [
-Container(
-height: 200,
-),
-Row(
-mainAxisAlignment: MainAxisAlignment.spaceAround,
-children: <Widget>[
-SharedUI.drawButton(width / 2.5, height * 0.6, 'Cancel',
-textColor: SharedUI.red,
-bgColor: SharedUI.white,
-event: onStepCancel),
-SharedUI.drawButton(width / 2.5, height * 0.6, 'Next',
-event: onStepContinue),
-],
-),
-],
-);
-},
-currentStep: _currentStep,
-steps: [
-Step(
-content: MyFirstForm(height, width),
-title: Text(""),
-isActive: (_currentStep == 0) ? true : false,
-),
-Step(
-content: Container(
-color: Colors.yellow,
-child: Text(
-"2",
-style: TextStyle(color: Colors.white, fontSize: 72),
-),
-height: 250,
-width: 250,
-),
-title: Text(""),
-isActive: (_currentStep == 1) ? true : false),
-Step(
-content: Container(
-color: Colors.green,
-child: Text(
-"3",
-style: TextStyle(color: Colors.white, fontSize: 72),
-),
-height: 650,
-width: 250,
-),
-title: Text(""),
-isActive: (_currentStep == 2) ? true : false),
-],
-type: StepperType.horizontal,
-onStepContinue: () {
-if (_currentStep < 2) {
-setState(() {
-_currentStep++;
-});
-}
-},
-onStepCancel: () {
-if (_currentStep > 0) {
-setState(() {
-_currentStep--;
-});
-}
-},
-),
-
-*/
