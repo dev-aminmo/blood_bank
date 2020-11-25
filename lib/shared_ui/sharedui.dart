@@ -5,6 +5,7 @@ class SharedUI {
   static const Color red = Color(0xffD22E2B);
   static const Color white = Colors.white;
   static const Color gray = Color(0xff8FA0B3);
+  static const Color lightGray = Color(0xff718096);
   static TextStyle textStyle(Color textColor) {
     return TextStyle(
         fontFamily: 'Montserrat',
@@ -62,6 +63,21 @@ class SharedUI {
             borderSide: BorderSide(color: SharedUI.red, width: 1.5)));
   }
 
+  static InputDecoration profileInputDecoration(String helper) {
+    return InputDecoration(
+        labelText: helper,
+        labelStyle: TextStyle(
+          color: Color(0xff8FA0B3),
+        ),
+        border: OutlineInputBorder(),
+        enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: BorderSide(color: Color(0xffCBD5E0), width: 1.5)),
+        focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: BorderSide(color: SharedUI.red, width: 1.5)));
+  }
+
   static TextStyle textFormFieldStyle = TextStyle(
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
@@ -72,6 +88,15 @@ class SharedUI {
       style: SharedUI.textFormFieldStyle,
       cursorColor: SharedUI.red,
       decoration: SharedUI.inputDecoration(hint),
+    );
+  }
+
+  static TextFormField profileInput(String label) {
+    return TextFormField(
+      initialValue: "Hello",
+      style: SharedUI.textFormFieldStyle,
+      cursorColor: SharedUI.red,
+      decoration: SharedUI.profileInputDecoration(label),
     );
   }
 
