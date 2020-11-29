@@ -1,7 +1,9 @@
 import 'package:blood_app/screens/login.dart';
 import 'package:blood_app/screens/signup.dart';
-import 'package:flutter/material.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
+import 'package:flutter/material.dart';
+
+import 'donors.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -59,29 +61,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     SizedBox(
                       height: height * 0.07,
                     )
-
-                    /**/
-                    /*
-                   SharedUI.drawButton(width, height, _buttonTextWelcome[0],
-                      event: () {
-                      setState(() {
-                        _isSeen = true;
-                      });
-                    }),
-              SizedBox(
-                height: height * 0.02,
-              ),
-              SharedUI.drawButton(
-                width,
-                height,
-                _buttonTextWelcome[1],
-                bgColor: SharedUI.white,
-                textColor: SharedUI.red,
-              ),
-              SizedBox(
-                height: height * 0.07,
-              ),
-              */
                   ],
                 )
               : Column(
@@ -102,33 +81,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       height: height * 0.02,
                     ),
                     SharedUI.drawButton(width, height, _buttonTextWelcome[1],
-                        bgColor: SharedUI.white, textColor: SharedUI.red),
+                        bgColor: SharedUI.white,
+                        textColor: SharedUI.red, event: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+                        return Donors();
+                      }));
+                    }),
                     SizedBox(
                       height: height * 0.07,
                     )
-
-                    /**/
-                    /*
-                   SharedUI.drawButton(width, height, _buttonTextWelcome[0],
-                      event: () {
-                      setState(() {
-                        _isSeen = true;
-                      });
-                    }),
-              SizedBox(
-                height: height * 0.02,
-              ),
-              SharedUI.drawButton(
-                width,
-                height,
-                _buttonTextWelcome[1],
-                bgColor: SharedUI.white,
-                textColor: SharedUI.red,
-              ),
-              SizedBox(
-                height: height * 0.07,
-              ),
-              */
                   ],
                 ),
           duration: Duration(milliseconds: 850),

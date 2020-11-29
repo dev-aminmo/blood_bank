@@ -12,7 +12,7 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
-  static const Duration duration = Duration(milliseconds: 450);
+  static const Duration duration = Duration(milliseconds: 350);
   double height;
   double width;
   int _currentStep = 0;
@@ -59,7 +59,7 @@ class _SignupState extends State<Signup> {
                               color: SharedUI.gray,
                             ),
                             AnimatedContainer(
-                              duration: const Duration(seconds: 1),
+                              duration: const Duration(milliseconds: 500),
                               width: (_currentStep >= 1) ? width / 3 : 0,
                               height: 2,
                               color: SharedUI.red,
