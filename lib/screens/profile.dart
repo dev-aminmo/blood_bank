@@ -33,7 +33,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
   }
 
   static const _propertyTextStyle =
-  TextStyle(fontSize: 18, color: SharedUI.lightGray);
+      TextStyle(fontSize: 18, color: SharedUI.lightGray);
   static const _infoTextStyle = TextStyle(fontSize: 18);
 
   @override

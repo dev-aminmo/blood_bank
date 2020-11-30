@@ -11,16 +11,93 @@ class Signup extends StatefulWidget {
   _SignupState createState() => _SignupState();
 }
 
-class _SignupState extends State<Signup> {
+class _SignupState extends State<Signup> with TickerProviderStateMixin {
   static const Duration duration = Duration(milliseconds: 350);
   double height;
   double width;
   int _currentStep = 0;
+  bool canAnimateSecondContainer = false;
+  bool canAnimateThirdContainer = false;
+  AnimationController _firstRedAnimationController;
+  AnimationController _firstGrayAnimationController;
+  AnimationController _secondRedAnimationController;
+  AnimationController _secondGrayAnimationController;
+  Animation<int> _firstRedAnimation;
+  Animation<int> _firstGrayAnimation;
+  Animation<int> _secondRedAnimation;
+  Animation<int> _secondGrayAnimation;
+
+  @override
+  void dispose() {
+    _firstRedAnimationController.dispose();
+    _firstGrayAnimationController.dispose();
+    _secondRedAnimationController.dispose();
+    _secondGrayAnimationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    _firstRedAnimationController = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this,
+    )
+      ..addListener(() {
+        setState(() {
+          if (_firstRedAnimationController.isCompleted) {
+            canAnimateSecondContainer = true;
+          }
+        });
+      });
+    _secondRedAnimationController = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this,
+    )
+      ..addListener(() {
+        setState(() {
+          if (_secondRedAnimationController.isCompleted) {
+            canAnimateThirdContainer = true;
+          }
+        });
+      });
+    _firstGrayAnimationController = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this,
+    )
+      ..addListener(() {
+        setState(() {});
+      });
+
+    _secondGrayAnimationController = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this,
+    )
+      ..addListener(() {
+        setState(() {});
+      });
+
+    _firstRedAnimation =
+        IntTween(begin: 0, end: 10).animate(_firstRedAnimationController);
+    _firstGrayAnimation =
+        IntTween(begin: 10, end: 0).animate(_firstGrayAnimationController);
+    _secondRedAnimation =
+        IntTween(begin: 0, end: 10).animate(_secondRedAnimationController);
+    _secondGrayAnimation =
+        IntTween(begin: 10, end: 0).animate(_secondGrayAnimationController);
+
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    height = MediaQuery.of(context).size.height;
-    width = MediaQuery.of(context).size.width;
+    height = MediaQuery
+        .of(context)
+        .size
+        .height;
+    width = MediaQuery
+        .of(context)
+        .size
+        .width;
     return Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: SharedUI.white,
@@ -43,74 +120,79 @@ class _SignupState extends State<Signup> {
                             duration: duration,
                             child: (_currentStep >= 1)
                                 ? Icon(
-                                    Icons.done,
-                                    key: ValueKey<int>(_currentStep),
-                                  )
+                              Icons.done,
+                              color: SharedUI.white,
+                              key: ValueKey<int>(_currentStep),
+                            )
                                 : Text(
-                                    "1",
-                                    style: SharedUI.textStyle(SharedUI.white),
-                                  ),
+                              "1",
+                              style: SharedUI.textStyle(SharedUI.white),
+                            ),
                           )),
                       Flexible(
-                        child: Stack(
-                          children: [
-                            Container(
-                              height: 2,
-                              color: SharedUI.gray,
-                            ),
-                            AnimatedContainer(
-                              duration: const Duration(milliseconds: 500),
-                              width: (_currentStep >= 1) ? width / 3 : 0,
-                              height: 2,
-                              color: SharedUI.red,
-                            ),
-                          ],
-                        ),
-                      ),
-                      /*Flexible(
-                        child: Container(
-                          height: 2,
-                          color: SharedUI.red,
-                        ),
-                      ),*/
-                      CircleAvatar(
-                          backgroundColor: (_currentStep >= 1)
-                              ? SharedUI.red
-                              : SharedUI.gray,
+                          flex: _firstRedAnimation.value,
+                          child: Container(
+                            height: 2,
+                            color: SharedUI.red,
+                          )),
+                      Flexible(
+                          flex: _firstGrayAnimation.value,
+                          child: Container(
+                            height: 2,
+                            color: SharedUI.gray,
+                          )),
+                      AnimatedContainer(
+                          width: width * 0.1,
+                          height: width * 0.1,
+                          duration: duration,
+                          decoration: BoxDecoration(
+                            color: // (_currentStep >= 1)
+                            (canAnimateSecondContainer == true)
+                                ? SharedUI.red
+                                : SharedUI.gray,
+                            borderRadius: BorderRadius.circular(width * 0.05),
+                          ),
                           child: AnimatedSwitcher(
                             duration: duration,
-                            child: (_currentStep >= 2)
+                            child: (canAnimateSecondContainer == true)
                                 ? Icon(
-                                    Icons.done,
-                                    key: ValueKey<int>(_currentStep),
-                                  )
+                              Icons.done,
+                              color: SharedUI.white,
+                              key: ValueKey<int>(_currentStep),
+                            )
                                 : Text(
-                                    "2",
-                                    style: SharedUI.textStyle(SharedUI.white),
-                                  ),
+                              "2",
+                              style: SharedUI.textStyle(SharedUI.white),
+                            ),
                           )),
                       Flexible(
-                        child: Stack(
-                          children: [
-                            Container(
-                              height: 2,
-                              color: SharedUI.gray,
-                            ),
-                            AnimatedContainer(
-                              duration: const Duration(seconds: 1),
-                              width: (_currentStep >= 2) ? width / 3 : 0,
-                              height: 2,
-                              color: SharedUI.red,
-                            ),
-                          ],
+                          flex: _secondRedAnimation.value,
+                          child: Container(
+                            height: 2,
+                            color: SharedUI.red,
+                          )),
+                      Flexible(
+                          flex: _secondGrayAnimation.value,
+                          child: Container(
+                            height: 2,
+                            color: SharedUI.gray,
+                          )),
+                      AnimatedContainer(
+                        width: width * 0.1,
+                        height: width * 0.1,
+                        duration: duration,
+                        decoration: BoxDecoration(
+                          color: // (_currentStep >= 1)
+                          (canAnimateThirdContainer == true)
+                              ? SharedUI.red
+                              : SharedUI.gray,
+                          borderRadius: BorderRadius.circular(width * 0.05),
                         ),
-                      ),
-                      CircleAvatar(
-                        backgroundColor:
-                            (_currentStep >= 2) ? SharedUI.red : SharedUI.gray,
-                        child: Text(
-                          "3",
-                          style: SharedUI.textStyle(SharedUI.white),
+                        child: Center(
+                          child: Text(
+                            "3",
+                            style: SharedUI.textStyle(SharedUI.white),
+                          ),
                         ),
                       ),
                     ],
@@ -170,11 +252,24 @@ class _SignupState extends State<Signup> {
 
   goNext() {
     setState(() {
-      if (_currentStep < 2) {
-        _currentStep++;
-      } else {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Profile()));
+      switch (_currentStep) {
+        case 0:
+          _currentStep++;
+          _firstRedAnimationController.forward();
+          _firstGrayAnimationController.forward();
+          break;
+        case 1:
+          _currentStep++;
+          _secondRedAnimationController.forward();
+          _secondGrayAnimationController.forward();
+          break;
+        case 2:
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => Profile()));
+          break;
+        default:
+          _currentStep++;
+          break;
       }
     });
   }
