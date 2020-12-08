@@ -41,8 +41,7 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
     _firstRedAnimationController = AnimationController(
       duration: Duration(seconds: 1),
       vsync: this,
-    )
-      ..addListener(() {
+    )..addListener(() {
         setState(() {
           if (_firstRedAnimationController.isCompleted) {
             canAnimateSecondContainer = true;
@@ -210,14 +209,14 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
                       },
                       duration: Duration(milliseconds: 850),
                       switchInCurve: Curves.ease,
-                      child: _getContent(
+                      child: _buildContent(
                           _currentStep, height * 0.9, width, goNext)),
                 ],
               ),
             )));
   }
 
-  _getContent(int currentStep, double height, double width, Function goNext) {
+  _buildContent(int currentStep, double height, double width, Function goNext) {
     switch (currentStep) {
       case 0:
         return MyFirstForm(
