@@ -10,6 +10,17 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   double height;
   double width;
+  final _formKey = GlobalKey<FormState>();
+  bool _obscureText = true;
+  TextEditingController _emailEditingController;
+  TextEditingController _passEditingController;
+
+  @override
+  void initState() {
+    _emailEditingController = TextEditingController();
+    _passEditingController = TextEditingController();
+  }
+
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
@@ -32,47 +43,91 @@ class _LoginState extends State<Login> {
               style: SharedUI.textStyle(Colors.black).copyWith(fontSize: 28),
             ),
             Form(
+                key: _formKey,
                 child: Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    height: height * 0.03,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        height: height * 0.03,
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            SizedBox(
+                              height: height * 0.05,
+                            ),
+                            /*SharedUI.input('Email Address'),*/
+                            TextFormField(
+                              controller: _emailEditingController,
+                              style: SharedUI.textFormFieldStyle,
+                              cursorColor: SharedUI.red,
+                              decoration:
+                              SharedUI.inputDecoration("Email Address"),
+                              validator: (v) {
+                                if (v.length < 5) {
+                                  return "Hello ";
+                                }
+                                return null;
+                              },
+                              onChanged: (v) {
+                                print('onchanged $v ');
+                              },
+                            ),
+                            SizedBox(),
+                            TextFormField(
+                              controller: _passEditingController,
+                              style: SharedUI.textFormFieldStyle,
+                              obscureText: _obscureText,
+                              cursorColor: SharedUI.red,
+                              decoration: SharedUI.inputDecoration("Password",
+                                  suffix: IconButton(
+                                    icon: Icon(
+                                      (_obscureText)
+                                          ? Icons.visibility
+                                          : Icons.visibility_off,
+                                    ),
+                                    onPressed: () {
+                                      setState(() {
+                                        _obscureText = !_obscureText;
+                                      });
+                                    },
+                                    color: SharedUI.gray,
+                                  )),
+                              validator: (v) {
+                                if (v.length < 5) {
+                                  return "Hello ";
+                                }
+                                return null;
+                              },
+                              onChanged: (v) {
+                                print('onchanged $v ');
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            SizedBox(
+                              height: height * 0.05,
+                            ),
+                            SharedUI.drawButton(width, height * 0.85, 'Log in',
+                                event: () {
+                                  print(_formKey.currentState.validate());
+                                }),
+                            SizedBox(
+                              height: height * 0.01,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
                   ),
-                  Expanded(
-                    flex: 1,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        SharedUI.input('Email Address'),
-                        SharedUI.input('Password'),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        SizedBox(
-                          height: height * 0.01,
-                        ),
-                        SharedUI.drawButton(width, height * 0.85, 'Log in'),
-                        Text(
-                          'OR',
-                          style: SharedUI.textStyle(SharedUI.red),
-                        ),
-                        SharedUI.drawGoogleButton(
-                            width, height, 'Log in with google'),
-                        SizedBox(
-                          height: height * 0.01,
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            )),
+                )),
           ],
         ),
       ),

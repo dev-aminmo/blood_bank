@@ -11,7 +11,6 @@ class User {
   String birthDay;
   String birthMonth;
   String birthYear;
-  String email;
 
   User(
       {this.profileImage,
@@ -21,7 +20,6 @@ class User {
       @required this.phoneNumber,
       @required this.state,
       @required this.municipal,
-      @required this.email,
       @required this.birthDay,
       @required this.birthMonth,
       @required this.birthYear});
@@ -34,7 +32,6 @@ class User {
     this.phoneNumber = json['phoneNumber'];
     this.state = json['state'];
     this.municipal = json['municipal'];
-    this.email = json['email'];
     this.birthDay = json['birthDat'];
     this.birthMonth = json['birthMonth'];
     this.birthYear = json['birthYear'];

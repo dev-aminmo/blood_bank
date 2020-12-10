@@ -192,7 +192,7 @@ class _DropDownsState extends State<DropDowns> {
               ),
             );
           }
-          return Center(child: CircularProgressIndicator());
+          return SizedBox();
         });
   }
 }

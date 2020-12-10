@@ -46,11 +46,12 @@ class SharedUI {
     );
   }
 
-  static InputDecoration inputDecoration(String hint) {
+  static InputDecoration inputDecoration(String hint, {Widget suffix}) {
     return InputDecoration(
         hintText: hint,
+        suffixIcon: suffix,
+        errorStyle: TextStyle(fontSize: 16),
         hintStyle: TextStyle(
-            fontFamily: 'Montserrat',
             fontWeight: FontWeight.w400,
             color: Color(0xff8FA0B3),
             fontSize: 20),
@@ -83,6 +84,7 @@ class SharedUI {
       fontWeight: FontWeight.w400,
       color: Colors.black,
       fontSize: 20);
+
   static TextFormField input(String hint) {
     return TextFormField(
       style: SharedUI.textFormFieldStyle,

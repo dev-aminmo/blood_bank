@@ -13,7 +13,7 @@ class UserApi {
     var response = await http.get(_allUsers);
     if (response.statusCode == 200) {
       var jsonData = jsonDecode(response.body);
-      var data = jsonData["users"];
+      var data = jsonData["response"]["users"];
       for (var item in data) {
         usersList.add(User.fromJson(item));
       }
