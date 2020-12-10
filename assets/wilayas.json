@@ -1,0 +1,6456 @@
+[
+  {
+    "1": {
+      "wilaya_id": "1",
+      "name": "Adrar",
+      "communes": {
+        "1": {
+          "commune_id": "1",
+          "name": "Adrar"
+        },
+        "2": {
+          "commune_id": "2",
+          "name": "Tamest"
+        },
+        "3": {
+          "commune_id": "3",
+          "name": "Charouine"
+        },
+        "4": {
+          "commune_id": "4",
+          "name": "Reggane"
+        },
+        "5": {
+          "commune_id": "5",
+          "name": "In Zghmir"
+        },
+        "6": {
+          "commune_id": "6",
+          "name": "Tit"
+        },
+        "7": {
+          "commune_id": "7",
+          "name": "Ksar Kaddour"
+        },
+        "8": {
+          "commune_id": "8",
+          "name": "Tsabit"
+        },
+        "9": {
+          "commune_id": "9",
+          "name": "Timimoun"
+        },
+        "10": {
+          "commune_id": "10",
+          "name": "Ouled Saïd"
+        },
+        "11": {
+          "commune_id": "11",
+          "name": "Zaouiet Kounta"
+        },
+        "12": {
+          "commune_id": "12",
+          "name": "Aoulef"
+        },
+        "13": {
+          "commune_id": "13",
+          "name": "Tamekten"
+        },
+        "14": {
+          "commune_id": "14",
+          "name": "Tamantit"
+        },
+        "15": {
+          "commune_id": "15",
+          "name": "Fenoughil"
+        },
+        "16": {
+          "commune_id": "16",
+          "name": "Tinerkouk"
+        },
+        "17": {
+          "commune_id": "17",
+          "name": "Deldoul"
+        },
+        "18": {
+          "commune_id": "18",
+          "name": "Sali"
+        },
+        "19": {
+          "commune_id": "19",
+          "name": "Akabli"
+        },
+        "20": {
+          "commune_id": "20",
+          "name": "Metarfa"
+        },
+        "21": {
+          "commune_id": "21",
+          "name": "Ouled Ahmed Tammi"
+        },
+        "22": {
+          "commune_id": "22",
+          "name": "Bouda"
+        },
+        "23": {
+          "commune_id": "23",
+          "name": "Aougrout"
+        },
+        "24": {
+          "commune_id": "24",
+          "name": "Talmine"
+        },
+        "25": {
+          "commune_id": "25",
+          "name": "Bordj Badji Mokhtar"
+        },
+        "26": {
+          "commune_id": "26",
+          "name": "Sebaa"
+        },
+        "27": {
+          "commune_id": "27",
+          "name": "Ouled Aïssa"
+        },
+        "28": {
+          "commune_id": "28",
+          "name": "Timiaouine"
+        }
+      }
+    },
+    "2": {
+      "wilaya_id": "2",
+      "name": "Chlef",
+      "communes": {
+        "29": {
+          "commune_id": "29",
+          "name": "Abou El Hassan"
+        },
+        "30": {
+          "commune_id": "30",
+          "name": "Aïn Merane"
+        },
+        "31": {
+          "commune_id": "31",
+          "name": "Bénairia"
+        },
+        "32": {
+          "commune_id": "32",
+          "name": "Beni Bouateb"
+        },
+        "33": {
+          "commune_id": "33",
+          "name": "Beni Haoua"
+        },
+        "34": {
+          "commune_id": "34",
+          "name": "Beni Rached"
+        },
+        "35": {
+          "commune_id": "35",
+          "name": "Boukadir"
+        },
+        "36": {
+          "commune_id": "36",
+          "name": "Bouzeghaia"
+        },
+        "37": {
+          "commune_id": "37",
+          "name": "Breira"
+        },
+        "38": {
+          "commune_id": "38",
+          "name": "Chettia"
+        },
+        "39": {
+          "commune_id": "39",
+          "name": "Chlef"
+        },
+        "40": {
+          "commune_id": "40",
+          "name": "Dahra"
+        },
+        "41": {
+          "commune_id": "41",
+          "name": "El Hadjadj"
+        },
+        "42": {
+          "commune_id": "42",
+          "name": "El Karimia"
+        },
+        "43": {
+          "commune_id": "43",
+          "name": "El Marsa"
+        },
+        "44": {
+          "commune_id": "44",
+          "name": "Harchoun"
+        },
+        "45": {
+          "commune_id": "45",
+          "name": "Harenfa"
+        },
+        "46": {
+          "commune_id": "46",
+          "name": "Labiod Medjadja"
+        },
+        "47": {
+          "commune_id": "47",
+          "name": "Moussadek"
+        },
+        "48": {
+          "commune_id": "48",
+          "name": "Oued Fodda"
+        },
+        "49": {
+          "commune_id": "49",
+          "name": "Oued Goussine"
+        },
+        "50": {
+          "commune_id": "50",
+          "name": "Oued Sly"
+        },
+        "51": {
+          "commune_id": "51",
+          "name": "Ouled Abbes"
+        },
+        "52": {
+          "commune_id": "52",
+          "name": "Ouled Ben Abdelkader"
+        },
+        "53": {
+          "commune_id": "53",
+          "name": "Ouled Fares"
+        },
+        "54": {
+          "commune_id": "54",
+          "name": "Oum Drou"
+        },
+        "55": {
+          "commune_id": "55",
+          "name": "Sendjas"
+        },
+        "56": {
+          "commune_id": "56",
+          "name": "Sidi Abderrahmane"
+        },
+        "57": {
+          "commune_id": "57",
+          "name": "Sidi Akkacha"
+        },
+        "58": {
+          "commune_id": "58",
+          "name": "Sobha"
+        },
+        "59": {
+          "commune_id": "59",
+          "name": "Tadjna"
+        },
+        "60": {
+          "commune_id": "60",
+          "name": "Talassa"
+        },
+        "61": {
+          "commune_id": "61",
+          "name": "Taougrit"
+        },
+        "62": {
+          "commune_id": "62",
+          "name": "Ténès"
+        },
+        "63": {
+          "commune_id": "63",
+          "name": "Zeboudja"
+        }
+      }
+    },
+    "3": {
+      "wilaya_id": "3",
+      "name": "Laghouat",
+      "communes": {
+        "64": {
+          "commune_id": "64",
+          "name": "Laghouat"
+        },
+        "65": {
+          "commune_id": "65",
+          "name": "Ksar El Hirane"
+        },
+        "66": {
+          "commune_id": "66",
+          "name": "Bennasser Benchohra"
+        },
+        "67": {
+          "commune_id": "67",
+          "name": "Sidi Makhlouf"
+        },
+        "68": {
+          "commune_id": "68",
+          "name": "Hassi Delaa"
+        },
+        "69": {
+          "commune_id": "69",
+          "name": "Hassi RMel"
+        },
+        "70": {
+          "commune_id": "70",
+          "name": "Aïn Madhi"
+        },
+        "71": {
+          "commune_id": "71",
+          "name": "Tadjemout"
+        },
+        "72": {
+          "commune_id": "72",
+          "name": "Kheneg"
+        },
+        "73": {
+          "commune_id": "73",
+          "name": "Gueltat Sidi Saad"
+        },
+        "74": {
+          "commune_id": "74",
+          "name": "Aïn Sidi Ali"
+        },
+        "75": {
+          "commune_id": "75",
+          "name": "Beidha"
+        },
+        "76": {
+          "commune_id": "76",
+          "name": "Brida"
+        },
+        "77": {
+          "commune_id": "77",
+          "name": "El Ghicha"
+        },
+        "78": {
+          "commune_id": "78",
+          "name": "Hadj Mechri"
+        },
+        "79": {
+          "commune_id": "79",
+          "name": "Sebgag"
+        },
+        "80": {
+          "commune_id": "80",
+          "name": "Taouila"
+        },
+        "81": {
+          "commune_id": "81",
+          "name": "Tadjrouna"
+        },
+        "82": {
+          "commune_id": "82",
+          "name": "Aflou"
+        },
+        "83": {
+          "commune_id": "83",
+          "name": "El Assafia"
+        },
+        "84": {
+          "commune_id": "84",
+          "name": "Oued Morra"
+        },
+        "85": {
+          "commune_id": "85",
+          "name": "Oued MZi"
+        },
+        "86": {
+          "commune_id": "86",
+          "name": "El Houaita"
+        },
+        "87": {
+          "commune_id": "87",
+          "name": "Sidi Bouzid"
+        }
+      }
+    },
+    "4": {
+      "wilaya_id": "4",
+      "name": "Oum El Bouaghi",
+      "communes": {
+        "88": {
+          "commune_id": "88",
+          "name": "Oum el Bouaghi"
+        },
+        "89": {
+          "commune_id": "89",
+          "name": "Aïn Béïda"
+        },
+        "90": {
+          "commune_id": "90",
+          "name": "Aïn Mlila"
+        },
+        "91": {
+          "commune_id": "91",
+          "name": "Behir Chergui"
+        },
+        "92": {
+          "commune_id": "92",
+          "name": "El Amiria"
+        },
+        "93": {
+          "commune_id": "93",
+          "name": "Sigus"
+        },
+        "94": {
+          "commune_id": "94",
+          "name": "El Belala"
+        },
+        "95": {
+          "commune_id": "95",
+          "name": "Aïn Babouche"
+        },
+        "96": {
+          "commune_id": "96",
+          "name": "Berriche"
+        },
+        "97": {
+          "commune_id": "97",
+          "name": "Ouled Hamla"
+        },
+        "98": {
+          "commune_id": "98",
+          "name": "Dhalaa"
+        },
+        "99": {
+          "commune_id": "99",
+          "name": "Aïn Kercha"
+        },
+        "100": {
+          "commune_id": "100",
+          "name": "Hanchir Toumghani"
+        },
+        "101": {
+          "commune_id": "101",
+          "name": "El Djazia"
+        },
+        "102": {
+          "commune_id": "102",
+          "name": "Aïn Diss"
+        },
+        "103": {
+          "commune_id": "103",
+          "name": "Fkirina"
+        },
+        "104": {
+          "commune_id": "104",
+          "name": "Souk Naamane"
+        },
+        "105": {
+          "commune_id": "105",
+          "name": "Zorg"
+        },
+        "106": {
+          "commune_id": "106",
+          "name": "El Fedjouz Boughrara Saoudi"
+        },
+        "107": {
+          "commune_id": "107",
+          "name": "Ouled Zouaï"
+        },
+        "108": {
+          "commune_id": "108",
+          "name": "Bir Chouhada"
+        },
+        "109": {
+          "commune_id": "109",
+          "name": "Ksar Sbahi"
+        },
+        "110": {
+          "commune_id": "110",
+          "name": "Oued Nini"
+        },
+        "111": {
+          "commune_id": "111",
+          "name": "Meskiana"
+        },
+        "112": {
+          "commune_id": "112",
+          "name": "Aïn Fakroun"
+        },
+        "113": {
+          "commune_id": "113",
+          "name": "Rahia"
+        },
+        "114": {
+          "commune_id": "114",
+          "name": "Aïn Zitoun"
+        },
+        "115": {
+          "commune_id": "115",
+          "name": "Ouled Gacem"
+        },
+        "116": {
+          "commune_id": "116",
+          "name": "El Harmilia"
+        }
+      }
+    },
+    "5": {
+      "wilaya_id": "5",
+      "name": "Batna",
+      "communes": {
+        "117": {
+          "commune_id": "117",
+          "name": "Batna"
+        },
+        "118": {
+          "commune_id": "118",
+          "name": "Ghassira"
+        },
+        "119": {
+          "commune_id": "119",
+          "name": "Maafa"
+        },
+        "120": {
+          "commune_id": "120",
+          "name": "Merouana"
+        },
+        "121": {
+          "commune_id": "121",
+          "name": "Seriana"
+        },
+        "122": {
+          "commune_id": "122",
+          "name": "Menaa"
+        },
+        "123": {
+          "commune_id": "123",
+          "name": "El Madher"
+        },
+        "124": {
+          "commune_id": "124",
+          "name": "Tazoult"
+        },
+        "125": {
+          "commune_id": "125",
+          "name": "NGaous"
+        },
+        "126": {
+          "commune_id": "126",
+          "name": "Guigba"
+        },
+        "127": {
+          "commune_id": "127",
+          "name": "Inoughissen"
+        },
+        "128": {
+          "commune_id": "128",
+          "name": "Ouyoun El Assafir"
+        },
+        "129": {
+          "commune_id": "129",
+          "name": "Djerma"
+        },
+        "130": {
+          "commune_id": "130",
+          "name": "Bitam"
+        },
+        "131": {
+          "commune_id": "131",
+          "name": "Abdelkader Azil"
+        },
+        "132": {
+          "commune_id": "132",
+          "name": "Arris"
+        },
+        "133": {
+          "commune_id": "133",
+          "name": "Kimmel"
+        },
+        "134": {
+          "commune_id": "134",
+          "name": "Tilatou"
+        },
+        "135": {
+          "commune_id": "135",
+          "name": "Aïn Djasser"
+        },
+        "136": {
+          "commune_id": "136",
+          "name": "Ouled Sellam"
+        },
+        "137": {
+          "commune_id": "137",
+          "name": "Tigherghar"
+        },
+        "138": {
+          "commune_id": "138",
+          "name": "Aïn Yagout"
+        },
+        "139": {
+          "commune_id": "139",
+          "name": "Sefiane"
+        },
+        "140": {
+          "commune_id": "140",
+          "name": "Fesdis"
+        },
+        "141": {
+          "commune_id": "141",
+          "name": "Rahbat"
+        },
+        "142": {
+          "commune_id": "142",
+          "name": "Tighanimine"
+        },
+        "143": {
+          "commune_id": "143",
+          "name": "Lemsane"
+        },
+        "144": {
+          "commune_id": "144",
+          "name": "Ksar Bellezma"
+        },
+        "145": {
+          "commune_id": "145",
+          "name": "Seggana"
+        },
+        "146": {
+          "commune_id": "146",
+          "name": "Ichmoul"
+        },
+        "147": {
+          "commune_id": "147",
+          "name": "Foum Toub"
+        },
+        "148": {
+          "commune_id": "148",
+          "name": "Ben Foudhala El Hakania"
+        },
+        "149": {
+          "commune_id": "149",
+          "name": "Oued El Ma"
+        },
+        "150": {
+          "commune_id": "150",
+          "name": "Talkhamt"
+        },
+        "151": {
+          "commune_id": "151",
+          "name": "Bouzina"
+        },
+        "152": {
+          "commune_id": "152",
+          "name": "Chemora"
+        },
+        "153": {
+          "commune_id": "153",
+          "name": "Oued Chaaba"
+        },
+        "154": {
+          "commune_id": "154",
+          "name": "Taxlent"
+        },
+        "155": {
+          "commune_id": "155",
+          "name": "Gosbat"
+        },
+        "156": {
+          "commune_id": "156",
+          "name": "Ouled Aouf"
+        },
+        "157": {
+          "commune_id": "157",
+          "name": "Boumagueur"
+        },
+        "158": {
+          "commune_id": "158",
+          "name": "Barika"
+        },
+        "159": {
+          "commune_id": "159",
+          "name": "Djezar"
+        },
+        "160": {
+          "commune_id": "160",
+          "name": "TKout"
+        },
+        "161": {
+          "commune_id": "161",
+          "name": "Aïn Touta"
+        },
+        "162": {
+          "commune_id": "162",
+          "name": "Hidoussa"
+        },
+        "163": {
+          "commune_id": "163",
+          "name": "Teniet El Abed"
+        },
+        "164": {
+          "commune_id": "164",
+          "name": "Oued Taga"
+        },
+        "165": {
+          "commune_id": "165",
+          "name": "Ouled Fadel"
+        },
+        "166": {
+          "commune_id": "166",
+          "name": "Timgad"
+        },
+        "167": {
+          "commune_id": "167",
+          "name": "Ras El Aioun"
+        },
+        "168": {
+          "commune_id": "168",
+          "name": "Chir"
+        },
+        "169": {
+          "commune_id": "169",
+          "name": "Ouled Si Slimane"
+        },
+        "170": {
+          "commune_id": "170",
+          "name": "Zanat El Beida"
+        },
+        "171": {
+          "commune_id": "171",
+          "name": "Mdoukel"
+        },
+        "172": {
+          "commune_id": "172",
+          "name": "Ouled Ammar"
+        },
+        "173": {
+          "commune_id": "173",
+          "name": "El Hassi"
+        },
+        "174": {
+          "commune_id": "174",
+          "name": "Lazrou"
+        },
+        "175": {
+          "commune_id": "175",
+          "name": "Boumia"
+        },
+        "176": {
+          "commune_id": "176",
+          "name": "Boulhilat"
+        },
+        "177": {
+          "commune_id": "177",
+          "name": "Larbaâ"
+        }
+      }
+    },
+    "6": {
+      "wilaya_id": "6",
+      "name": "Béjaïa",
+      "communes": {
+        "178": {
+          "commune_id": "178",
+          "name": "Béjaïa"
+        },
+        "179": {
+          "commune_id": "179",
+          "name": "Amizour"
+        },
+        "180": {
+          "commune_id": "180",
+          "name": "Ferraoun"
+        },
+        "181": {
+          "commune_id": "181",
+          "name": "Taourirt Ighil"
+        },
+        "182": {
+          "commune_id": "182",
+          "name": "Chellata"
+        },
+        "183": {
+          "commune_id": "183",
+          "name": "Tamokra"
+        },
+        "184": {
+          "commune_id": "184",
+          "name": "Timezrit"
+        },
+        "185": {
+          "commune_id": "185",
+          "name": "Souk El Ténine"
+        },
+        "186": {
+          "commune_id": "186",
+          "name": "Mcisna"
+        },
+        "187": {
+          "commune_id": "187",
+          "name": "Tinabdher"
+        },
+        "188": {
+          "commune_id": "188",
+          "name": "Tichy"
+        },
+        "189": {
+          "commune_id": "189",
+          "name": "Semaoun"
+        },
+        "190": {
+          "commune_id": "190",
+          "name": "Kendira"
+        },
+        "191": {
+          "commune_id": "191",
+          "name": "Tifra"
+        },
+        "192": {
+          "commune_id": "192",
+          "name": "Ighram"
+        },
+        "193": {
+          "commune_id": "193",
+          "name": "Amalou"
+        },
+        "194": {
+          "commune_id": "194",
+          "name": "Ighil Ali"
+        },
+        "195": {
+          "commune_id": "195",
+          "name": "Fenaïa Ilmaten"
+        },
+        "196": {
+          "commune_id": "196",
+          "name": "Toudja"
+        },
+        "197": {
+          "commune_id": "197",
+          "name": "Darguina"
+        },
+        "198": {
+          "commune_id": "198",
+          "name": "Sidi-Ayad"
+        },
+        "199": {
+          "commune_id": "199",
+          "name": "Aokas"
+        },
+        "200": {
+          "commune_id": "200",
+          "name": "Beni Djellil"
+        },
+        "201": {
+          "commune_id": "201",
+          "name": "Adekar"
+        },
+        "202": {
+          "commune_id": "202",
+          "name": "Akbou"
+        },
+        "203": {
+          "commune_id": "203",
+          "name": "Seddouk"
+        },
+        "204": {
+          "commune_id": "204",
+          "name": "Tazmalt"
+        },
+        "205": {
+          "commune_id": "205",
+          "name": "Aït-Rzine"
+        },
+        "206": {
+          "commune_id": "206",
+          "name": "Chemini"
+        },
+        "207": {
+          "commune_id": "207",
+          "name": "Souk-Oufella"
+        },
+        "208": {
+          "commune_id": "208",
+          "name": "Boukhelifa"
+        },
+        "209": {
+          "commune_id": "209",
+          "name": "Tibane"
+        },
+        "210": {
+          "commune_id": "210",
+          "name": "Tala Hamza"
+        },
+        "211": {
+          "commune_id": "211",
+          "name": "Barbacha"
+        },
+        "212": {
+          "commune_id": "212",
+          "name": "Beni Ksila"
+        },
+        "213": {
+          "commune_id": "213",
+          "name": "Ouzellaguen"
+        },
+        "214": {
+          "commune_id": "214",
+          "name": "Bouhamza"
+        },
+        "215": {
+          "commune_id": "215",
+          "name": "Beni Mellikeche"
+        },
+        "216": {
+          "commune_id": "216",
+          "name": "Sidi-Aïch"
+        },
+        "217": {
+          "commune_id": "217",
+          "name": "El Kseur"
+        },
+        "218": {
+          "commune_id": "218",
+          "name": "Melbou"
+        },
+        "219": {
+          "commune_id": "219",
+          "name": "Akfadou"
+        },
+        "220": {
+          "commune_id": "220",
+          "name": "Leflaye"
+        },
+        "221": {
+          "commune_id": "221",
+          "name": "Kherrata"
+        },
+        "222": {
+          "commune_id": "222",
+          "name": "Draâ El-Kaïd"
+        },
+        "223": {
+          "commune_id": "223",
+          "name": "Tamridjet"
+        },
+        "224": {
+          "commune_id": "224",
+          "name": "Aït-Smail"
+        },
+        "225": {
+          "commune_id": "225",
+          "name": "Boukhelifa"
+        },
+        "226": {
+          "commune_id": "226",
+          "name": "Tizi NBerber"
+        },
+        "227": {
+          "commune_id": "227",
+          "name": "Beni Maouche"
+        },
+        "228": {
+          "commune_id": "228",
+          "name": "Oued Ghir"
+        },
+        "229": {
+          "commune_id": "229",
+          "name": "Beni Ourtilane"
+        }
+      }
+    },
+    "7": {
+      "wilaya_id": "7",
+      "name": "Biskra",
+      "communes": {
+        "230": {
+          "commune_id": "230",
+          "name": "Aïn Naga"
+        },
+        "231": {
+          "commune_id": "231",
+          "name": "Aïn Zaatout"
+        },
+        "232": {
+          "commune_id": "232",
+          "name": "Besbes"
+        },
+        "233": {
+          "commune_id": "233",
+          "name": "Biskra"
+        },
+        "234": {
+          "commune_id": "234",
+          "name": "Bordj Ben Azzouz"
+        },
+        "235": {
+          "commune_id": "235",
+          "name": "Bouchagroune"
+        },
+        "236": {
+          "commune_id": "236",
+          "name": "Branis"
+        },
+        "237": {
+          "commune_id": "237",
+          "name": "Chetma"
+        },
+        "238": {
+          "commune_id": "238",
+          "name": "Djemorah"
+        },
+        "239": {
+          "commune_id": "239",
+          "name": "Doucen"
+        },
+        "240": {
+          "commune_id": "240",
+          "name": "Ech Chaïba"
+        },
+        "241": {
+          "commune_id": "241",
+          "name": "El Feidh"
+        },
+        "242": {
+          "commune_id": "242",
+          "name": "El Ghrous"
+        },
+        "243": {
+          "commune_id": "243",
+          "name": "El Hadjeb"
+        },
+        "244": {
+          "commune_id": "244",
+          "name": "El Haouch"
+        },
+        "245": {
+          "commune_id": "245",
+          "name": "El Kantara"
+        },
+        "246": {
+          "commune_id": "246",
+          "name": "El Mizaraa"
+        },
+        "247": {
+          "commune_id": "247",
+          "name": "El Outaya"
+        },
+        "248": {
+          "commune_id": "248",
+          "name": "Foughala"
+        },
+        "249": {
+          "commune_id": "249",
+          "name": "Khenguet Sidi Nadji"
+        },
+        "250": {
+          "commune_id": "250",
+          "name": "Lichana"
+        },
+        "251": {
+          "commune_id": "251",
+          "name": "Lioua"
+        },
+        "252": {
+          "commune_id": "252",
+          "name": "MChouneche"
+        },
+        "253": {
+          "commune_id": "253",
+          "name": "Mekhadma"
+        },
+        "254": {
+          "commune_id": "254",
+          "name": "MLili"
+        },
+        "255": {
+          "commune_id": "255",
+          "name": "Ouled Djellal"
+        },
+        "256": {
+          "commune_id": "256",
+          "name": "Oumache"
+        },
+        "257": {
+          "commune_id": "257",
+          "name": "Ourlal"
+        },
+        "258": {
+          "commune_id": "258",
+          "name": "Ras El Miaad"
+        },
+        "259": {
+          "commune_id": "259",
+          "name": "Sidi Khaled"
+        },
+        "260": {
+          "commune_id": "260",
+          "name": "Sidi Okba"
+        },
+        "261": {
+          "commune_id": "261",
+          "name": "Tolga"
+        },
+        "262": {
+          "commune_id": "262",
+          "name": "Zeribet El Oued"
+        }
+      }
+    },
+    "8": {
+      "wilaya_id": "8",
+      "name": "Béchar",
+      "communes": {
+        "263": {
+          "commune_id": "263",
+          "name": "Béchar"
+        },
+        "264": {
+          "commune_id": "264",
+          "name": "Erg Ferradj"
+        },
+        "265": {
+          "commune_id": "265",
+          "name": "Ouled Khoudir"
+        },
+        "266": {
+          "commune_id": "266",
+          "name": "Meridja"
+        },
+        "267": {
+          "commune_id": "267",
+          "name": "Timoudi"
+        },
+        "268": {
+          "commune_id": "268",
+          "name": "Lahmar"
+        },
+        "269": {
+          "commune_id": "269",
+          "name": "Béni Abbès"
+        },
+        "270": {
+          "commune_id": "270",
+          "name": "Beni Ikhlef"
+        },
+        "271": {
+          "commune_id": "271",
+          "name": "Mechraa Houari Boumedienne"
+        },
+        "272": {
+          "commune_id": "272",
+          "name": "Kenadsa"
+        },
+        "273": {
+          "commune_id": "273",
+          "name": "Igli"
+        },
+        "274": {
+          "commune_id": "274",
+          "name": "Tabelbala"
+        },
+        "275": {
+          "commune_id": "275",
+          "name": "Taghit"
+        },
+        "276": {
+          "commune_id": "276",
+          "name": "El Ouata"
+        },
+        "277": {
+          "commune_id": "277",
+          "name": "Boukais"
+        },
+        "278": {
+          "commune_id": "278",
+          "name": "Mougheul"
+        },
+        "279": {
+          "commune_id": "279",
+          "name": "Abadla"
+        },
+        "280": {
+          "commune_id": "280",
+          "name": "Kerzaz"
+        },
+        "281": {
+          "commune_id": "281",
+          "name": "Ksabi"
+        },
+        "282": {
+          "commune_id": "282",
+          "name": "Tamtert"
+        },
+        "283": {
+          "commune_id": "283",
+          "name": "Beni Ounif"
+        }
+      }
+    },
+    "9": {
+      "wilaya_id": "9",
+      "name": "Blwilaya_ida",
+      "communes": {
+        "284": {
+          "commune_id": "284",
+          "name": "Blida"
+        },
+        "285": {
+          "commune_id": "285",
+          "name": "Chebli"
+        },
+        "286": {
+          "commune_id": "286",
+          "name": "Bouinan"
+        },
+        "287": {
+          "commune_id": "287",
+          "name": "Oued Alleug"
+        },
+        "288": {
+          "commune_id": "288",
+          "name": "Ouled Yaïch"
+        },
+        "289": {
+          "commune_id": "289",
+          "name": "Chréa"
+        },
+        "290": {
+          "commune_id": "290",
+          "name": "El Affroun"
+        },
+        "291": {
+          "commune_id": "291",
+          "name": "Chiffa"
+        },
+        "292": {
+          "commune_id": "292",
+          "name": "Hammam Melouane"
+        },
+        "293": {
+          "commune_id": "293",
+          "name": "Benkhelil"
+        },
+        "294": {
+          "commune_id": "294",
+          "name": "Soumaa"
+        },
+        "295": {
+          "commune_id": "295",
+          "name": "Mouzaia"
+        },
+        "296": {
+          "commune_id": "296",
+          "name": "Souhane"
+        },
+        "297": {
+          "commune_id": "297",
+          "name": "Meftah"
+        },
+        "298": {
+          "commune_id": "298",
+          "name": "Ouled Slama"
+        },
+        "299": {
+          "commune_id": "299",
+          "name": "Boufarik"
+        },
+        "300": {
+          "commune_id": "300",
+          "name": "Larbaa"
+        },
+        "301": {
+          "commune_id": "301",
+          "name": "Oued Djer"
+        },
+        "302": {
+          "commune_id": "302",
+          "name": "Beni Tamou"
+        },
+        "303": {
+          "commune_id": "303",
+          "name": "Bouarfa"
+        },
+        "304": {
+          "commune_id": "304",
+          "name": "Beni Mered"
+        },
+        "305": {
+          "commune_id": "305",
+          "name": "Bougara"
+        },
+        "306": {
+          "commune_id": "306",
+          "name": "Guerouaou"
+        },
+        "307": {
+          "commune_id": "307",
+          "name": "Aïn Romana"
+        },
+        "308": {
+          "commune_id": "308",
+          "name": "Djebabra"
+        }
+      }
+    },
+    "10": {
+      "wilaya_id": "10",
+      "name": "Bouira",
+      "communes": {
+        "309": {
+          "commune_id": "309",
+          "name": "Ain Bessam"
+        },
+        "310": {
+          "commune_id": "310",
+          "name": "Hanif"
+        },
+        "311": {
+          "commune_id": "311",
+          "name": "Aghbalou"
+        },
+        "312": {
+          "commune_id": "312",
+          "name": "Aïn El Hadjar"
+        },
+        "313": {
+          "commune_id": "313",
+          "name": "Ahl El Ksar"
+        },
+        "314": {
+          "commune_id": "314",
+          "name": "Aïn Laloui"
+        },
+        "315": {
+          "commune_id": "315",
+          "name": "Ath Mansour"
+        },
+        "316": {
+          "commune_id": "316",
+          "name": "Aomar"
+        },
+        "317": {
+          "commune_id": "317",
+          "name": "Aïn El Turc"
+        },
+        "318": {
+          "commune_id": "318",
+          "name": "Aït Laziz"
+        },
+        "319": {
+          "commune_id": "319",
+          "name": "Bouderbala"
+        },
+        "320": {
+          "commune_id": "320",
+          "name": "Bechloul"
+        },
+        "321": {
+          "commune_id": "321",
+          "name": "Bir Ghbalou"
+        },
+        "322": {
+          "commune_id": "322",
+          "name": "Boukram"
+        },
+        "323": {
+          "commune_id": "323",
+          "name": "Bordj Okhriss"
+        },
+        "324": {
+          "commune_id": "324",
+          "name": "Bouira"
+        },
+        "325": {
+          "commune_id": "325",
+          "name": "Chorfa"
+        },
+        "326": {
+          "commune_id": "326",
+          "name": "Dechmia"
+        },
+        "327": {
+          "commune_id": "327",
+          "name": "Dirrah"
+        },
+        "328": {
+          "commune_id": "328",
+          "name": "Djebahia"
+        },
+        "329": {
+          "commune_id": "329",
+          "name": "El Hakimia"
+        },
+        "330": {
+          "commune_id": "330",
+          "name": "El Hachimia"
+        },
+        "331": {
+          "commune_id": "331",
+          "name": "El Adjiba"
+        },
+        "332": {
+          "commune_id": "332",
+          "name": "El Khabouzia"
+        },
+        "333": {
+          "commune_id": "333",
+          "name": "El Mokrani"
+        },
+        "334": {
+          "commune_id": "334",
+          "name": "El Asnam"
+        },
+        "335": {
+          "commune_id": "335",
+          "name": "Guerrouma"
+        },
+        "336": {
+          "commune_id": "336",
+          "name": "Haizer"
+        },
+        "337": {
+          "commune_id": "337",
+          "name": "Hadjera Zerga"
+        },
+        "338": {
+          "commune_id": "338",
+          "name": "Kadiria"
+        },
+        "339": {
+          "commune_id": "339",
+          "name": "Lakhdaria"
+        },
+        "340": {
+          "commune_id": "340",
+          "name": "MChedallah"
+        },
+        "341": {
+          "commune_id": "341",
+          "name": "Mezdour"
+        },
+        "342": {
+          "commune_id": "342",
+          "name": "Maala"
+        },
+        "343": {
+          "commune_id": "343",
+          "name": "Maamora"
+        },
+        "344": {
+          "commune_id": "344",
+          "name": "Oued El Berdi"
+        },
+        "345": {
+          "commune_id": "345",
+          "name": "Ouled Rached"
+        },
+        "346": {
+          "commune_id": "346",
+          "name": "Raouraoua"
+        },
+        "347": {
+          "commune_id": "347",
+          "name": "Ridane"
+        },
+        "348": {
+          "commune_id": "348",
+          "name": "Saharidj"
+        },
+        "349": {
+          "commune_id": "349",
+          "name": "Sour El Ghouzlane"
+        },
+        "350": {
+          "commune_id": "350",
+          "name": "Souk El Khemis"
+        },
+        "351": {
+          "commune_id": "351",
+          "name": "Taguedit"
+        },
+        "352": {
+          "commune_id": "352",
+          "name": "Taghzout"
+        },
+        "353": {
+          "commune_id": "353",
+          "name": "Zbarbar"
+        }
+      }
+    },
+    "11": {
+      "wilaya_id": "11",
+      "name": "Tamanrasset",
+      "communes": {
+        "354": {
+          "commune_id": "354",
+          "name": "Tamanrasset"
+        },
+        "355": {
+          "commune_id": "355",
+          "name": "Abalessa"
+        },
+        "356": {
+          "commune_id": "356",
+          "name": "In Ghar"
+        },
+        "357": {
+          "commune_id": "357",
+          "name": "In Guezzam"
+        },
+        "358": {
+          "commune_id": "358",
+          "name": "Idles"
+        },
+        "359": {
+          "commune_id": "359",
+          "name": "Tazrouk"
+        },
+        "360": {
+          "commune_id": "360",
+          "name": "Tin Zaouatine"
+        },
+        "361": {
+          "commune_id": "361",
+          "name": "In Salah"
+        },
+        "362": {
+          "commune_id": "362",
+          "name": "In Amguel"
+        },
+        "363": {
+          "commune_id": "363",
+          "name": "Foggaret Ezzaouia"
+        }
+      }
+    },
+    "12": {
+      "wilaya_id": "12",
+      "name": "Tébessa",
+      "communes": {
+        "364": {
+          "commune_id": "364",
+          "name": "Tébessa"
+        },
+        "365": {
+          "commune_id": "365",
+          "name": "Bir el-Ater"
+        },
+        "366": {
+          "commune_id": "366",
+          "name": "Cheria"
+        },
+        "367": {
+          "commune_id": "367",
+          "name": "Stah Guentis"
+        },
+        "368": {
+          "commune_id": "368",
+          "name": "El Aouinet"
+        },
+        "369": {
+          "commune_id": "369",
+          "name": "El Houidjbet"
+        },
+        "370": {
+          "commune_id": "370",
+          "name": "Safsaf El Ouesra"
+        },
+        "371": {
+          "commune_id": "371",
+          "name": "Hammamet"
+        },
+        "372": {
+          "commune_id": "372",
+          "name": "Negrine"
+        },
+        "373": {
+          "commune_id": "373",
+          "name": "Bir Mokkadem"
+        },
+        "374": {
+          "commune_id": "374",
+          "name": "El Kouif"
+        },
+        "375": {
+          "commune_id": "375",
+          "name": "Morsott"
+        },
+        "376": {
+          "commune_id": "376",
+          "name": "El Ogla"
+        },
+        "377": {
+          "commune_id": "377",
+          "name": "Bir Dheb"
+        },
+        "378": {
+          "commune_id": "378",
+          "name": "Ogla Melha"
+        },
+        "379": {
+          "commune_id": "379",
+          "name": "Guorriguer"
+        },
+        "380": {
+          "commune_id": "380",
+          "name": "Bekkaria"
+        },
+        "381": {
+          "commune_id": "381",
+          "name": "Boukhadra"
+        },
+        "382": {
+          "commune_id": "382",
+          "name": "Ouenza"
+        },
+        "383": {
+          "commune_id": "383",
+          "name": "El Ma Labiodh"
+        },
+        "384": {
+          "commune_id": "384",
+          "name": "Oum Ali"
+        },
+        "385": {
+          "commune_id": "385",
+          "name": "Tlidjene"
+        },
+        "386": {
+          "commune_id": "386",
+          "name": "Aïn Zerga"
+        },
+        "387": {
+          "commune_id": "387",
+          "name": "El Meridj"
+        },
+        "388": {
+          "commune_id": "388",
+          "name": "Boulhaf Dir"
+        },
+        "389": {
+          "commune_id": "389",
+          "name": "Bedjene"
+        },
+        "390": {
+          "commune_id": "390",
+          "name": "El Mezeraa"
+        },
+        "391": {
+          "commune_id": "391",
+          "name": "Ferkane"
+        }
+      }
+    },
+    "13": {
+      "wilaya_id": "13",
+      "name": "Tlemcen",
+      "communes": {
+        "392": {
+          "commune_id": "392",
+          "name": "Tlemcen"
+        },
+        "393": {
+          "commune_id": "393",
+          "name": "Beni Mester"
+        },
+        "394": {
+          "commune_id": "394",
+          "name": "Aïn Tallout"
+        },
+        "395": {
+          "commune_id": "395",
+          "name": "Remchi"
+        },
+        "396": {
+          "commune_id": "396",
+          "name": "El Fehoul"
+        },
+        "397": {
+          "commune_id": "397",
+          "name": "Sabra"
+        },
+        "398": {
+          "commune_id": "398",
+          "name": "Ghazaouet"
+        },
+        "399": {
+          "commune_id": "399",
+          "name": "Souani"
+        },
+        "400": {
+          "commune_id": "400",
+          "name": "Djebala"
+        },
+        "401": {
+          "commune_id": "401",
+          "name": "El Gor"
+        },
+        "402": {
+          "commune_id": "402",
+          "name": "Oued Lakhdar"
+        },
+        "403": {
+          "commune_id": "403",
+          "name": "Aïn Fezza"
+        },
+        "404": {
+          "commune_id": "404",
+          "name": "Ouled Mimoun"
+        },
+        "405": {
+          "commune_id": "405",
+          "name": "Amieur"
+        },
+        "406": {
+          "commune_id": "406",
+          "name": "Aïn Youcef"
+        },
+        "407": {
+          "commune_id": "407",
+          "name": "Zenata"
+        },
+        "408": {
+          "commune_id": "408",
+          "name": "Beni Snous"
+        },
+        "409": {
+          "commune_id": "409",
+          "name": "Bab El Assa"
+        },
+        "410": {
+          "commune_id": "410",
+          "name": "Dar Yaghmouracene"
+        },
+        "411": {
+          "commune_id": "411",
+          "name": "Fellaoucene"
+        },
+        "412": {
+          "commune_id": "412",
+          "name": "Azails"
+        },
+        "413": {
+          "commune_id": "413",
+          "name": "Sebaa Chioukh"
+        },
+        "414": {
+          "commune_id": "414",
+          "name": "Terny Beni Hediel"
+        },
+        "415": {
+          "commune_id": "415",
+          "name": "Bensekrane"
+        },
+        "416": {
+          "commune_id": "416",
+          "name": "Aïn Nehala"
+        },
+        "417": {
+          "commune_id": "417",
+          "name": "Hennaya"
+        },
+        "418": {
+          "commune_id": "418",
+          "name": "Maghnia"
+        },
+        "419": {
+          "commune_id": "419",
+          "name": "Hammam Boughrara"
+        },
+        "420": {
+          "commune_id": "420",
+          "name": "Souahlia"
+        },
+        "421": {
+          "commune_id": "421",
+          "name": "MSirda Fouaga"
+        },
+        "422": {
+          "commune_id": "422",
+          "name": "Aïn Fetah"
+        },
+        "423": {
+          "commune_id": "423",
+          "name": "El Aricha"
+        },
+        "424": {
+          "commune_id": "424",
+          "name": "Souk Tlata"
+        },
+        "425": {
+          "commune_id": "425",
+          "name": "Sidi Abdelli"
+        },
+        "426": {
+          "commune_id": "426",
+          "name": "Sebdou"
+        },
+        "427": {
+          "commune_id": "427",
+          "name": "Beni Ouarsous"
+        },
+        "428": {
+          "commune_id": "428",
+          "name": "Sidi Medjahed"
+        },
+        "429": {
+          "commune_id": "429",
+          "name": "Beni Boussaid"
+        },
+        "430": {
+          "commune_id": "430",
+          "name": "Marsa Ben MHidi"
+        },
+        "431": {
+          "commune_id": "431",
+          "name": "Nedroma"
+        },
+        "432": {
+          "commune_id": "432",
+          "name": "Sidi Djillali"
+        },
+        "433": {
+          "commune_id": "433",
+          "name": "Beni Bahdel"
+        },
+        "434": {
+          "commune_id": "434",
+          "name": "El Bouihi"
+        },
+        "435": {
+          "commune_id": "435",
+          "name": "Honaïne"
+        },
+        "436": {
+          "commune_id": "436",
+          "name": "Tienet"
+        },
+        "437": {
+          "commune_id": "437",
+          "name": "Ouled Riyah"
+        },
+        "438": {
+          "commune_id": "438",
+          "name": "Bouhlou"
+        },
+        "439": {
+          "commune_id": "439",
+          "name": "Beni Khellad"
+        },
+        "440": {
+          "commune_id": "440",
+          "name": "Aïn Ghoraba"
+        },
+        "441": {
+          "commune_id": "441",
+          "name": "Chetouane"
+        },
+        "442": {
+          "commune_id": "442",
+          "name": "Mansourah"
+        },
+        "443": {
+          "commune_id": "443",
+          "name": "Beni Semiel"
+        },
+        "444": {
+          "commune_id": "444",
+          "name": "Aïn Kebira"
+        }
+      }
+    },
+    "14": {
+      "wilaya_id": "14",
+      "name": "Tiaret",
+      "communes": {
+        "445": {
+          "commune_id": "445",
+          "name": "Aïn Bouchekif"
+        },
+        "446": {
+          "commune_id": "446",
+          "name": "Aïn Deheb"
+        },
+        "447": {
+          "commune_id": "447",
+          "name": "Aïn El Hadid"
+        },
+        "448": {
+          "commune_id": "448",
+          "name": "Aïn Kermes"
+        },
+        "449": {
+          "commune_id": "449",
+          "name": "Aïn Dzarit"
+        },
+        "450": {
+          "commune_id": "450",
+          "name": "Bougara"
+        },
+        "451": {
+          "commune_id": "451",
+          "name": "Chehaima"
+        },
+        "452": {
+          "commune_id": "452",
+          "name": "Dahmouni"
+        },
+        "453": {
+          "commune_id": "453",
+          "name": "Djebilet Rosfa"
+        },
+        "454": {
+          "commune_id": "454",
+          "name": "Djillali Ben Amar"
+        },
+        "455": {
+          "commune_id": "455",
+          "name": "Faidja"
+        },
+        "456": {
+          "commune_id": "456",
+          "name": "Frenda"
+        },
+        "457": {
+          "commune_id": "457",
+          "name": "Guertoufa"
+        },
+        "458": {
+          "commune_id": "458",
+          "name": "Hamadia"
+        },
+        "459": {
+          "commune_id": "459",
+          "name": "Ksar Chellala"
+        },
+        "460": {
+          "commune_id": "460",
+          "name": "Madna"
+        },
+        "461": {
+          "commune_id": "461",
+          "name": "Mahdia"
+        },
+        "462": {
+          "commune_id": "462",
+          "name": "Mechraa Safa"
+        },
+        "463": {
+          "commune_id": "463",
+          "name": "Medrissa"
+        },
+        "464": {
+          "commune_id": "464",
+          "name": "Medroussa"
+        },
+        "465": {
+          "commune_id": "465",
+          "name": "Meghila"
+        },
+        "466": {
+          "commune_id": "466",
+          "name": "Mellakou"
+        },
+        "467": {
+          "commune_id": "467",
+          "name": "Nadorah"
+        },
+        "468": {
+          "commune_id": "468",
+          "name": "Naima"
+        },
+        "469": {
+          "commune_id": "469",
+          "name": "Oued Lilli"
+        },
+        "470": {
+          "commune_id": "470",
+          "name": "Rahouia"
+        },
+        "471": {
+          "commune_id": "471",
+          "name": "Rechaiga"
+        },
+        "472": {
+          "commune_id": "472",
+          "name": "Sebaine"
+        },
+        "473": {
+          "commune_id": "473",
+          "name": "Sebt"
+        },
+        "474": {
+          "commune_id": "474",
+          "name": "Serghine"
+        },
+        "475": {
+          "commune_id": "475",
+          "name": "Si Abdelghani"
+        },
+        "476": {
+          "commune_id": "476",
+          "name": "Sidi Abderahmane"
+        },
+        "477": {
+          "commune_id": "477",
+          "name": "Sidi Ali Mellal"
+        },
+        "478": {
+          "commune_id": "478",
+          "name": "Sidi Bakhti"
+        },
+        "479": {
+          "commune_id": "479",
+          "name": "Sidi Hosni"
+        },
+        "480": {
+          "commune_id": "480",
+          "name": "Sougueur"
+        },
+        "481": {
+          "commune_id": "481",
+          "name": "Tagdemt"
+        },
+        "482": {
+          "commune_id": "482",
+          "name": "Takhemaret"
+        },
+        "483": {
+          "commune_id": "483",
+          "name": "Tiaret"
+        },
+        "484": {
+          "commune_id": "484",
+          "name": "Tidda"
+        },
+        "485": {
+          "commune_id": "485",
+          "name": "Tousnina"
+        },
+        "486": {
+          "commune_id": "486",
+          "name": "Zmalet El Emir Abdelkader"
+        }
+      }
+    },
+    "15": {
+      "wilaya_id": "15",
+      "name": "Tizi Ouzou",
+      "communes": {
+        "488": {
+          "commune_id": "488",
+          "name": "Tizi Ouzou"
+        },
+        "489": {
+          "commune_id": "489",
+          "name": "Ain El Hammam"
+        },
+        "490": {
+          "commune_id": "490",
+          "name": "Akbil"
+        },
+        "491": {
+          "commune_id": "491",
+          "name": "Freha"
+        },
+        "492": {
+          "commune_id": "492",
+          "name": "Souamaâ"
+        },
+        "493": {
+          "commune_id": "493",
+          "name": "Mechtras"
+        },
+        "494": {
+          "commune_id": "494",
+          "name": "Irdjen"
+        },
+        "495": {
+          "commune_id": "495",
+          "name": "Timizart"
+        },
+        "496": {
+          "commune_id": "496",
+          "name": "Makouda"
+        },
+        "497": {
+          "commune_id": "497",
+          "name": "Draâ El Mizan"
+        },
+        "498": {
+          "commune_id": "498",
+          "name": "Tizi Gheniff"
+        },
+        "499": {
+          "commune_id": "499",
+          "name": "Bounouh"
+        },
+        "500": {
+          "commune_id": "500",
+          "name": "Aït Chafâa"
+        },
+        "501": {
+          "commune_id": "501",
+          "name": "Frikat"
+        },
+        "502": {
+          "commune_id": "502",
+          "name": "Beni Aïssi"
+        },
+        "503": {
+          "commune_id": "503",
+          "name": "Beni Zmenzer"
+        },
+        "504": {
+          "commune_id": "504",
+          "name": "Iferhounène"
+        },
+        "505": {
+          "commune_id": "505",
+          "name": "Azazga"
+        },
+        "506": {
+          "commune_id": "506",
+          "name": "Illoula Oumalou"
+        },
+        "507": {
+          "commune_id": "507",
+          "name": "Yakouren"
+        },
+        "508": {
+          "commune_id": "508",
+          "name": "Larbaâ Nath Irathen"
+        },
+        "509": {
+          "commune_id": "509",
+          "name": "Tizi Rached"
+        },
+        "510": {
+          "commune_id": "510",
+          "name": "Zekri"
+        },
+        "511": {
+          "commune_id": "511",
+          "name": "Ouaguenoun"
+        },
+        "512": {
+          "commune_id": "512",
+          "name": "Aïn Zaouia"
+        },
+        "513": {
+          "commune_id": "513",
+          "name": "MKira"
+        },
+        "514": {
+          "commune_id": "514",
+          "name": "Aït Yahia"
+        },
+        "515": {
+          "commune_id": "515",
+          "name": "Aït Mahmoud"
+        },
+        "516": {
+          "commune_id": "516",
+          "name": "Mâatkas"
+        },
+        "517": {
+          "commune_id": "517",
+          "name": "Aït Boumahdi"
+        },
+        "518": {
+          "commune_id": "518",
+          "name": "Abi Youcef"
+        },
+        "519": {
+          "commune_id": "519",
+          "name": "Beni Douala"
+        },
+        "520": {
+          "commune_id": "520",
+          "name": "Illilten"
+        },
+        "521": {
+          "commune_id": "521",
+          "name": "Bouzguen"
+        },
+        "522": {
+          "commune_id": "522",
+          "name": "Aït Aggouacha"
+        },
+        "523": {
+          "commune_id": "523",
+          "name": "Ouadhia"
+        },
+        "524": {
+          "commune_id": "524",
+          "name": "Azeffoun"
+        },
+        "525": {
+          "commune_id": "525",
+          "name": "Tigzirt"
+        },
+        "526": {
+          "commune_id": "526",
+          "name": "Djebel Aissa Mimoun"
+        },
+        "527": {
+          "commune_id": "527",
+          "name": "Boghni"
+        },
+        "528": {
+          "commune_id": "528",
+          "name": "Ifigha"
+        },
+        "529": {
+          "commune_id": "529",
+          "name": "Aït Oumalou"
+        },
+        "530": {
+          "commune_id": "530",
+          "name": "Tirmitine"
+        },
+        "531": {
+          "commune_id": "531",
+          "name": "Akerrou"
+        },
+        "532": {
+          "commune_id": "532",
+          "name": "Yatafen"
+        },
+        "533": {
+          "commune_id": "533",
+          "name": "Beni Ziki"
+        },
+        "534": {
+          "commune_id": "534",
+          "name": "Draâ Ben Khedda"
+        },
+        "535": {
+          "commune_id": "535",
+          "name": "Ouacif"
+        },
+        "536": {
+          "commune_id": "536",
+          "name": "Idjeur"
+        },
+        "537": {
+          "commune_id": "537",
+          "name": "Mekla"
+        },
+        "538": {
+          "commune_id": "538",
+          "name": "Tizi NTleta"
+        },
+        "539": {
+          "commune_id": "539",
+          "name": "Beni Yenni"
+        },
+        "540": {
+          "commune_id": "540",
+          "name": "Aghribs"
+        },
+        "541": {
+          "commune_id": "541",
+          "name": "Iflissen"
+        },
+        "542": {
+          "commune_id": "542",
+          "name": "Boudjima"
+        },
+        "543": {
+          "commune_id": "543",
+          "name": "Aït Yahia Moussa"
+        },
+        "544": {
+          "commune_id": "544",
+          "name": "Souk El Thenine"
+        },
+        "545": {
+          "commune_id": "545",
+          "name": "Aït Khellili"
+        },
+        "546": {
+          "commune_id": "546",
+          "name": "Sidi Namane"
+        },
+        "547": {
+          "commune_id": "547",
+          "name": "Iboudraren"
+        },
+        "548": {
+          "commune_id": "548",
+          "name": "Agouni Gueghrane"
+        },
+        "549": {
+          "commune_id": "549",
+          "name": "Mizrana"
+        },
+        "550": {
+          "commune_id": "550",
+          "name": "Imsouhel"
+        },
+        "551": {
+          "commune_id": "551",
+          "name": "Tadmaït"
+        },
+        "552": {
+          "commune_id": "552",
+          "name": "Aït Bouadou"
+        },
+        "553": {
+          "commune_id": "553",
+          "name": "Assi Youcef"
+        },
+        "554": {
+          "commune_id": "554",
+          "name": "Aït Toudert"
+        }
+      }
+    },
+    "16": {
+      "wilaya_id": "16",
+      "name": "Alger",
+      "communes": {
+        "487": {
+          "commune_id": "487",
+          "name": "Alger"
+        },
+        "555": {
+          "commune_id": "555",
+          "name": "Alger-Centre"
+        },
+        "556": {
+          "commune_id": "556",
+          "name": "Aïn Benian"
+        },
+        "557": {
+          "commune_id": "557",
+          "name": "Aïn Taya"
+        },
+        "558": {
+          "commune_id": "558",
+          "name": "Bab El Oued"
+        },
+        "559": {
+          "commune_id": "559",
+          "name": "Bab Ezzouar"
+        },
+        "560": {
+          "commune_id": "560",
+          "name": "Baba Hassen"
+        },
+        "561": {
+          "commune_id": "561",
+          "name": "Bach djerrah"
+        },
+        "562": {
+          "commune_id": "562",
+          "name": "Baraki"
+        },
+        "563": {
+          "commune_id": "563",
+          "name": "Mohamed Belouizdad"
+        },
+        "564": {
+          "commune_id": "564",
+          "name": "Ben Aknoun"
+        },
+        "565": {
+          "commune_id": "565",
+          "name": "Beni Messous"
+        },
+        "566": {
+          "commune_id": "566",
+          "name": "Bir Mourad Raïs"
+        },
+        "567": {
+          "commune_id": "567",
+          "name": "Birkhadem"
+        },
+        "568": {
+          "commune_id": "568",
+          "name": "Birtouta"
+        },
+        "569": {
+          "commune_id": "569",
+          "name": "Bologhine"
+        },
+        "570": {
+          "commune_id": "570",
+          "name": "Bordj El Bahri"
+        },
+        "571": {
+          "commune_id": "571",
+          "name": "Bordj El Kiffan"
+        },
+        "572": {
+          "commune_id": "572",
+          "name": "Bourouba"
+        },
+        "573": {
+          "commune_id": "573",
+          "name": "Bouzareah"
+        },
+        "574": {
+          "commune_id": "574",
+          "name": "Casbah"
+        },
+        "575": {
+          "commune_id": "575",
+          "name": "Cheraga"
+        },
+        "576": {
+          "commune_id": "576",
+          "name": "Dar El Beïda"
+        },
+        "577": {
+          "commune_id": "577",
+          "name": "Dely Ibrahim"
+        },
+        "578": {
+          "commune_id": "578",
+          "name": "Djasr Kasentina"
+        },
+        "579": {
+          "commune_id": "579",
+          "name": "Douera"
+        },
+        "580": {
+          "commune_id": "580",
+          "name": "Draria"
+        },
+        "581": {
+          "commune_id": "581",
+          "name": "El Achour"
+        },
+        "582": {
+          "commune_id": "582",
+          "name": "El Biar"
+        },
+        "583": {
+          "commune_id": "583",
+          "name": "El Hammamet"
+        },
+        "584": {
+          "commune_id": "584",
+          "name": "El Harrach"
+        },
+        "585": {
+          "commune_id": "585",
+          "name": "El Madania"
+        },
+        "586": {
+          "commune_id": "586",
+          "name": "El Magharia"
+        },
+        "587": {
+          "commune_id": "587",
+          "name": "El Marsa"
+        },
+        "588": {
+          "commune_id": "588",
+          "name": "El Mouradia"
+        },
+        "589": {
+          "commune_id": "589",
+          "name": "Hraoua"
+        },
+        "590": {
+          "commune_id": "590",
+          "name": "Hussein Dey"
+        },
+        "591": {
+          "commune_id": "591",
+          "name": "Hydra"
+        },
+        "592": {
+          "commune_id": "592",
+          "name": "Khraicia"
+        },
+        "593": {
+          "commune_id": "593",
+          "name": "Kouba"
+        },
+        "594": {
+          "commune_id": "594",
+          "name": "Les Eucalyptus"
+        },
+        "595": {
+          "commune_id": "595",
+          "name": "Mahelma"
+        },
+        "596": {
+          "commune_id": "596",
+          "name": "Mohammadia"
+        },
+        "597": {
+          "commune_id": "597",
+          "name": "Oued Koriche"
+        },
+        "598": {
+          "commune_id": "598",
+          "name": "Oued Smar"
+        },
+        "599": {
+          "commune_id": "599",
+          "name": "Ouled Chebel"
+        },
+        "600": {
+          "commune_id": "600",
+          "name": "Ouled Fayet"
+        },
+        "601": {
+          "commune_id": "601",
+          "name": "Rahmania"
+        },
+        "602": {
+          "commune_id": "602",
+          "name": "Raïs Hamidou"
+        },
+        "603": {
+          "commune_id": "603",
+          "name": "Reghaïa"
+        },
+        "604": {
+          "commune_id": "604",
+          "name": "Rouïba"
+        },
+        "605": {
+          "commune_id": "605",
+          "name": "Saoula"
+        },
+        "606": {
+          "commune_id": "606",
+          "name": "Sidi MHamed"
+        },
+        "607": {
+          "commune_id": "607",
+          "name": "Sidi Moussa"
+        },
+        "608": {
+          "commune_id": "608",
+          "name": "Souidania"
+        },
+        "609": {
+          "commune_id": "609",
+          "name": "Staoueli"
+        },
+        "610": {
+          "commune_id": "610",
+          "name": "Tessala El Merdja"
+        },
+        "611": {
+          "commune_id": "611",
+          "name": "Zeralda"
+        }
+      }
+    },
+    "17": {
+      "wilaya_id": "17",
+      "name": "Djelfa",
+      "communes": {
+        "612": {
+          "commune_id": "612",
+          "name": "Aïn Chouhada"
+        },
+        "613": {
+          "commune_id": "613",
+          "name": "Aïn El Ibel"
+        },
+        "614": {
+          "commune_id": "614",
+          "name": "Aïn Feka"
+        },
+        "615": {
+          "commune_id": "615",
+          "name": "Aïn Maabed"
+        },
+        "616": {
+          "commune_id": "616",
+          "name": "Aïn Oussara"
+        },
+        "617": {
+          "commune_id": "617",
+          "name": "Amourah"
+        },
+        "618": {
+          "commune_id": "618",
+          "name": "Benhar"
+        },
+        "619": {
+          "commune_id": "619",
+          "name": "Beni Yagoub"
+        },
+        "620": {
+          "commune_id": "620",
+          "name": "Birine"
+        },
+        "621": {
+          "commune_id": "621",
+          "name": "Bouira Lahdab"
+        },
+        "622": {
+          "commune_id": "622",
+          "name": "Charef"
+        },
+        "623": {
+          "commune_id": "623",
+          "name": "Dar Chioukh"
+        },
+        "624": {
+          "commune_id": "624",
+          "name": "Deldoul"
+        },
+        "625": {
+          "commune_id": "625",
+          "name": "Djelfa"
+        },
+        "626": {
+          "commune_id": "626",
+          "name": "Douis"
+        },
+        "627": {
+          "commune_id": "627",
+          "name": "El Guedid"
+        },
+        "628": {
+          "commune_id": "628",
+          "name": "El Idrissia"
+        },
+        "629": {
+          "commune_id": "629",
+          "name": "El Khemis"
+        },
+        "630": {
+          "commune_id": "630",
+          "name": "Faidh El Botma"
+        },
+        "631": {
+          "commune_id": "631",
+          "name": "Guernini"
+        },
+        "632": {
+          "commune_id": "632",
+          "name": "Guettara"
+        },
+        "633": {
+          "commune_id": "633",
+          "name": "Had-Sahary"
+        },
+        "634": {
+          "commune_id": "634",
+          "name": "Hassi Bahbah"
+        },
+        "635": {
+          "commune_id": "635",
+          "name": "Hassi El Euch"
+        },
+        "636": {
+          "commune_id": "636",
+          "name": "Hassi Fedoul"
+        },
+        "637": {
+          "commune_id": "637",
+          "name": "Messaad"
+        },
+        "638": {
+          "commune_id": "638",
+          "name": "MLiliha"
+        },
+        "639": {
+          "commune_id": "639",
+          "name": "Moudjebara"
+        },
+        "640": {
+          "commune_id": "640",
+          "name": "Oum Laadham"
+        },
+        "641": {
+          "commune_id": "641",
+          "name": "Sed Rahal"
+        },
+        "642": {
+          "commune_id": "642",
+          "name": "Selmana"
+        },
+        "643": {
+          "commune_id": "643",
+          "name": "Sidi Baizid"
+        },
+        "644": {
+          "commune_id": "644",
+          "name": "Sidi Ladjel"
+        },
+        "645": {
+          "commune_id": "645",
+          "name": "Tadmit"
+        },
+        "646": {
+          "commune_id": "646",
+          "name": "Zaafrane"
+        },
+        "647": {
+          "commune_id": "647",
+          "name": "Zaccar"
+        }
+      }
+    },
+    "18": {
+      "wilaya_id": "18",
+      "name": "Jijel",
+      "communes": {
+        "648": {
+          "commune_id": "648",
+          "name": "Jijel"
+        },
+        "649": {
+          "commune_id": "649",
+          "name": "Eraguene"
+        },
+        "650": {
+          "commune_id": "650",
+          "name": "El Aouana"
+        },
+        "651": {
+          "commune_id": "651",
+          "name": "Ziama Mansouriah"
+        },
+        "652": {
+          "commune_id": "652",
+          "name": "Taher"
+        },
+        "653": {
+          "commune_id": "653",
+          "name": "Emir Abdelkader"
+        },
+        "654": {
+          "commune_id": "654",
+          "name": "Chekfa"
+        },
+        "655": {
+          "commune_id": "655",
+          "name": "Chahna"
+        },
+        "656": {
+          "commune_id": "656",
+          "name": "El Milia"
+        },
+        "657": {
+          "commune_id": "657",
+          "name": "Sidi Maarouf"
+        },
+        "658": {
+          "commune_id": "658",
+          "name": "Settara"
+        },
+        "659": {
+          "commune_id": "659",
+          "name": "El Ancer"
+        },
+        "660": {
+          "commune_id": "660",
+          "name": "Sidi Abdelaziz"
+        },
+        "661": {
+          "commune_id": "661",
+          "name": "Kaous"
+        },
+        "662": {
+          "commune_id": "662",
+          "name": "Ghebala"
+        },
+        "663": {
+          "commune_id": "663",
+          "name": "Bouraoui Belhadef"
+        },
+        "664": {
+          "commune_id": "664",
+          "name": "Djimla"
+        },
+        "665": {
+          "commune_id": "665",
+          "name": "Selma Benziada"
+        },
+        "666": {
+          "commune_id": "666",
+          "name": "Boucif Ouled Askeur"
+        },
+        "667": {
+          "commune_id": "667",
+          "name": "El Kennar Nouchfi"
+        },
+        "668": {
+          "commune_id": "668",
+          "name": "Ouled Yahia Khedrouche"
+        },
+        "669": {
+          "commune_id": "669",
+          "name": "Boudriaa Ben Yadjis"
+        },
+        "670": {
+          "commune_id": "670",
+          "name": "Kheïri Oued Adjoul"
+        },
+        "671": {
+          "commune_id": "671",
+          "name": "Texenna"
+        },
+        "672": {
+          "commune_id": "672",
+          "name": "Djemaa Beni Habibi"
+        },
+        "673": {
+          "commune_id": "673",
+          "name": "Bordj Tahar"
+        },
+        "674": {
+          "commune_id": "674",
+          "name": "Ouled Rabah"
+        },
+        "675": {
+          "commune_id": "675",
+          "name": "Ouadjana"
+        }
+      }
+    },
+    "19": {
+      "wilaya_id": "19",
+      "name": "Sétif",
+      "communes": {
+        "676": {
+          "commune_id": "676",
+          "name": "Aïn Abessa"
+        },
+        "677": {
+          "commune_id": "677",
+          "name": "Aïn Arnat"
+        },
+        "678": {
+          "commune_id": "678",
+          "name": "Aïn Azel"
+        },
+        "679": {
+          "commune_id": "679",
+          "name": "Aïn El Kebira"
+        },
+        "680": {
+          "commune_id": "680",
+          "name": "Aïn Lahdjar"
+        },
+        "681": {
+          "commune_id": "681",
+          "name": "Aïn Legradj"
+        },
+        "682": {
+          "commune_id": "682",
+          "name": "Aïn Oulmene"
+        },
+        "683": {
+          "commune_id": "683",
+          "name": "Aïn Roua"
+        },
+        "684": {
+          "commune_id": "684",
+          "name": "Aïn Sebt"
+        },
+        "685": {
+          "commune_id": "685",
+          "name": "Aït Naoual Mezada"
+        },
+        "686": {
+          "commune_id": "686",
+          "name": "Aït Tizi"
+        },
+        "687": {
+          "commune_id": "687",
+          "name": "Amoucha"
+        },
+        "688": {
+          "commune_id": "688",
+          "name": "Babor"
+        },
+        "689": {
+          "commune_id": "689",
+          "name": "Bazer Sakhra"
+        },
+        "690": {
+          "commune_id": "690",
+          "name": "Beidha Bordj"
+        },
+        "691": {
+          "commune_id": "691",
+          "name": "Belaa"
+        },
+        "692": {
+          "commune_id": "692",
+          "name": "Beni Aziz"
+        },
+        "693": {
+          "commune_id": "693",
+          "name": "Beni Chebana"
+        },
+        "694": {
+          "commune_id": "694",
+          "name": "Beni Fouda"
+        },
+        "695": {
+          "commune_id": "695",
+          "name": "Beni Hocine"
+        },
+        "696": {
+          "commune_id": "696",
+          "name": "Beni Mouhli"
+        },
+        "697": {
+          "commune_id": "697",
+          "name": "Beni Ouartilene"
+        },
+        "698": {
+          "commune_id": "698",
+          "name": "Bir El Arch"
+        },
+        "699": {
+          "commune_id": "699",
+          "name": "Bir Haddada"
+        },
+        "700": {
+          "commune_id": "700",
+          "name": "Bouandas"
+        },
+        "701": {
+          "commune_id": "701",
+          "name": "Bougaa"
+        },
+        "702": {
+          "commune_id": "702",
+          "name": "Bousselam"
+        },
+        "703": {
+          "commune_id": "703",
+          "name": "Boutaleb"
+        },
+        "704": {
+          "commune_id": "704",
+          "name": "Dehamcha"
+        },
+        "705": {
+          "commune_id": "705",
+          "name": "Djemila"
+        },
+        "706": {
+          "commune_id": "706",
+          "name": "Draa Kebila"
+        },
+        "707": {
+          "commune_id": "707",
+          "name": "El Eulma"
+        },
+        "708": {
+          "commune_id": "708",
+          "name": "El Ouldja"
+        },
+        "709": {
+          "commune_id": "709",
+          "name": "El Ouricia"
+        },
+        "710": {
+          "commune_id": "710",
+          "name": "Guellal"
+        },
+        "711": {
+          "commune_id": "711",
+          "name": "Guelta Zerka"
+        },
+        "712": {
+          "commune_id": "712",
+          "name": "Guenzet"
+        },
+        "713": {
+          "commune_id": "713",
+          "name": "Guidjel"
+        },
+        "714": {
+          "commune_id": "714",
+          "name": "Hamma"
+        },
+        "715": {
+          "commune_id": "715",
+          "name": "Hammam Guergour"
+        },
+        "716": {
+          "commune_id": "716",
+          "name": "Hammam Soukhna"
+        },
+        "717": {
+          "commune_id": "717",
+          "name": "Harbil"
+        },
+        "718": {
+          "commune_id": "718",
+          "name": "Ksar El Abtal"
+        },
+        "719": {
+          "commune_id": "719",
+          "name": "Maaouia"
+        },
+        "720": {
+          "commune_id": "720",
+          "name": "Maoklane"
+        },
+        "721": {
+          "commune_id": "721",
+          "name": "Mezloug"
+        },
+        "722": {
+          "commune_id": "722",
+          "name": "Oued El Barad"
+        },
+        "723": {
+          "commune_id": "723",
+          "name": "Ouled Addouane"
+        },
+        "724": {
+          "commune_id": "724",
+          "name": "Ouled Sabor"
+        },
+        "725": {
+          "commune_id": "725",
+          "name": "Ouled Si Ahmed"
+        },
+        "726": {
+          "commune_id": "726",
+          "name": "Ouled Tebben"
+        },
+        "727": {
+          "commune_id": "727",
+          "name": "Rasfa"
+        },
+        "728": {
+          "commune_id": "728",
+          "name": "Salah Bey"
+        },
+        "729": {
+          "commune_id": "729",
+          "name": "Serdj El Ghoul"
+        },
+        "730": {
+          "commune_id": "730",
+          "name": "Sétif"
+        },
+        "731": {
+          "commune_id": "731",
+          "name": "Tachouda"
+        },
+        "732": {
+          "commune_id": "732",
+          "name": "Talaifacene"
+        },
+        "733": {
+          "commune_id": "733",
+          "name": "Taya"
+        },
+        "734": {
+          "commune_id": "734",
+          "name": "Tella"
+        },
+        "735": {
+          "commune_id": "735",
+          "name": "Tizi NBechar"
+        }
+      }
+    },
+    "20": {
+      "wilaya_id": "20",
+      "name": "Saïda",
+      "communes": {
+        "736": {
+          "commune_id": "736",
+          "name": "Aïn El Hadjar"
+        },
+        "737": {
+          "commune_id": "737",
+          "name": "Aïn Sekhouna"
+        },
+        "738": {
+          "commune_id": "738",
+          "name": "Aïn Soltane"
+        },
+        "739": {
+          "commune_id": "739",
+          "name": "Doui Thabet"
+        },
+        "740": {
+          "commune_id": "740",
+          "name": "El Hassasna"
+        },
+        "741": {
+          "commune_id": "741",
+          "name": "Hounet"
+        },
+        "742": {
+          "commune_id": "742",
+          "name": "Maamora"
+        },
+        "743": {
+          "commune_id": "743",
+          "name": "Moulay Larbi"
+        },
+        "744": {
+          "commune_id": "744",
+          "name": "Ouled Brahim"
+        },
+        "745": {
+          "commune_id": "745",
+          "name": "Ouled Khaled"
+        },
+        "746": {
+          "commune_id": "746",
+          "name": "Saïda"
+        },
+        "747": {
+          "commune_id": "747",
+          "name": "Sidi Ahmed"
+        },
+        "748": {
+          "commune_id": "748",
+          "name": "Sidi Amar"
+        },
+        "749": {
+          "commune_id": "749",
+          "name": "Sidi Boubekeur"
+        },
+        "750": {
+          "commune_id": "750",
+          "name": "Tircine"
+        },
+        "751": {
+          "commune_id": "751",
+          "name": "Youb"
+        }
+      }
+    },
+    "21": {
+      "wilaya_id": "21",
+      "name": "Skikda",
+      "communes": {
+        "752": {
+          "commune_id": "752",
+          "name": "Aïn Bouziane"
+        },
+        "753": {
+          "commune_id": "753",
+          "name": "Aïn Charchar"
+        },
+        "754": {
+          "commune_id": "754",
+          "name": "Aïn Kechra"
+        },
+        "755": {
+          "commune_id": "755",
+          "name": "Aïn Zouit"
+        },
+        "756": {
+          "commune_id": "756",
+          "name": "Azzaba"
+        },
+        "757": {
+          "commune_id": "757",
+          "name": "Bekkouche Lakhdar"
+        },
+        "758": {
+          "commune_id": "758",
+          "name": "Bin El Ouiden"
+        },
+        "759": {
+          "commune_id": "759",
+          "name": "Ben Azzouz"
+        },
+        "760": {
+          "commune_id": "760",
+          "name": "Beni Bechir"
+        },
+        "761": {
+          "commune_id": "761",
+          "name": "Beni Oulbane"
+        },
+        "762": {
+          "commune_id": "762",
+          "name": "Beni Zid"
+        },
+        "763": {
+          "commune_id": "763",
+          "name": "Bouchtata"
+        },
+        "764": {
+          "commune_id": "764",
+          "name": "Cheraia"
+        },
+        "765": {
+          "commune_id": "765",
+          "name": "Collo"
+        },
+        "766": {
+          "commune_id": "766",
+          "name": "Djendel Saadi Mohamed"
+        },
+        "767": {
+          "commune_id": "767",
+          "name": "El Ghedir"
+        },
+        "768": {
+          "commune_id": "768",
+          "name": "El Hadaiek"
+        },
+        "769": {
+          "commune_id": "769",
+          "name": "El Harrouch"
+        },
+        "770": {
+          "commune_id": "770",
+          "name": "El Marsa"
+        },
+        "771": {
+          "commune_id": "771",
+          "name": "Emdjez Edchich"
+        },
+        "772": {
+          "commune_id": "772",
+          "name": "Es Sebt"
+        },
+        "773": {
+          "commune_id": "773",
+          "name": "Filfila"
+        },
+        "774": {
+          "commune_id": "774",
+          "name": "Hamadi Krouma"
+        },
+        "775": {
+          "commune_id": "775",
+          "name": "Kanoua"
+        },
+        "776": {
+          "commune_id": "776",
+          "name": "Kerkera"
+        },
+        "777": {
+          "commune_id": "777",
+          "name": "Kheneg Mayoum"
+        },
+        "778": {
+          "commune_id": "778",
+          "name": "Oued Zehour"
+        },
+        "779": {
+          "commune_id": "779",
+          "name": "Ouldja Boulballout"
+        },
+        "780": {
+          "commune_id": "780",
+          "name": "Ouled Attia"
+        },
+        "781": {
+          "commune_id": "781",
+          "name": "Ouled Hbaba"
+        },
+        "782": {
+          "commune_id": "782",
+          "name": "Oum Toub"
+        },
+        "783": {
+          "commune_id": "783",
+          "name": "Ramdane Djamel"
+        },
+        "784": {
+          "commune_id": "784",
+          "name": "Salah Bouchaour"
+        },
+        "785": {
+          "commune_id": "785",
+          "name": "Sidi Mezghiche"
+        },
+        "786": {
+          "commune_id": "786",
+          "name": "Skikda"
+        },
+        "787": {
+          "commune_id": "787",
+          "name": "Tamalous"
+        },
+        "788": {
+          "commune_id": "788",
+          "name": "Zerdaza"
+        },
+        "789": {
+          "commune_id": "789",
+          "name": "Zitouna"
+        }
+      }
+    },
+    "22": {
+      "wilaya_id": "22",
+      "name": "Swilaya_idi Bel Abbès",
+      "communes": {
+        "790": {
+          "commune_id": "790",
+          "name": "Aïn Adden"
+        },
+        "791": {
+          "commune_id": "791",
+          "name": "Aïn El Berd"
+        },
+        "792": {
+          "commune_id": "792",
+          "name": "Aïn Kada"
+        },
+        "793": {
+          "commune_id": "793",
+          "name": "Aïn Thrid"
+        },
+        "794": {
+          "commune_id": "794",
+          "name": "Aïn Tindamine"
+        },
+        "795": {
+          "commune_id": "795",
+          "name": "Amarnas"
+        },
+        "796": {
+          "commune_id": "796",
+          "name": "Badredine El Mokrani"
+        },
+        "797": {
+          "commune_id": "797",
+          "name": "Belarbi"
+        },
+        "798": {
+          "commune_id": "798",
+          "name": "Ben Badis"
+        },
+        "799": {
+          "commune_id": "799",
+          "name": "Benachiba Chelia"
+        },
+        "800": {
+          "commune_id": "800",
+          "name": "Bir El Hammam"
+        },
+        "801": {
+          "commune_id": "801",
+          "name": "Boudjebaa El Bordj"
+        },
+        "802": {
+          "commune_id": "802",
+          "name": "Boukhanafis"
+        },
+        "803": {
+          "commune_id": "803",
+          "name": "Chettouane Belaila"
+        },
+        "804": {
+          "commune_id": "804",
+          "name": "Dhaya"
+        },
+        "805": {
+          "commune_id": "805",
+          "name": "El Haçaiba"
+        },
+        "806": {
+          "commune_id": "806",
+          "name": "Hassi Dahou"
+        },
+        "807": {
+          "commune_id": "807",
+          "name": "Hassi Zehana"
+        },
+        "808": {
+          "commune_id": "808",
+          "name": "Lamtar"
+        },
+        "809": {
+          "commune_id": "809",
+          "name": "Makedra"
+        },
+        "810": {
+          "commune_id": "810",
+          "name": "Marhoum"
+        },
+        "811": {
+          "commune_id": "811",
+          "name": "MCid"
+        },
+        "812": {
+          "commune_id": "812",
+          "name": "Merine"
+        },
+        "813": {
+          "commune_id": "813",
+          "name": "Mezaourou"
+        },
+        "814": {
+          "commune_id": "814",
+          "name": "Mostefa Ben Brahim"
+        },
+        "815": {
+          "commune_id": "815",
+          "name": "Moulay Slissen"
+        },
+        "816": {
+          "commune_id": "816",
+          "name": "Oued Sebaa"
+        },
+        "817": {
+          "commune_id": "817",
+          "name": "Oued Sefioun"
+        },
+        "818": {
+          "commune_id": "818",
+          "name": "Oued Taourira"
+        },
+        "819": {
+          "commune_id": "819",
+          "name": "Ras El Ma"
+        },
+        "820": {
+          "commune_id": "820",
+          "name": "Redjem Demouche"
+        },
+        "821": {
+          "commune_id": "821",
+          "name": "Sehala Thaoura"
+        },
+        "822": {
+          "commune_id": "822",
+          "name": "Sfisef"
+        },
+        "823": {
+          "commune_id": "823",
+          "name": "Sidi Ali Benyoub"
+        },
+        "824": {
+          "commune_id": "824",
+          "name": "Sidi Ali Boussidi"
+        },
+        "825": {
+          "commune_id": "825",
+          "name": "Sidi Bel Abbes"
+        },
+        "826": {
+          "commune_id": "826",
+          "name": "Sidi Brahim"
+        },
+        "827": {
+          "commune_id": "827",
+          "name": "Sidi Chaib"
+        },
+        "828": {
+          "commune_id": "828",
+          "name": "Sidi Daho des Zairs"
+        },
+        "829": {
+          "commune_id": "829",
+          "name": "Sidi Hamadouche"
+        },
+        "830": {
+          "commune_id": "830",
+          "name": "Sidi Khaled"
+        },
+        "831": {
+          "commune_id": "831",
+          "name": "Sidi Lahcene"
+        },
+        "832": {
+          "commune_id": "832",
+          "name": "Sidi Yacoub"
+        },
+        "833": {
+          "commune_id": "833",
+          "name": "Tabia"
+        },
+        "834": {
+          "commune_id": "834",
+          "name": "Tafissour"
+        },
+        "835": {
+          "commune_id": "835",
+          "name": "Taoudmout"
+        },
+        "836": {
+          "commune_id": "836",
+          "name": "Teghalimet"
+        },
+        "837": {
+          "commune_id": "837",
+          "name": "Telagh"
+        },
+        "838": {
+          "commune_id": "838",
+          "name": "Tenira"
+        },
+        "839": {
+          "commune_id": "839",
+          "name": "Tessala"
+        },
+        "840": {
+          "commune_id": "840",
+          "name": "Tilmouni"
+        },
+        "841": {
+          "commune_id": "841",
+          "name": "Zerouala"
+        }
+      }
+    },
+    "23": {
+      "wilaya_id": "23",
+      "name": "Annaba",
+      "communes": {
+        "842": {
+          "commune_id": "842",
+          "name": "Annaba"
+        },
+        "843": {
+          "commune_id": "843",
+          "name": "Barrahel"
+        },
+        "844": {
+          "commune_id": "844",
+          "name": "El Hadjar"
+        },
+        "845": {
+          "commune_id": "845",
+          "name": "Eulma"
+        },
+        "846": {
+          "commune_id": "846",
+          "name": "El Bouni"
+        },
+        "847": {
+          "commune_id": "847",
+          "name": "Oued El Aneb"
+        },
+        "848": {
+          "commune_id": "848",
+          "name": "Cheurfa"
+        },
+        "849": {
+          "commune_id": "849",
+          "name": "Seraïdi"
+        },
+        "850": {
+          "commune_id": "850",
+          "name": "Aïn Berda"
+        },
+        "851": {
+          "commune_id": "851",
+          "name": "Chetaïbi"
+        },
+        "852": {
+          "commune_id": "852",
+          "name": "Sidi Amar"
+        },
+        "853": {
+          "commune_id": "853",
+          "name": "Treat"
+        }
+      }
+    },
+    "24": {
+      "wilaya_id": "24",
+      "name": "Guelma",
+      "communes": {
+        "854": {
+          "commune_id": "854",
+          "name": "Aïn Ben Beida"
+        },
+        "855": {
+          "commune_id": "855",
+          "name": "Aïn Larbi"
+        },
+        "856": {
+          "commune_id": "856",
+          "name": "Aïn Makhlouf"
+        },
+        "857": {
+          "commune_id": "857",
+          "name": "Aïn Reggada"
+        },
+        "858": {
+          "commune_id": "858",
+          "name": "Aïn Sandel"
+        },
+        "859": {
+          "commune_id": "859",
+          "name": "Belkheir"
+        },
+        "860": {
+          "commune_id": "860",
+          "name": "Ben Djerrah"
+        },
+        "861": {
+          "commune_id": "861",
+          "name": "Beni Mezline"
+        },
+        "862": {
+          "commune_id": "862",
+          "name": "Bordj Sabath"
+        },
+        "863": {
+          "commune_id": "863",
+          "name": "Bouhachana"
+        },
+        "864": {
+          "commune_id": "864",
+          "name": "Bouhamdane"
+        },
+        "865": {
+          "commune_id": "865",
+          "name": "Bouati Mahmoud"
+        },
+        "866": {
+          "commune_id": "866",
+          "name": "Bouchegouf"
+        },
+        "867": {
+          "commune_id": "867",
+          "name": "Boumahra Ahmed"
+        },
+        "868": {
+          "commune_id": "868",
+          "name": "Dahouara"
+        },
+        "869": {
+          "commune_id": "869",
+          "name": "Djeballah Khemissi"
+        },
+        "870": {
+          "commune_id": "870",
+          "name": "El Fedjoudj"
+        },
+        "871": {
+          "commune_id": "871",
+          "name": "Guellat Bou Sbaa"
+        },
+        "872": {
+          "commune_id": "872",
+          "name": "Guelma"
+        },
+        "873": {
+          "commune_id": "873",
+          "name": "Hammam Debagh"
+        },
+        "874": {
+          "commune_id": "874",
+          "name": "Hammam NBail"
+        },
+        "875": {
+          "commune_id": "875",
+          "name": "Héliopolis"
+        },
+        "876": {
+          "commune_id": "876",
+          "name": "Houari Boumédiène"
+        },
+        "877": {
+          "commune_id": "877",
+          "name": "Khezarra"
+        },
+        "878": {
+          "commune_id": "878",
+          "name": "Medjez Amar"
+        },
+        "879": {
+          "commune_id": "879",
+          "name": "Medjez Sfa"
+        },
+        "880": {
+          "commune_id": "880",
+          "name": "Nechmaya"
+        },
+        "881": {
+          "commune_id": "881",
+          "name": "Oued Cheham"
+        },
+        "882": {
+          "commune_id": "882",
+          "name": "Oued Fragha"
+        },
+        "883": {
+          "commune_id": "883",
+          "name": "Oued Zenati"
+        },
+        "884": {
+          "commune_id": "884",
+          "name": "Ras El Agba"
+        },
+        "885": {
+          "commune_id": "885",
+          "name": "Roknia"
+        },
+        "886": {
+          "commune_id": "886",
+          "name": "Sellaoua Announa"
+        },
+        "887": {
+          "commune_id": "887",
+          "name": "Tamlouka"
+        }
+      }
+    },
+    "25": {
+      "wilaya_id": "25",
+      "name": "Constantine",
+      "communes": {
+        "888": {
+          "commune_id": "888",
+          "name": "Aïn Abid"
+        },
+        "889": {
+          "commune_id": "889",
+          "name": "Aïn Smara"
+        },
+        "890": {
+          "commune_id": "890",
+          "name": "Beni Hamiden"
+        },
+        "891": {
+          "commune_id": "891",
+          "name": "Constantine"
+        },
+        "892": {
+          "commune_id": "892",
+          "name": "Didouche Mourad"
+        },
+        "893": {
+          "commune_id": "893",
+          "name": "El Khroub"
+        },
+        "894": {
+          "commune_id": "894",
+          "name": "Hamma Bouziane"
+        },
+        "895": {
+          "commune_id": "895",
+          "name": "Ibn Badis"
+        },
+        "896": {
+          "commune_id": "896",
+          "name": "Ibn Ziad"
+        },
+        "897": {
+          "commune_id": "897",
+          "name": "Messaoud Boudjriou"
+        },
+        "898": {
+          "commune_id": "898",
+          "name": "Ouled Rahmoune"
+        },
+        "899": {
+          "commune_id": "899",
+          "name": "Zighoud Youcef"
+        }
+      }
+    },
+    "26": {
+      "wilaya_id": "26",
+      "name": "Médéa",
+      "communes": {
+        "900": {
+          "commune_id": "900",
+          "name": "Aïn Boucif"
+        },
+        "901": {
+          "commune_id": "901",
+          "name": "Aïn Ouksir"
+        },
+        "902": {
+          "commune_id": "902",
+          "name": "Aissaouia"
+        },
+        "903": {
+          "commune_id": "903",
+          "name": "Aziz"
+        },
+        "904": {
+          "commune_id": "904",
+          "name": "Baata"
+        },
+        "905": {
+          "commune_id": "905",
+          "name": "Benchicao"
+        },
+        "906": {
+          "commune_id": "906",
+          "name": "Beni Slimane"
+        },
+        "907": {
+          "commune_id": "907",
+          "name": "Berrouaghia"
+        },
+        "908": {
+          "commune_id": "908",
+          "name": "Bir Ben Laabed"
+        },
+        "909": {
+          "commune_id": "909",
+          "name": "Boghar"
+        },
+        "910": {
+          "commune_id": "910",
+          "name": "Bou Aiche"
+        },
+        "911": {
+          "commune_id": "911",
+          "name": "Bouaichoune"
+        },
+        "912": {
+          "commune_id": "912",
+          "name": "Bouchrahil"
+        },
+        "913": {
+          "commune_id": "913",
+          "name": "Boughezoul"
+        },
+        "914": {
+          "commune_id": "914",
+          "name": "Bouskene"
+        },
+        "915": {
+          "commune_id": "915",
+          "name": "Chahbounia"
+        },
+        "916": {
+          "commune_id": "916",
+          "name": "Chellalet El Adhaoura"
+        },
+        "917": {
+          "commune_id": "917",
+          "name": "Cheniguel"
+        },
+        "918": {
+          "commune_id": "918",
+          "name": "Derrag"
+        },
+        "919": {
+          "commune_id": "919",
+          "name": "Deux Bassins"
+        },
+        "920": {
+          "commune_id": "920",
+          "name": "Djouab"
+        },
+        "921": {
+          "commune_id": "921",
+          "name": "Draa Essamar"
+        },
+        "922": {
+          "commune_id": "922",
+          "name": "El Azizia"
+        },
+        "923": {
+          "commune_id": "923",
+          "name": "El Guelb El Kebir"
+        },
+        "924": {
+          "commune_id": "924",
+          "name": "El Hamdania"
+        },
+        "925": {
+          "commune_id": "925",
+          "name": "El Omaria"
+        },
+        "926": {
+          "commune_id": "926",
+          "name": "El Ouinet"
+        },
+        "927": {
+          "commune_id": "927",
+          "name": "Hannacha"
+        },
+        "928": {
+          "commune_id": "928",
+          "name": "Kef Lakhdar"
+        },
+        "929": {
+          "commune_id": "929",
+          "name": "Khams Djouamaa"
+        },
+        "930": {
+          "commune_id": "930",
+          "name": "Ksar Boukhari"
+        },
+        "931": {
+          "commune_id": "931",
+          "name": "Meghraoua"
+        },
+        "932": {
+          "commune_id": "932",
+          "name": "Médéa"
+        },
+        "933": {
+          "commune_id": "933",
+          "name": "Moudjbar"
+        },
+        "934": {
+          "commune_id": "934",
+          "name": "Meftaha"
+        },
+        "935": {
+          "commune_id": "935",
+          "name": "Mezerana"
+        },
+        "936": {
+          "commune_id": "936",
+          "name": "Mihoub"
+        },
+        "937": {
+          "commune_id": "937",
+          "name": "Ouamri"
+        },
+        "938": {
+          "commune_id": "938",
+          "name": "Oued Harbil"
+        },
+        "939": {
+          "commune_id": "939",
+          "name": "Ouled Antar"
+        },
+        "940": {
+          "commune_id": "940",
+          "name": "Ouled Bouachra"
+        },
+        "941": {
+          "commune_id": "941",
+          "name": "Ouled Brahim"
+        },
+        "942": {
+          "commune_id": "942",
+          "name": "Ouled Deide"
+        },
+        "943": {
+          "commune_id": "943",
+          "name": "Ouled Hellal"
+        },
+        "944": {
+          "commune_id": "944",
+          "name": "Ouled Maaref"
+        },
+        "945": {
+          "commune_id": "945",
+          "name": "Oum El Djalil"
+        },
+        "946": {
+          "commune_id": "946",
+          "name": "Ouzera"
+        },
+        "947": {
+          "commune_id": "947",
+          "name": "Rebaia"
+        },
+        "948": {
+          "commune_id": "948",
+          "name": "Saneg"
+        },
+        "949": {
+          "commune_id": "949",
+          "name": "Sedraia"
+        },
+        "950": {
+          "commune_id": "950",
+          "name": "Seghouane"
+        },
+        "951": {
+          "commune_id": "951",
+          "name": "Si Mahdjoub"
+        },
+        "952": {
+          "commune_id": "952",
+          "name": "Sidi Damed"
+        },
+        "953": {
+          "commune_id": "953",
+          "name": "Sidi Errabia"
+        },
+        "954": {
+          "commune_id": "954",
+          "name": "Sidi Naamane"
+        },
+        "955": {
+          "commune_id": "955",
+          "name": "Sidi Zahar"
+        },
+        "956": {
+          "commune_id": "956",
+          "name": "Sidi Ziane"
+        },
+        "957": {
+          "commune_id": "957",
+          "name": "Souagui"
+        },
+        "958": {
+          "commune_id": "958",
+          "name": "Tablat"
+        },
+        "959": {
+          "commune_id": "959",
+          "name": "Tafraout"
+        },
+        "960": {
+          "commune_id": "960",
+          "name": "Tamesguida"
+        },
+        "961": {
+          "commune_id": "961",
+          "name": "Tizi Mahdi"
+        },
+        "962": {
+          "commune_id": "962",
+          "name": "Tlatet Eddouar"
+        },
+        "963": {
+          "commune_id": "963",
+          "name": "Zoubiria"
+        }
+      }
+    },
+    "27": {
+      "wilaya_id": "27",
+      "name": "Mostaganem",
+      "communes": {
+        "964": {
+          "commune_id": "964",
+          "name": "Abdelmalek Ramdane"
+        },
+        "965": {
+          "commune_id": "965",
+          "name": "Achaacha"
+        },
+        "966": {
+          "commune_id": "966",
+          "name": "Aïn Boudinar"
+        },
+        "967": {
+          "commune_id": "967",
+          "name": "Aïn Nouissy"
+        },
+        "968": {
+          "commune_id": "968",
+          "name": "Aïn Sidi Cherif"
+        },
+        "969": {
+          "commune_id": "969",
+          "name": "Aïn Tedles"
+        },
+        "970": {
+          "commune_id": "970",
+          "name": "Touahria"
+        },
+        "971": {
+          "commune_id": "971",
+          "name": "Bouguirat"
+        },
+        "972": {
+          "commune_id": "972",
+          "name": "El Hassaine"
+        },
+        "973": {
+          "commune_id": "973",
+          "name": "Fornaka"
+        },
+        "974": {
+          "commune_id": "974",
+          "name": "Hadjadj"
+        },
+        "975": {
+          "commune_id": "975",
+          "name": "Hassi Mameche"
+        },
+        "976": {
+          "commune_id": "976",
+          "name": "Khadra"
+        },
+        "977": {
+          "commune_id": "977",
+          "name": "Kheireddine"
+        },
+        "978": {
+          "commune_id": "978",
+          "name": "Mansourah"
+        },
+        "979": {
+          "commune_id": "979",
+          "name": "Mesra"
+        },
+        "980": {
+          "commune_id": "980",
+          "name": "Mazagran"
+        },
+        "981": {
+          "commune_id": "981",
+          "name": "Mostaganem"
+        },
+        "982": {
+          "commune_id": "982",
+          "name": "Nekmaria"
+        },
+        "983": {
+          "commune_id": "983",
+          "name": "Oued El Kheir"
+        },
+        "984": {
+          "commune_id": "984",
+          "name": "Ouled Boughalem"
+        },
+        "985": {
+          "commune_id": "985",
+          "name": "Ouled Maallah"
+        },
+        "986": {
+          "commune_id": "986",
+          "name": "Safsaf"
+        },
+        "987": {
+          "commune_id": "987",
+          "name": "Sayada"
+        },
+        "988": {
+          "commune_id": "988",
+          "name": "Sidi Ali"
+        },
+        "989": {
+          "commune_id": "989",
+          "name": "Sidi Belattar"
+        },
+        "990": {
+          "commune_id": "990",
+          "name": "Sidi Lakhdar"
+        },
+        "991": {
+          "commune_id": "991",
+          "name": "Sirat"
+        },
+        "992": {
+          "commune_id": "992",
+          "name": "Souaflia"
+        },
+        "993": {
+          "commune_id": "993",
+          "name": "Sour"
+        },
+        "994": {
+          "commune_id": "994",
+          "name": "Stidia"
+        },
+        "995": {
+          "commune_id": "995",
+          "name": "Tazgait"
+        }
+      }
+    },
+    "28": {
+      "wilaya_id": "28",
+      "name": "MSila",
+      "communes": {
+        "996": {
+          "commune_id": "996",
+          "name": "Aïn El Hadjel"
+        },
+        "997": {
+          "commune_id": "997",
+          "name": "Aïn El Melh"
+        },
+        "998": {
+          "commune_id": "998",
+          "name": "Aïn Errich"
+        },
+        "999": {
+          "commune_id": "999",
+          "name": "Aïn Fares"
+        },
+        "1000": {
+          "commune_id": "1000",
+          "name": "Aïn Khadra"
+        },
+        "1001": {
+          "commune_id": "1001",
+          "name": "Belaiba"
+        },
+        "1002": {
+          "commune_id": "1002",
+          "name": "Ben Srour"
+        },
+        "1003": {
+          "commune_id": "1003",
+          "name": "Beni Ilmane"
+        },
+        "1004": {
+          "commune_id": "1004",
+          "name": "Benzouh"
+        },
+        "1005": {
+          "commune_id": "1005",
+          "name": "Berhoum"
+        },
+        "1006": {
+          "commune_id": "1006",
+          "name": "Bir Foda"
+        },
+        "1007": {
+          "commune_id": "1007",
+          "name": "Bou-Saâda"
+        },
+        "1008": {
+          "commune_id": "1008",
+          "name": "Bouti Sayah"
+        },
+        "1009": {
+          "commune_id": "1009",
+          "name": "Chellal"
+        },
+        "1010": {
+          "commune_id": "1010",
+          "name": "Dehahna"
+        },
+        "1011": {
+          "commune_id": "1011",
+          "name": "Djebel Messaad"
+        },
+        "1012": {
+          "commune_id": "1012",
+          "name": "El Hamel"
+        },
+        "1013": {
+          "commune_id": "1013",
+          "name": "El Houamed"
+        },
+        "1014": {
+          "commune_id": "1014",
+          "name": "Hammam Dhalaa"
+        },
+        "1015": {
+          "commune_id": "1015",
+          "name": "Khettouti Sed El Djir"
+        },
+        "1016": {
+          "commune_id": "1016",
+          "name": "Khoubana"
+        },
+        "1017": {
+          "commune_id": "1017",
+          "name": "Maadid"
+        },
+        "1018": {
+          "commune_id": "1018",
+          "name": "Maarif"
+        },
+        "1019": {
+          "commune_id": "1019",
+          "name": "Magra"
+        },
+        "1020": {
+          "commune_id": "1020",
+          "name": "MCif"
+        },
+        "1021": {
+          "commune_id": "1021",
+          "name": "Medjedel"
+        },
+        "1022": {
+          "commune_id": "1022",
+          "name": "Mohammed Boudiaf"
+        },
+        "1023": {
+          "commune_id": "1023",
+          "name": "MSila"
+        },
+        "1024": {
+          "commune_id": "1024",
+          "name": "MTarfa"
+        },
+        "1025": {
+          "commune_id": "1025",
+          "name": "Ouanougha"
+        },
+        "1026": {
+          "commune_id": "1026",
+          "name": "Ouled Addi Guebala"
+        },
+        "1027": {
+          "commune_id": "1027",
+          "name": "Ouled Atia"
+        },
+        "1028": {
+          "commune_id": "1028",
+          "name": "Ouled Derradj"
+        },
+        "1029": {
+          "commune_id": "1029",
+          "name": "Ouled Madhi"
+        },
+        "1030": {
+          "commune_id": "1030",
+          "name": "Ouled Mansour"
+        },
+        "1031": {
+          "commune_id": "1031",
+          "name": "Ouled Sidi Brahim"
+        },
+        "1032": {
+          "commune_id": "1032",
+          "name": "Ouled Slimane"
+        },
+        "1033": {
+          "commune_id": "1033",
+          "name": "Oultem"
+        },
+        "1034": {
+          "commune_id": "1034",
+          "name": "Sidi Aïssa"
+        },
+        "1035": {
+          "commune_id": "1035",
+          "name": "Sidi Ameur"
+        },
+        "1036": {
+          "commune_id": "1036",
+          "name": "Sidi Hadjeres"
+        },
+        "1037": {
+          "commune_id": "1037",
+          "name": "Sidi MHamed"
+        },
+        "1038": {
+          "commune_id": "1038",
+          "name": "Slim"
+        },
+        "1039": {
+          "commune_id": "1039",
+          "name": "Souamaa"
+        },
+        "1040": {
+          "commune_id": "1040",
+          "name": "Tamsa"
+        },
+        "1041": {
+          "commune_id": "1041",
+          "name": "Tarmount"
+        },
+        "1042": {
+          "commune_id": "1042",
+          "name": "Zarzour"
+        }
+      }
+    },
+    "29": {
+      "wilaya_id": "29",
+      "name": "Mascara",
+      "communes": {
+        "1043": {
+          "commune_id": "1043",
+          "name": "Aïn Fares"
+        },
+        "1044": {
+          "commune_id": "1044",
+          "name": "Aïn Fekan"
+        },
+        "1045": {
+          "commune_id": "1045",
+          "name": "Aïn Ferah"
+        },
+        "1046": {
+          "commune_id": "1046",
+          "name": "Aïn Fras"
+        },
+        "1047": {
+          "commune_id": "1047",
+          "name": "Alaïmia"
+        },
+        "1048": {
+          "commune_id": "1048",
+          "name": "Aouf"
+        },
+        "1049": {
+          "commune_id": "1049",
+          "name": "Beniane"
+        },
+        "1050": {
+          "commune_id": "1050",
+          "name": "Bou Hanifia"
+        },
+        "1051": {
+          "commune_id": "1051",
+          "name": "Bou Henni"
+        },
+        "1052": {
+          "commune_id": "1052",
+          "name": "Chorfa"
+        },
+        "1053": {
+          "commune_id": "1053",
+          "name": "El Bordj"
+        },
+        "1054": {
+          "commune_id": "1054",
+          "name": "El Gaada"
+        },
+        "1055": {
+          "commune_id": "1055",
+          "name": "El Ghomri"
+        },
+        "1056": {
+          "commune_id": "1056",
+          "name": "El Guettana"
+        },
+        "1057": {
+          "commune_id": "1057",
+          "name": "El Keurt"
+        },
+        "1058": {
+          "commune_id": "1058",
+          "name": "El Menaouer"
+        },
+        "1059": {
+          "commune_id": "1059",
+          "name": "Ferraguig"
+        },
+        "1060": {
+          "commune_id": "1060",
+          "name": "Froha"
+        },
+        "1061": {
+          "commune_id": "1061",
+          "name": "Gharrous"
+        },
+        "1062": {
+          "commune_id": "1062",
+          "name": "Guerdjoum"
+        },
+        "1063": {
+          "commune_id": "1063",
+          "name": "Ghriss"
+        },
+        "1064": {
+          "commune_id": "1064",
+          "name": "Hachem"
+        },
+        "1065": {
+          "commune_id": "1065",
+          "name": "Hacine"
+        },
+        "1066": {
+          "commune_id": "1066",
+          "name": "Khalouia"
+        },
+        "1067": {
+          "commune_id": "1067",
+          "name": "Makdha"
+        },
+        "1068": {
+          "commune_id": "1068",
+          "name": "Mamounia"
+        },
+        "1069": {
+          "commune_id": "1069",
+          "name": "Maoussa"
+        },
+        "1070": {
+          "commune_id": "1070",
+          "name": "Mascara"
+        },
+        "1071": {
+          "commune_id": "1071",
+          "name": "Matemore"
+        },
+        "1072": {
+          "commune_id": "1072",
+          "name": "Mocta Douz"
+        },
+        "1073": {
+          "commune_id": "1073",
+          "name": "Mohammadia"
+        },
+        "1074": {
+          "commune_id": "1074",
+          "name": "Nesmoth"
+        },
+        "1075": {
+          "commune_id": "1075",
+          "name": "Oggaz"
+        },
+        "1076": {
+          "commune_id": "1076",
+          "name": "Oued El Abtal"
+        },
+        "1077": {
+          "commune_id": "1077",
+          "name": "Oued Taria"
+        },
+        "1078": {
+          "commune_id": "1078",
+          "name": "Ras El Aïn Amirouche"
+        },
+        "1079": {
+          "commune_id": "1079",
+          "name": "Sedjerara"
+        },
+        "1080": {
+          "commune_id": "1080",
+          "name": "Sehailia"
+        },
+        "1081": {
+          "commune_id": "1081",
+          "name": "Sidi Abdeldjebar"
+        },
+        "1082": {
+          "commune_id": "1082",
+          "name": "Sidi Abdelmoumen"
+        },
+        "1083": {
+          "commune_id": "1083",
+          "name": "Sidi Kada"
+        },
+        "1084": {
+          "commune_id": "1084",
+          "name": "Sidi Boussaid"
+        },
+        "1085": {
+          "commune_id": "1085",
+          "name": "Sig"
+        },
+        "1086": {
+          "commune_id": "1086",
+          "name": "Tighennif"
+        },
+        "1087": {
+          "commune_id": "1087",
+          "name": "Tizi"
+        },
+        "1088": {
+          "commune_id": "1088",
+          "name": "Zahana"
+        },
+        "1089": {
+          "commune_id": "1089",
+          "name": "Zelmata"
+        }
+      }
+    },
+    "30": {
+      "wilaya_id": "30",
+      "name": "Ouargla",
+      "communes": {
+        "1090": {
+          "commune_id": "1090",
+          "name": "Aïn Beida"
+        },
+        "1091": {
+          "commune_id": "1091",
+          "name": "Benaceur"
+        },
+        "1092": {
+          "commune_id": "1092",
+          "name": "Blidet Amor"
+        },
+        "1093": {
+          "commune_id": "1093",
+          "name": "El Allia"
+        },
+        "1094": {
+          "commune_id": "1094",
+          "name": "El Borma"
+        },
+        "1095": {
+          "commune_id": "1095",
+          "name": "El Hadjira"
+        },
+        "1096": {
+          "commune_id": "1096",
+          "name": "Hassi Ben Abdellah"
+        },
+        "1097": {
+          "commune_id": "1097",
+          "name": "Hassi Messaoud"
+        },
+        "1098": {
+          "commune_id": "1098",
+          "name": "Megarine"
+        },
+        "1099": {
+          "commune_id": "1099",
+          "name": "MNaguer"
+        },
+        "1100": {
+          "commune_id": "1100",
+          "name": "Nezla"
+        },
+        "1101": {
+          "commune_id": "1101",
+          "name": "NGoussa"
+        },
+        "1102": {
+          "commune_id": "1102",
+          "name": "Ouargla"
+        },
+        "1103": {
+          "commune_id": "1103",
+          "name": "Rouissat"
+        },
+        "1104": {
+          "commune_id": "1104",
+          "name": "Sidi Khouiled"
+        },
+        "1105": {
+          "commune_id": "1105",
+          "name": "Sidi Slimane"
+        },
+        "1106": {
+          "commune_id": "1106",
+          "name": "Taibet"
+        },
+        "1107": {
+          "commune_id": "1107",
+          "name": "Tamacine"
+        },
+        "1108": {
+          "commune_id": "1108",
+          "name": "Tebesbest"
+        },
+        "1109": {
+          "commune_id": "1109",
+          "name": "Touggourt"
+        },
+        "1110": {
+          "commune_id": "1110",
+          "name": "Zaouia El Abidia"
+        }
+      }
+    },
+    "31": {
+      "wilaya_id": "31",
+      "name": "Oran",
+      "communes": {
+        "1111": {
+          "commune_id": "1111",
+          "name": "Oran"
+        },
+        "1112": {
+          "commune_id": "1112",
+          "name": "Gdyel"
+        },
+        "1113": {
+          "commune_id": "1113",
+          "name": "Bir El Djir"
+        },
+        "1114": {
+          "commune_id": "1114",
+          "name": "Hassi Bounif"
+        },
+        "1115": {
+          "commune_id": "1115",
+          "name": "Es Senia"
+        },
+        "1116": {
+          "commune_id": "1116",
+          "name": "Arzew"
+        },
+        "1117": {
+          "commune_id": "1117",
+          "name": "Bethioua"
+        },
+        "1118": {
+          "commune_id": "1118",
+          "name": "Marsat El Hadjadj"
+        },
+        "1119": {
+          "commune_id": "1119",
+          "name": "Aïn El Turk"
+        },
+        "1120": {
+          "commune_id": "1120",
+          "name": "El Ançor"
+        },
+        "1121": {
+          "commune_id": "1121",
+          "name": "Oued Tlelat"
+        },
+        "1122": {
+          "commune_id": "1122",
+          "name": "Tafraoui"
+        },
+        "1123": {
+          "commune_id": "1123",
+          "name": "Sidi Chami"
+        },
+        "1124": {
+          "commune_id": "1124",
+          "name": "Boufatis"
+        },
+        "1125": {
+          "commune_id": "1125",
+          "name": "Mers El Kébir"
+        },
+        "1126": {
+          "commune_id": "1126",
+          "name": "Bou-Sfer"
+        },
+        "1127": {
+          "commune_id": "1127",
+          "name": "El Kerma"
+        },
+        "1128": {
+          "commune_id": "1128",
+          "name": "El Braya"
+        },
+        "1129": {
+          "commune_id": "1129",
+          "name": "Hassi Ben Okba "
+        },
+        "1130": {
+          "commune_id": "1130",
+          "name": "Ben Freha"
+        },
+        "1131": {
+          "commune_id": "1131",
+          "name": "Hassi Mefsoukh"
+        },
+        "1132": {
+          "commune_id": "1132",
+          "name": "Sidi Benyebka"
+        },
+        "1133": {
+          "commune_id": "1133",
+          "name": "Misserghin"
+        },
+        "1134": {
+          "commune_id": "1134",
+          "name": "Boutlelis"
+        },
+        "1135": {
+          "commune_id": "1135",
+          "name": "Aïn El Kerma"
+        },
+        "1136": {
+          "commune_id": "1136",
+          "name": "Aïn El Bia"
+        }
+      }
+    },
+    "32": {
+      "wilaya_id": "32",
+      "name": "El Bayadh",
+      "communes": {
+        "1137": {
+          "commune_id": "1137",
+          "name": "El Bayadh"
+        },
+        "1138": {
+          "commune_id": "1138",
+          "name": "Rogassa"
+        },
+        "1139": {
+          "commune_id": "1139",
+          "name": "Stitten"
+        },
+        "1140": {
+          "commune_id": "1140",
+          "name": "Brezina"
+        },
+        "1141": {
+          "commune_id": "1141",
+          "name": "Ghassoul"
+        },
+        "1142": {
+          "commune_id": "1142",
+          "name": "Boualem"
+        },
+        "1143": {
+          "commune_id": "1143",
+          "name": "El Abiodh Sidi Cheikh"
+        },
+        "1144": {
+          "commune_id": "1144",
+          "name": "Aïn El Orak"
+        },
+        "1145": {
+          "commune_id": "1145",
+          "name": "Arbaouat"
+        },
+        "1146": {
+          "commune_id": "1146",
+          "name": "Bougtoub"
+        },
+        "1147": {
+          "commune_id": "1147",
+          "name": "El Kheiter"
+        },
+        "1148": {
+          "commune_id": "1148",
+          "name": "Kef El Ahmar"
+        },
+        "1149": {
+          "commune_id": "1149",
+          "name": "Boussemghoun"
+        },
+        "1150": {
+          "commune_id": "1150",
+          "name": "Chellala"
+        },
+        "1151": {
+          "commune_id": "1151",
+          "name": "Kraakda"
+        },
+        "1152": {
+          "commune_id": "1152",
+          "name": "El Bnoud"
+        },
+        "1153": {
+          "commune_id": "1153",
+          "name": "Cheguig"
+        },
+        "1154": {
+          "commune_id": "1154",
+          "name": "Sidi Ameur"
+        },
+        "1155": {
+          "commune_id": "1155",
+          "name": "El Mehara"
+        },
+        "1156": {
+          "commune_id": "1156",
+          "name": "Tousmouline"
+        },
+        "1157": {
+          "commune_id": "1157",
+          "name": "Sidi Slimane"
+        },
+        "1158": {
+          "commune_id": "1158",
+          "name": "Sidi Tifour"
+        }
+      }
+    },
+    "33": {
+      "wilaya_id": "33",
+      "name": "Illizi",
+      "communes": {
+        "1159": {
+          "commune_id": "1159",
+          "name": "Illizi"
+        },
+        "1160": {
+          "commune_id": "1160",
+          "name": "Djanet"
+        },
+        "1161": {
+          "commune_id": "1161",
+          "name": "Debdeb"
+        },
+        "1162": {
+          "commune_id": "1162",
+          "name": "Bordj Omar Driss"
+        },
+        "1163": {
+          "commune_id": "1163",
+          "name": "Bordj El Haouas "
+        },
+        "1164": {
+          "commune_id": "1164",
+          "name": "In Amenas"
+        }
+      }
+    },
+    "34": {
+      "wilaya_id": "34",
+      "name": "Bordj Bou Arrerwilaya_idj",
+      "communes": {
+        "1165": {
+          "commune_id": "1165",
+          "name": "Aïn Taghrout"
+        },
+        "1166": {
+          "commune_id": "1166",
+          "name": "Aïn Tesra"
+        },
+        "1167": {
+          "commune_id": "1167",
+          "name": "Belimour"
+        },
+        "1168": {
+          "commune_id": "1168",
+          "name": "Ben Daoud"
+        },
+        "1169": {
+          "commune_id": "1169",
+          "name": "Bir Kasdali"
+        },
+        "1170": {
+          "commune_id": "1170",
+          "name": "Bordj Bou Arreridj"
+        },
+        "1171": {
+          "commune_id": "1171",
+          "name": "Bordj Ghédir"
+        },
+        "1172": {
+          "commune_id": "1172",
+          "name": "Bordj Zemoura"
+        },
+        "1173": {
+          "commune_id": "1173",
+          "name": "Colla"
+        },
+        "1174": {
+          "commune_id": "1174",
+          "name": "Djaafra"
+        },
+        "1175": {
+          "commune_id": "1175",
+          "name": "El Ach"
+        },
+        "1176": {
+          "commune_id": "1176",
+          "name": "El Achir"
+        },
+        "1177": {
+          "commune_id": "1177",
+          "name": "El Anseur"
+        },
+        "1178": {
+          "commune_id": "1178",
+          "name": "El Hamadia"
+        },
+        "1179": {
+          "commune_id": "1179",
+          "name": "El Main"
+        },
+        "1180": {
+          "commune_id": "1180",
+          "name": "El Mhir"
+        },
+        "1181": {
+          "commune_id": "1181",
+          "name": "Ghilassa"
+        },
+        "1182": {
+          "commune_id": "1182",
+          "name": "Haraza"
+        },
+        "1183": {
+          "commune_id": "1183",
+          "name": "Hasnaoua"
+        },
+        "1184": {
+          "commune_id": "1184",
+          "name": "Khelil"
+        },
+        "1185": {
+          "commune_id": "1185",
+          "name": "Ksour"
+        },
+        "1186": {
+          "commune_id": "1186",
+          "name": "Mansoura"
+        },
+        "1187": {
+          "commune_id": "1187",
+          "name": "Medjana"
+        },
+        "1188": {
+          "commune_id": "1188",
+          "name": "Ouled Brahem"
+        },
+        "1189": {
+          "commune_id": "1189",
+          "name": "Ouled Dahmane"
+        },
+        "1190": {
+          "commune_id": "1190",
+          "name": "Ouled Sidi Brahim"
+        },
+        "1191": {
+          "commune_id": "1191",
+          "name": "Rabta"
+        },
+        "1192": {
+          "commune_id": "1192",
+          "name": "Ras El Oued"
+        },
+        "1193": {
+          "commune_id": "1193",
+          "name": "Sidi Embarek"
+        },
+        "1194": {
+          "commune_id": "1194",
+          "name": "Tefreg"
+        },
+        "1195": {
+          "commune_id": "1195",
+          "name": "Taglait"
+        },
+        "1196": {
+          "commune_id": "1196",
+          "name": "Teniet En Nasr"
+        },
+        "1197": {
+          "commune_id": "1197",
+          "name": "Tassameurt"
+        },
+        "1198": {
+          "commune_id": "1198",
+          "name": "Tixter"
+        }
+      }
+    },
+    "35": {
+      "wilaya_id": "35",
+      "name": "Boumerdès",
+      "communes": {
+        "1199": {
+          "commune_id": "1199",
+          "name": "Afir"
+        },
+        "1200": {
+          "commune_id": "1200",
+          "name": "Ammal"
+        },
+        "1201": {
+          "commune_id": "1201",
+          "name": "Baghlia"
+        },
+        "1202": {
+          "commune_id": "1202",
+          "name": "Ben Choud"
+        },
+        "1203": {
+          "commune_id": "1203",
+          "name": "Beni Amrane"
+        },
+        "1204": {
+          "commune_id": "1204",
+          "name": "Bordj Menaiel"
+        },
+        "1205": {
+          "commune_id": "1205",
+          "name": "Boudouaou"
+        },
+        "1206": {
+          "commune_id": "1206",
+          "name": "Boudouaou-El-Bahri"
+        },
+        "1207": {
+          "commune_id": "1207",
+          "name": "Boumerdes"
+        },
+        "1208": {
+          "commune_id": "1208",
+          "name": "Bouzegza Keddara"
+        },
+        "1209": {
+          "commune_id": "1209",
+          "name": "Chabet el Ameur"
+        },
+        "1210": {
+          "commune_id": "1210",
+          "name": "Corso"
+        },
+        "1211": {
+          "commune_id": "1211",
+          "name": "Dellys"
+        },
+        "1212": {
+          "commune_id": "1212",
+          "name": "Djinet"
+        },
+        "1213": {
+          "commune_id": "1213",
+          "name": "El Kharrouba"
+        },
+        "1214": {
+          "commune_id": "1214",
+          "name": "Hammedi"
+        },
+        "1215": {
+          "commune_id": "1215",
+          "name": "Issers"
+        },
+        "1216": {
+          "commune_id": "1216",
+          "name": "Khemis El-Khechna"
+        },
+        "1217": {
+          "commune_id": "1217",
+          "name": "Larbatache"
+        },
+        "1218": {
+          "commune_id": "1218",
+          "name": "Leghata"
+        },
+        "1219": {
+          "commune_id": "1219",
+          "name": "Naciria"
+        },
+        "1220": {
+          "commune_id": "1220",
+          "name": "Ouled Aissa"
+        },
+        "1221": {
+          "commune_id": "1221",
+          "name": "Ouled Hedadj"
+        },
+        "1222": {
+          "commune_id": "1222",
+          "name": "Ouled Moussa"
+        },
+        "1223": {
+          "commune_id": "1223",
+          "name": "Si Mustapha"
+        },
+        "1224": {
+          "commune_id": "1224",
+          "name": "Sidi Daoud"
+        },
+        "1225": {
+          "commune_id": "1225",
+          "name": "Souk El Had"
+        },
+        "1226": {
+          "commune_id": "1226",
+          "name": "Taourga"
+        },
+        "1227": {
+          "commune_id": "1227",
+          "name": "Thenia"
+        },
+        "1228": {
+          "commune_id": "1228",
+          "name": "Tidjelabine"
+        },
+        "1229": {
+          "commune_id": "1229",
+          "name": "Timezrit"
+        },
+        "1230": {
+          "commune_id": "1230",
+          "name": "Zemmouri"
+        }
+      }
+    },
+    "36": {
+      "wilaya_id": "36",
+      "name": "El Tarf",
+      "communes": {
+        "1231": {
+          "commune_id": "1231",
+          "name": "Aïn El Assel"
+        },
+        "1232": {
+          "commune_id": "1232",
+          "name": "Aïn Kerma"
+        },
+        "1233": {
+          "commune_id": "1233",
+          "name": "Asfour"
+        },
+        "1234": {
+          "commune_id": "1234",
+          "name": "Ben Mehidi"
+        },
+        "1235": {
+          "commune_id": "1235",
+          "name": "Berrihane"
+        },
+        "1236": {
+          "commune_id": "1236",
+          "name": "Besbes"
+        },
+        "1237": {
+          "commune_id": "1237",
+          "name": "Bougous"
+        },
+        "1238": {
+          "commune_id": "1238",
+          "name": "Bouhadjar"
+        },
+        "1239": {
+          "commune_id": "1239",
+          "name": "Bouteldja"
+        },
+        "1240": {
+          "commune_id": "1240",
+          "name": "Chebaita Mokhtar"
+        },
+        "1241": {
+          "commune_id": "1241",
+          "name": "Chefia"
+        },
+        "1242": {
+          "commune_id": "1242",
+          "name": "Chihani"
+        },
+        "1243": {
+          "commune_id": "1243",
+          "name": "Dréan"
+        },
+        "1244": {
+          "commune_id": "1244",
+          "name": "Echatt"
+        },
+        "1245": {
+          "commune_id": "1245",
+          "name": "El Aioun"
+        },
+        "1246": {
+          "commune_id": "1246",
+          "name": "El Tarf"
+        },
+        "1247": {
+          "commune_id": "1247",
+          "name": "Hammam Beni Salah"
+        },
+        "1248": {
+          "commune_id": "1248",
+          "name": "Lac des Oiseaux"
+        },
+        "1249": {
+          "commune_id": "1249",
+          "name": "Oued Zitoun"
+        },
+        "1250": {
+          "commune_id": "1250",
+          "name": "Raml Souk"
+        },
+        "1251": {
+          "commune_id": "1251",
+          "name": "Souarekh"
+        },
+        "1252": {
+          "commune_id": "1252",
+          "name": "Zerizer"
+        },
+        "1253": {
+          "commune_id": "1253",
+          "name": "Zitouna"
+        }
+      }
+    },
+    "37": {
+      "wilaya_id": "37",
+      "name": "Tindouf",
+      "communes": {
+        "1254": {
+          "commune_id": "1254",
+          "name": "Tindouf"
+        },
+        "1255": {
+          "commune_id": "1255",
+          "name": "Oum el Assel"
+        }
+      }
+    },
+    "38": {
+      "wilaya_id": "38",
+      "name": "Tissemsilt",
+      "communes": {
+        "1256": {
+          "commune_id": "1256",
+          "name": "Ammari"
+        },
+        "1257": {
+          "commune_id": "1257",
+          "name": "Beni Chaib"
+        },
+        "1258": {
+          "commune_id": "1258",
+          "name": "Beni Lahcene"
+        },
+        "1259": {
+          "commune_id": "1259",
+          "name": "Boucaid"
+        },
+        "1260": {
+          "commune_id": "1260",
+          "name": "Bordj Bou Naama"
+        },
+        "1261": {
+          "commune_id": "1261",
+          "name": "Bordj El Emir Abdelkader"
+        },
+        "1262": {
+          "commune_id": "1262",
+          "name": "Khemisti"
+        },
+        "1263": {
+          "commune_id": "1263",
+          "name": "Larbaa"
+        },
+        "1264": {
+          "commune_id": "1264",
+          "name": "Lardjem"
+        },
+        "1265": {
+          "commune_id": "1265",
+          "name": "Layoune"
+        },
+        "1266": {
+          "commune_id": "1266",
+          "name": "Lazharia"
+        },
+        "1267": {
+          "commune_id": "1267",
+          "name": "Maacem"
+        },
+        "1268": {
+          "commune_id": "1268",
+          "name": "Melaab"
+        },
+        "1269": {
+          "commune_id": "1269",
+          "name": "Ouled Bessem"
+        },
+        "1270": {
+          "commune_id": "1270",
+          "name": "Sidi Abed"
+        },
+        "1271": {
+          "commune_id": "1271",
+          "name": "Sidi Boutouchent"
+        },
+        "1272": {
+          "commune_id": "1272",
+          "name": "Sidi Lantri"
+        },
+        "1273": {
+          "commune_id": "1273",
+          "name": "Sidi Slimane"
+        },
+        "1274": {
+          "commune_id": "1274",
+          "name": "Tamalaht"
+        },
+        "1275": {
+          "commune_id": "1275",
+          "name": "Theniet El Had"
+        },
+        "1276": {
+          "commune_id": "1276",
+          "name": "Tissemsilt"
+        },
+        "1277": {
+          "commune_id": "1277",
+          "name": "Youssoufia"
+        }
+      }
+    },
+    "39": {
+      "wilaya_id": "39",
+      "name": "El Oued",
+      "communes": {
+        "1278": {
+          "commune_id": "1278",
+          "name": "El Oued"
+        },
+        "1279": {
+          "commune_id": "1279",
+          "name": "Robbah "
+        },
+        "1280": {
+          "commune_id": "1280",
+          "name": "Oued El Alenda"
+        },
+        "1281": {
+          "commune_id": "1281",
+          "name": "Bayadha"
+        },
+        "1282": {
+          "commune_id": "1282",
+          "name": "Nakhla"
+        },
+        "1283": {
+          "commune_id": "1283",
+          "name": "Guemar"
+        },
+        "1284": {
+          "commune_id": "1284",
+          "name": "Kouinine"
+        },
+        "1285": {
+          "commune_id": "1285",
+          "name": "Reguiba"
+        },
+        "1286": {
+          "commune_id": "1286",
+          "name": "Hamraia"
+        },
+        "1287": {
+          "commune_id": "1287",
+          "name": "Taghzout"
+        },
+        "1288": {
+          "commune_id": "1288",
+          "name": "Debila "
+        },
+        "1289": {
+          "commune_id": "1289",
+          "name": "Hassani Abdelkrim"
+        },
+        "1290": {
+          "commune_id": "1290",
+          "name": "Hassi Khalifa"
+        },
+        "1291": {
+          "commune_id": "1291",
+          "name": "Taleb Larbi"
+        },
+        "1292": {
+          "commune_id": "1292",
+          "name": "Douar El Ma"
+        },
+        "1293": {
+          "commune_id": "1293",
+          "name": "Sidi Aoun"
+        },
+        "1294": {
+          "commune_id": "1294",
+          "name": "Trifaoui"
+        },
+        "1295": {
+          "commune_id": "1295",
+          "name": "Magrane"
+        },
+        "1296": {
+          "commune_id": "1296",
+          "name": "Beni Guecha"
+        },
+        "1297": {
+          "commune_id": "1297",
+          "name": "Ourmas"
+        },
+        "1298": {
+          "commune_id": "1298",
+          "name": "Still"
+        },
+        "1299": {
+          "commune_id": "1299",
+          "name": "MRara"
+        },
+        "1300": {
+          "commune_id": "1300",
+          "name": "Sidi Khellil"
+        },
+        "1301": {
+          "commune_id": "1301",
+          "name": "Tendla"
+        },
+        "1302": {
+          "commune_id": "1302",
+          "name": "El Ogla"
+        },
+        "1303": {
+          "commune_id": "1303",
+          "name": "Mih Ouansa"
+        },
+        "1304": {
+          "commune_id": "1304",
+          "name": "El MGhair"
+        },
+        "1305": {
+          "commune_id": "1305",
+          "name": "Djamaa"
+        },
+        "1306": {
+          "commune_id": "1306",
+          "name": "Oum Touyour"
+        },
+        "1307": {
+          "commune_id": "1307",
+          "name": "Sidi Amrane"
+        }
+      }
+    },
+    "40": {
+      "wilaya_id": "40",
+      "name": "Khenchela",
+      "communes": {
+        "1308": {
+          "commune_id": "1308",
+          "name": "Aïn Touila"
+        },
+        "1309": {
+          "commune_id": "1309",
+          "name": "Babar"
+        },
+        "1310": {
+          "commune_id": "1310",
+          "name": "Baghai"
+        },
+        "1311": {
+          "commune_id": "1311",
+          "name": "Bouhmama"
+        },
+        "1312": {
+          "commune_id": "1312",
+          "name": "Chechar"
+        },
+        "1313": {
+          "commune_id": "1313",
+          "name": "Chelia"
+        },
+        "1314": {
+          "commune_id": "1314",
+          "name": "Djellal"
+        },
+        "1315": {
+          "commune_id": "1315",
+          "name": "El Hamma"
+        },
+        "1316": {
+          "commune_id": "1316",
+          "name": "El Mahmal"
+        },
+        "1317": {
+          "commune_id": "1317",
+          "name": "El Oueldja"
+        },
+        "1318": {
+          "commune_id": "1318",
+          "name": "Ensigha"
+        },
+        "1319": {
+          "commune_id": "1319",
+          "name": "Kais"
+        },
+        "1320": {
+          "commune_id": "1320",
+          "name": "Khenchela"
+        },
+        "1321": {
+          "commune_id": "1321",
+          "name": "Khirane"
+        },
+        "1322": {
+          "commune_id": "1322",
+          "name": "MSara"
+        },
+        "1323": {
+          "commune_id": "1323",
+          "name": "MToussa"
+        },
+        "1324": {
+          "commune_id": "1324",
+          "name": "Ouled Rechache"
+        },
+        "1325": {
+          "commune_id": "1325",
+          "name": "Remila"
+        },
+        "1326": {
+          "commune_id": "1326",
+          "name": "Tamza"
+        },
+        "1327": {
+          "commune_id": "1327",
+          "name": "Taouzient"
+        },
+        "1328": {
+          "commune_id": "1328",
+          "name": "Yabous"
+        }
+      }
+    },
+    "41": {
+      "wilaya_id": "41",
+      "name": "Souk Ahras",
+      "communes": {
+        "1329": {
+          "commune_id": "1329",
+          "name": "Souk Ahras"
+        },
+        "1330": {
+          "commune_id": "1330",
+          "name": "Sedrata "
+        },
+        "1331": {
+          "commune_id": "1331",
+          "name": "Hanancha"
+        },
+        "1332": {
+          "commune_id": "1332",
+          "name": "Mechroha"
+        },
+        "1333": {
+          "commune_id": "1333",
+          "name": "Ouled Driss"
+        },
+        "1334": {
+          "commune_id": "1334",
+          "name": "Tiffech"
+        },
+        "1335": {
+          "commune_id": "1335",
+          "name": "Zaarouria"
+        },
+        "1336": {
+          "commune_id": "1336",
+          "name": "Taoura"
+        },
+        "1337": {
+          "commune_id": "1337",
+          "name": "Drea"
+        },
+        "1338": {
+          "commune_id": "1338",
+          "name": "Heddada"
+        },
+        "1339": {
+          "commune_id": "1339",
+          "name": "Khedara"
+        },
+        "1340": {
+          "commune_id": "1340",
+          "name": "Merahna"
+        },
+        "1341": {
+          "commune_id": "1341",
+          "name": "Ouled Moumene"
+        },
+        "1342": {
+          "commune_id": "1342",
+          "name": "Bir Bou Haouch"
+        },
+        "1343": {
+          "commune_id": "1343",
+          "name": "Mdaourouch"
+        },
+        "1344": {
+          "commune_id": "1344",
+          "name": "Oum El Adhaim "
+        },
+        "1345": {
+          "commune_id": "1345",
+          "name": "Aïn Zana"
+        },
+        "1346": {
+          "commune_id": "1346",
+          "name": "Aïn Soltane"
+        },
+        "1347": {
+          "commune_id": "1347",
+          "name": "Ouillen "
+        },
+        "1348": {
+          "commune_id": "1348",
+          "name": "Sidi Fredj"
+        },
+        "1349": {
+          "commune_id": "1349",
+          "name": "Safel El Ouiden "
+        },
+        "1350": {
+          "commune_id": "1350",
+          "name": "Ragouba"
+        },
+        "1351": {
+          "commune_id": "1351",
+          "name": "Khemissa"
+        },
+        "1352": {
+          "commune_id": "1352",
+          "name": "Oued Keberit"
+        },
+        "1353": {
+          "commune_id": "1353",
+          "name": "Terraguelt"
+        },
+        "1354": {
+          "commune_id": "1354",
+          "name": "Zouabi"
+        }
+      }
+    },
+    "42": {
+      "wilaya_id": "42",
+      "name": "Tipaza",
+      "communes": {
+        "1355": {
+          "commune_id": "1355",
+          "name": "Tipaza"
+        },
+        "1356": {
+          "commune_id": "1356",
+          "name": "Menaceur"
+        },
+        "1357": {
+          "commune_id": "1357",
+          "name": "Larhat"
+        },
+        "1358": {
+          "commune_id": "1358",
+          "name": "Douaouda"
+        },
+        "1359": {
+          "commune_id": "1359",
+          "name": "Bourkika"
+        },
+        "1360": {
+          "commune_id": "1360",
+          "name": "Khemisti"
+        },
+        "1361": {
+          "commune_id": "1361",
+          "name": "Aghbal "
+        },
+        "1362": {
+          "commune_id": "1362",
+          "name": "Hadjout"
+        },
+        "1363": {
+          "commune_id": "1363",
+          "name": "Sidi Amar"
+        },
+        "1364": {
+          "commune_id": "1364",
+          "name": "Gouraya"
+        },
+        "1365": {
+          "commune_id": "1365",
+          "name": "Nador"
+        },
+        "1366": {
+          "commune_id": "1366",
+          "name": "Chaiba"
+        },
+        "1367": {
+          "commune_id": "1367",
+          "name": "Aïn Tagourait"
+        },
+        "1368": {
+          "commune_id": "1368",
+          "name": "Cherchell"
+        },
+        "1369": {
+          "commune_id": "1369",
+          "name": "Damous"
+        },
+        "1370": {
+          "commune_id": "1370",
+          "name": "Merad"
+        },
+        "1371": {
+          "commune_id": "1371",
+          "name": "Fouka"
+        },
+        "1372": {
+          "commune_id": "1372",
+          "name": "Bou Ismaïl"
+        },
+        "1373": {
+          "commune_id": "1373",
+          "name": "Ahmar El Aïn"
+        },
+        "1374": {
+          "commune_id": "1374",
+          "name": "Bouharoun"
+        },
+        "1375": {
+          "commune_id": "1375",
+          "name": "Sidi Ghiles"
+        },
+        "1376": {
+          "commune_id": "1376",
+          "name": "Messelmoun"
+        },
+        "1377": {
+          "commune_id": "1377",
+          "name": "Sidi Rached"
+        },
+        "1378": {
+          "commune_id": "1378",
+          "name": "Koléa"
+        },
+        "1379": {
+          "commune_id": "1379",
+          "name": "Attatba "
+        },
+        "1380": {
+          "commune_id": "1380",
+          "name": "Sidi Semiane"
+        },
+        "1381": {
+          "commune_id": "1381",
+          "name": "Beni Milleuk"
+        },
+        "1382": {
+          "commune_id": "1382",
+          "name": "Hadjeret Ennous"
+        }
+      }
+    },
+    "43": {
+      "wilaya_id": "43",
+      "name": "Mila",
+      "communes": {
+        "1383": {
+          "commune_id": "1383",
+          "name": "Ahmed Rachedi"
+        },
+        "1384": {
+          "commune_id": "1384",
+          "name": "Aïn Beida Harriche"
+        },
+        "1385": {
+          "commune_id": "1385",
+          "name": "Aïn Mellouk"
+        },
+        "1386": {
+          "commune_id": "1386",
+          "name": "Aïn Tine"
+        },
+        "1387": {
+          "commune_id": "1387",
+          "name": "Amira Arrès"
+        },
+        "1388": {
+          "commune_id": "1388",
+          "name": "Benyahia Abderrahmane"
+        },
+        "1389": {
+          "commune_id": "1389",
+          "name": "Bouhatem"
+        },
+        "1390": {
+          "commune_id": "1390",
+          "name": "Chelghoum Laid"
+        },
+        "1391": {
+          "commune_id": "1391",
+          "name": "Chigara"
+        },
+        "1392": {
+          "commune_id": "1392",
+          "name": "Derrahi Bousselah"
+        },
+        "1393": {
+          "commune_id": "1393",
+          "name": "El Mechira"
+        },
+        "1394": {
+          "commune_id": "1394",
+          "name": "Elayadi Barbes"
+        },
+        "1395": {
+          "commune_id": "1395",
+          "name": "Ferdjioua"
+        },
+        "1396": {
+          "commune_id": "1396",
+          "name": "Grarem Gouga"
+        },
+        "1397": {
+          "commune_id": "1397",
+          "name": "Hamala"
+        },
+        "1398": {
+          "commune_id": "1398",
+          "name": "Mila"
+        },
+        "1399": {
+          "commune_id": "1399",
+          "name": "Minar Zarza"
+        },
+        "1400": {
+          "commune_id": "1400",
+          "name": "Oued Athmania"
+        },
+        "1401": {
+          "commune_id": "1401",
+          "name": "Oued Endja"
+        },
+        "1402": {
+          "commune_id": "1402",
+          "name": "Oued Seguen"
+        },
+        "1403": {
+          "commune_id": "1403",
+          "name": "Ouled Khalouf"
+        },
+        "1404": {
+          "commune_id": "1404",
+          "name": "Rouached"
+        },
+        "1405": {
+          "commune_id": "1405",
+          "name": "Sidi Khelifa"
+        },
+        "1406": {
+          "commune_id": "1406",
+          "name": "Sidi Merouane"
+        },
+        "1407": {
+          "commune_id": "1407",
+          "name": "Tadjenanet"
+        },
+        "1408": {
+          "commune_id": "1408",
+          "name": "Tassadane Haddada"
+        },
+        "1409": {
+          "commune_id": "1409",
+          "name": "Teleghma"
+        },
+        "1410": {
+          "commune_id": "1410",
+          "name": "Terrai Bainen"
+        },
+        "1411": {
+          "commune_id": "1411",
+          "name": "Tessala Lemtaï"
+        },
+        "1412": {
+          "commune_id": "1412",
+          "name": "Tiberguent"
+        },
+        "1413": {
+          "commune_id": "1413",
+          "name": "Yahia Beni Guecha"
+        },
+        "1414": {
+          "commune_id": "1414",
+          "name": "Zeghaia"
+        }
+      }
+    },
+    "44": {
+      "wilaya_id": "44",
+      "name": "Aïn Defla",
+      "communes": {
+        "1415": {
+          "commune_id": "1415",
+          "name": "Aïn Benian"
+        },
+        "1416": {
+          "commune_id": "1416",
+          "name": "Aïn Bouyahia"
+        },
+        "1417": {
+          "commune_id": "1417",
+          "name": "Aïn Defla"
+        },
+        "1418": {
+          "commune_id": "1418",
+          "name": "Aïn Lechiekh"
+        },
+        "1419": {
+          "commune_id": "1419",
+          "name": "Aïn Soltane"
+        },
+        "1420": {
+          "commune_id": "1420",
+          "name": "Aïn Torki"
+        },
+        "1421": {
+          "commune_id": "1421",
+          "name": "Arib"
+        },
+        "1422": {
+          "commune_id": "1422",
+          "name": "Bathia"
+        },
+        "1423": {
+          "commune_id": "1423",
+          "name": "Belaas"
+        },
+        "1424": {
+          "commune_id": "1424",
+          "name": "Ben Allal"
+        },
+        "1425": {
+          "commune_id": "1425",
+          "name": "Birbouche"
+        },
+        "1426": {
+          "commune_id": "1426",
+          "name": "Bir Ould Khelifa"
+        },
+        "1427": {
+          "commune_id": "1427",
+          "name": "Bordj Emir Khaled"
+        },
+        "1428": {
+          "commune_id": "1428",
+          "name": "Boumedfaa"
+        },
+        "1429": {
+          "commune_id": "1429",
+          "name": "Bourached"
+        },
+        "1430": {
+          "commune_id": "1430",
+          "name": "Djelida"
+        },
+        "1431": {
+          "commune_id": "1431",
+          "name": "Djemaa Ouled Cheikh"
+        },
+        "1432": {
+          "commune_id": "1432",
+          "name": "Djendel"
+        },
+        "1433": {
+          "commune_id": "1433",
+          "name": "El Abadia"
+        },
+        "1434": {
+          "commune_id": "1434",
+          "name": "El Amra"
+        },
+        "1435": {
+          "commune_id": "1435",
+          "name": "El Attaf"
+        },
+        "1436": {
+          "commune_id": "1436",
+          "name": "El Hassania"
+        },
+        "1437": {
+          "commune_id": "1437",
+          "name": "El Maine"
+        },
+        "1438": {
+          "commune_id": "1438",
+          "name": "Hammam Righa"
+        },
+        "1439": {
+          "commune_id": "1439",
+          "name": "Hoceinia"
+        },
+        "1440": {
+          "commune_id": "1440",
+          "name": "Khemis Miliana"
+        },
+        "1441": {
+          "commune_id": "1441",
+          "name": "Mekhatria"
+        },
+        "1442": {
+          "commune_id": "1442",
+          "name": "Miliana"
+        },
+        "1443": {
+          "commune_id": "1443",
+          "name": "Oued Chorfa"
+        },
+        "1444": {
+          "commune_id": "1444",
+          "name": "Oued Djemaa"
+        },
+        "1445": {
+          "commune_id": "1445",
+          "name": "Rouina"
+        },
+        "1446": {
+          "commune_id": "1446",
+          "name": "Sidi Lakhdar"
+        },
+        "1447": {
+          "commune_id": "1447",
+          "name": "Tacheta Zougagha"
+        },
+        "1448": {
+          "commune_id": "1448",
+          "name": "Tarik Ibn Ziad"
+        },
+        "1449": {
+          "commune_id": "1449",
+          "name": "Tiberkanine"
+        },
+        "1450": {
+          "commune_id": "1450",
+          "name": "Zeddine"
+        }
+      }
+    },
+    "45": {
+      "wilaya_id": "45",
+      "name": "Naâma",
+      "communes": {
+        "1451": {
+          "commune_id": "1451",
+          "name": "Naâma"
+        },
+        "1452": {
+          "commune_id": "1452",
+          "name": "Mecheria"
+        },
+        "1453": {
+          "commune_id": "1453",
+          "name": "Aïn Sefra"
+        },
+        "1454": {
+          "commune_id": "1454",
+          "name": "Tiout"
+        },
+        "1455": {
+          "commune_id": "1455",
+          "name": "Sfissifa"
+        },
+        "1456": {
+          "commune_id": "1456",
+          "name": "Moghrar"
+        },
+        "1457": {
+          "commune_id": "1457",
+          "name": "Assela"
+        },
+        "1458": {
+          "commune_id": "1458",
+          "name": "Djeniene Bourezg"
+        },
+        "1459": {
+          "commune_id": "1459",
+          "name": "Aïn Ben Khelil"
+        },
+        "1460": {
+          "commune_id": "1460",
+          "name": "Makman Ben Amer"
+        },
+        "1461": {
+          "commune_id": "1461",
+          "name": "Kasdir"
+        },
+        "1462": {
+          "commune_id": "1462",
+          "name": "El Biod"
+        }
+      }
+    },
+    "46": {
+      "wilaya_id": "46",
+      "name": "Aïn Témouchent",
+      "communes": {
+        "1463": {
+          "commune_id": "1463",
+          "name": "Aghlal"
+        },
+        "1464": {
+          "commune_id": "1464",
+          "name": "Aïn El Arbaa"
+        },
+        "1465": {
+          "commune_id": "1465",
+          "name": "Aïn Kihal"
+        },
+        "1466": {
+          "commune_id": "1466",
+          "name": "Aïn Témouchent"
+        },
+        "1467": {
+          "commune_id": "1467",
+          "name": "Aïn Tolba"
+        },
+        "1468": {
+          "commune_id": "1468",
+          "name": "Aoubellil"
+        },
+        "1469": {
+          "commune_id": "1469",
+          "name": "Beni Saf"
+        },
+        "1470": {
+          "commune_id": "1470",
+          "name": "Bouzedjar"
+        },
+        "1471": {
+          "commune_id": "1471",
+          "name": "Chaabat El Leham"
+        },
+        "1472": {
+          "commune_id": "1472",
+          "name": "Chentouf"
+        },
+        "1473": {
+          "commune_id": "1473",
+          "name": "El Amria"
+        },
+        "1474": {
+          "commune_id": "1474",
+          "name": "El Emir Abdelkader"
+        },
+        "1475": {
+          "commune_id": "1475",
+          "name": "El Malah"
+        },
+        "1476": {
+          "commune_id": "1476",
+          "name": "El Messaid"
+        },
+        "1477": {
+          "commune_id": "1477",
+          "name": "Hammam Bou hadjar"
+        },
+        "1478": {
+          "commune_id": "1478",
+          "name": "Hassasna"
+        },
+        "1479": {
+          "commune_id": "1479",
+          "name": "Hassi El Ghella"
+        },
+        "1480": {
+          "commune_id": "1480",
+          "name": "Oued Berkeche"
+        },
+        "1481": {
+          "commune_id": "1481",
+          "name": "Oued Sabah"
+        },
+        "1482": {
+          "commune_id": "1482",
+          "name": "Ouled Boudjemaa"
+        },
+        "1483": {
+          "commune_id": "1483",
+          "name": "Ouled Kihal"
+        },
+        "1484": {
+          "commune_id": "1484",
+          "name": "Oulhaça El Gheraba"
+        },
+        "1485": {
+          "commune_id": "1485",
+          "name": "Sidi Ben Adda"
+        },
+        "1486": {
+          "commune_id": "1486",
+          "name": "Sidi Boumedienne"
+        },
+        "1487": {
+          "commune_id": "1487",
+          "name": "Sidi Ouriache"
+        },
+        "1488": {
+          "commune_id": "1488",
+          "name": "Sidi Safi"
+        },
+        "1489": {
+          "commune_id": "1489",
+          "name": "Tamzoura"
+        },
+        "1490": {
+          "commune_id": "1490",
+          "name": "Terga"
+        }
+      }
+    },
+    "47": {
+      "wilaya_id": "47",
+      "name": "Ghardaïa",
+      "communes": {
+        "1491": {
+          "commune_id": "1491",
+          "name": "Berriane"
+        },
+        "1492": {
+          "commune_id": "1492",
+          "name": "Bounoura"
+        },
+        "1493": {
+          "commune_id": "1493",
+          "name": "Dhayet Bendhahoua"
+        },
+        "1494": {
+          "commune_id": "1494",
+          "name": "El Atteuf"
+        },
+        "1495": {
+          "commune_id": "1495",
+          "name": "El Guerrara"
+        },
+        "1496": {
+          "commune_id": "1496",
+          "name": "El Golea"
+        },
+        "1497": {
+          "commune_id": "1497",
+          "name": "Ghardaïa"
+        },
+        "1498": {
+          "commune_id": "1498",
+          "name": "Hassi Fehal"
+        },
+        "1499": {
+          "commune_id": "1499",
+          "name": "Hassi Gara"
+        },
+        "1500": {
+          "commune_id": "1500",
+          "name": "Mansoura"
+        },
+        "1501": {
+          "commune_id": "1501",
+          "name": "Metlili"
+        },
+        "1502": {
+          "commune_id": "1502",
+          "name": "Sebseb"
+        },
+        "1503": {
+          "commune_id": "1503",
+          "name": "Zelfana"
+        }
+      }
+    },
+    "48": {
+      "wilaya_id": "48",
+      "name": "Relizane",
+      "communes": {
+        "1504": {
+          "commune_id": "1504",
+          "name": "Aïn Rahma"
+        },
+        "1505": {
+          "commune_id": "1505",
+          "name": "Aïn Tarek"
+        },
+        "1506": {
+          "commune_id": "1506",
+          "name": "Ammi Moussa"
+        },
+        "1507": {
+          "commune_id": "1507",
+          "name": "Belassel Bouzegza"
+        },
+        "1508": {
+          "commune_id": "1508",
+          "name": "Bendaoud"
+        },
+        "1509": {
+          "commune_id": "1509",
+          "name": "Beni Dergoun"
+        },
+        "1510": {
+          "commune_id": "1510",
+          "name": "Beni Zentis"
+        },
+        "1511": {
+          "commune_id": "1511",
+          "name": "Dar Ben Abdellah"
+        },
+        "1512": {
+          "commune_id": "1512",
+          "name": "Djidioua"
+        },
+        "1513": {
+          "commune_id": "1513",
+          "name": "El Guettar"
+        },
+        "1514": {
+          "commune_id": "1514",
+          "name": "El Hamadna"
+        },
+        "1515": {
+          "commune_id": "1515",
+          "name": "El Hassi"
+        },
+        "1516": {
+          "commune_id": "1516",
+          "name": "El Matmar"
+        },
+        "1517": {
+          "commune_id": "1517",
+          "name": "El Ouldja"
+        },
+        "1518": {
+          "commune_id": "1518",
+          "name": "Had Echkalla"
+        },
+        "1519": {
+          "commune_id": "1519",
+          "name": "Hamri"
+        },
+        "1520": {
+          "commune_id": "1520",
+          "name": "Kalaa"
+        },
+        "1521": {
+          "commune_id": "1521",
+          "name": "Lahlef"
+        },
+        "1522": {
+          "commune_id": "1522",
+          "name": "Mazouna"
+        },
+        "1523": {
+          "commune_id": "1523",
+          "name": "Mediouna"
+        },
+        "1524": {
+          "commune_id": "1524",
+          "name": "Mendes"
+        },
+        "1525": {
+          "commune_id": "1525",
+          "name": "Merdja Sidi Abed"
+        },
+        "1526": {
+          "commune_id": "1526",
+          "name": "Ouarizane"
+        },
+        "1527": {
+          "commune_id": "1527",
+          "name": "Oued Essalem"
+        },
+        "1528": {
+          "commune_id": "1528",
+          "name": "Oued Rhiou"
+        },
+        "1529": {
+          "commune_id": "1529",
+          "name": "Ouled Aiche"
+        },
+        "1530": {
+          "commune_id": "1530",
+          "name": "Oued El Djemaa"
+        },
+        "1531": {
+          "commune_id": "1531",
+          "name": "Ouled Sidi Mihoub"
+        },
+        "1532": {
+          "commune_id": "1532",
+          "name": "Ramka"
+        },
+        "1533": {
+          "commune_id": "1533",
+          "name": "Relizane"
+        },
+        "1534": {
+          "commune_id": "1534",
+          "name": "Sidi Khettab"
+        },
+        "1535": {
+          "commune_id": "1535",
+          "name": "Sidi Lazreg"
+        },
+        "1536": {
+          "commune_id": "1536",
+          "name": "Sidi MHamed Ben Ali"
+        },
+        "1537": {
+          "commune_id": "1537",
+          "name": "Sidi MHamed Benaouda"
+        },
+        "1538": {
+          "commune_id": "1538",
+          "name": "Sidi Saada"
+        },
+        "1539": {
+          "commune_id": "1539",
+          "name": "Souk El Had"
+        },
+        "1540": {
+          "commune_id": "1540",
+          "name": "Yellel"
+        },
+        "1541": {
+          "commune_id": "1541",
+          "name": "Zemmora"
+        }
+      }
+    }
+  }
+]

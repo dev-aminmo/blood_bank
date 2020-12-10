@@ -51,8 +51,7 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
     _secondRedAnimationController = AnimationController(
       duration: Duration(seconds: 1),
       vsync: this,
-    )
-      ..addListener(() {
+    )..addListener(() {
         setState(() {
           if (_secondRedAnimationController.isCompleted) {
             canAnimateThirdContainer = true;

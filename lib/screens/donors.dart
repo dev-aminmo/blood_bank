@@ -1,4 +1,5 @@
 import 'package:blood_app/models/user.dart';
+import 'package:blood_app/shared_ui/dropDowns.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -13,12 +14,9 @@ class Donors extends StatefulWidget {
 class _DonorsState extends State<Donors> {
   double height;
   double width;
-  String stateDropDownValue;
-
-  String municipalDropDownValue;
-  String bloodDropDownValue;
+  String query;
   static const _propertyTextStyle =
-  TextStyle(fontSize: 18, color: SharedUI.lightGray);
+      TextStyle(fontSize: 18, color: SharedUI.lightGray);
   static const _infoTextStyle = TextStyle(fontSize: 18);
   var avatars;
 
@@ -35,7 +33,7 @@ class _DonorsState extends State<Donors> {
 
     return Scaffold(
       body: FutureBuilder(
-          future: UserApi().fetchAllUsers(),
+          future: UserApi().fetchUsers(query),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               var data = snapshot.data as List<User>;
@@ -43,156 +41,31 @@ class _DonorsState extends State<Donors> {
               return ListView.builder(
                 itemBuilder: (ctx, index) {
                   if (index == 0) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(horizontal: width * 0.07),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: height * 0.05,
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: DropdownButton<String>(
-                                  itemHeight: height * 0.1,
-                                  isExpanded: true,
-                                  hint: Text(
-                                    "State",
-                                    style: SharedUI.textStyle(SharedUI.gray)
-                                        .copyWith(fontSize: 22),
-                                  ),
-                                  value: stateDropDownValue,
-                                  icon: Icon(
-                                    Icons.expand_more,
-                                    color: SharedUI.red,
-                                  ),
-                                  iconSize: 24,
-                                  elevation: 16,
-                                  style: SharedUI.textStyle(Colors.black)
-                                      .copyWith(fontSize: 20),
-                                  underline: Container(
-                                    height: 2,
-                                    color: SharedUI.red,
-                                  ),
-                                  onChanged: (String newValue) {
-                                    setState(() {
-                                      stateDropDownValue = newValue;
-                                    });
-                                  },
-                                  items: <String>[
-                                    'One',
-                                    'Two',
-                                  ].map<DropdownMenuItem<String>>(
-                                      (String value) {
-                                    return DropdownMenuItem<String>(
-                                      value: value,
-                                      child: Text(value),
-                                    );
-                                  }).toList(),
-                                ),
-                              ),
-                              SizedBox(
-                                width: width * 0.05,
-                              ),
-                              Expanded(
-                                child: DropdownButton<String>(
-                                  itemHeight: height * 0.1,
-                                  isExpanded: true,
-                                  hint: Text(
-                                    "Municipal",
-                                    style: SharedUI.textStyle(SharedUI.gray)
-                                        .copyWith(fontSize: 22),
-                                  ),
-                                  value: municipalDropDownValue,
-                                  icon: Icon(
-                                    Icons.expand_more,
-                                    color: SharedUI.red,
-                                  ),
-                                  iconSize: 24,
-                                  elevation: 16,
-                                  style: SharedUI.textStyle(Colors.black)
-                                      .copyWith(fontSize: 20),
-                                  underline: Container(
-                                    height: 2,
-                                    color: SharedUI.red,
-                                  ),
-                                  onChanged: (String newValue) {
-                                    setState(() {
-                                      municipalDropDownValue = newValue;
-                                    });
-                                  },
-                                  items: <String>[
-                                    'One',
-                                    'Two',
-                                  ].map<DropdownMenuItem<String>>(
-                                      (String value) {
-                                    return DropdownMenuItem<String>(
-                                      value: value,
-                                      child: Text(value),
-                                    );
-                                  }).toList(),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: height * 0.005,
-                          ),
-                          DropdownButton<String>(
-                            itemHeight: height * 0.1,
-                            isExpanded: true,
-                            hint: Text(
-                              "Blood Type",
-                              style: SharedUI.textStyle(SharedUI.gray)
-                                  .copyWith(fontSize: 22),
-                            ),
-                            value: bloodDropDownValue,
-                            icon: Icon(
-                              Icons.expand_more,
-                              color: SharedUI.red,
-                            ),
-                            iconSize: 24,
-                            elevation: 16,
-                            style: SharedUI.textStyle(Colors.black)
-                                .copyWith(fontSize: 20),
-                            underline: Container(
-                              height: 2,
-                              color: SharedUI.red,
-                            ),
-                            onChanged: (String newValue) {
-                              setState(() {
-                                bloodDropDownValue = newValue;
-                              });
-                            },
-                            items: <String>[
-                              'A+',
-                              'A-',
-                              'B+',
-                              'B-',
-                              'AB+',
-                              'AB-',
-                              'O+',
-                              'O-',
-                            ].map<DropdownMenuItem<String>>((String value) {
-                              return DropdownMenuItem<String>(
-                                value: value,
-                                child: Text(value),
-                              );
-                            }).toList(),
-                          ),
-                          SizedBox(
-                            height: height * 0.04,
-                          ),
-                          SharedUI.drawButton(
-                            width / 2,
-                            height / 1.3,
-                            'Search',
-                          ),
-                          SizedBox(
-                            height: height * 0.05,
-                          ),
-                        ],
-                      ),
+                    return DropDowns(
+                      search:
+                          (String state, String municipal, String bloodType) {
+                        var q;
+                        if (state != null) {
+                          if (municipal == null) {
+                            q = "?state=$state";
+                          } else {
+                            q = "?state=$state?municipal=$municipal";
+                          }
+                        }
+                        if (bloodType != null) {
+                          if (q == null) {
+                            q = "?bloodType=$bloodType";
+                          } else {
+                            q = q + "?bloodType=$bloodType";
+                          }
+                        }
+                        if (q != null) {
+                          setState(() {
+                            print(q);
+                            query = "?state=chlef";
+                          });
+                        }
+                      },
                     );
                   }
 
