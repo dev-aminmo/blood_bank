@@ -68,8 +68,7 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
     _secondGrayAnimationController = AnimationController(
       duration: Duration(seconds: 1),
       vsync: this,
-    )
-      ..addListener(() {
+    )..addListener(() {
         setState(() {});
       });
 
