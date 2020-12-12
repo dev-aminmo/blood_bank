@@ -141,9 +141,9 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
                           duration: duration,
                           decoration: BoxDecoration(
                             color: // (_currentStep >= 1)
-                            (canAnimateSecondContainer == true)
-                                ? SharedUI.red
-                                : SharedUI.gray,
+                                (canAnimateSecondContainer == true)
+                                    ? SharedUI.red
+                                    : SharedUI.gray,
                             borderRadius: BorderRadius.circular(width * 0.05),
                           ),
                           child: AnimatedSwitcher(

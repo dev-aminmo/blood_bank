@@ -35,7 +35,6 @@ class _DropDownsState extends State<DropDowns> {
             for (var i = 1; i <= data[0].length; i++) {
               states.add(data[0][i.toString()]["name"]);
             }
-
             if (stateDropDownValue != null) {
               for (var i = 1; i <= data[0].length; i++) {
                 if (data[0][i.toString()]["name"] == stateDropDownValue) {
