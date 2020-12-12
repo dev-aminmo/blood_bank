@@ -3,7 +3,6 @@ import 'package:http/http.dart' as http;
 
 class SignUpAPI {
   String baseUrl = API.kBASE_URL;
-
   Future<bool> emailExists(String email) async {
     print(email);
     var response =

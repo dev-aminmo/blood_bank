@@ -19,8 +19,7 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
   double height;
   double width;
 
-  //TODO reset counter to 0
-  int _currentStep = 1;
+  int _currentStep = 0;
   bool canAnimateSecondContainer = false;
   bool canAnimateThirdContainer = false;
   AnimationController _firstRedAnimationController;
@@ -115,14 +114,14 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
                             duration: duration,
                             child: (_currentStep >= 1)
                                 ? Icon(
-                              Icons.done,
-                              color: SharedUI.white,
-                              key: ValueKey<int>(_currentStep),
-                            )
+                                    Icons.done,
+                                    color: SharedUI.white,
+                                    key: ValueKey<int>(_currentStep),
+                                  )
                                 : Text(
-                              "1",
-                              style: SharedUI.textStyle(SharedUI.white),
-                            ),
+                                    "1",
+                                    style: SharedUI.textStyle(SharedUI.white),
+                                  ),
                           )),
                       Flexible(
                           flex: _firstRedAnimation.value,
