@@ -76,8 +76,8 @@ class _LoginState extends State<Login> {
                                   SizedBox(
                                     height: height * 0.05,
                                   ),
-                                  /*SharedUI.input('Email Address'),*/
                                   TextFormField(
+                                    keyboardType: TextInputType.emailAddress,
                                     controller: _emailEditingController,
                                     style: SharedUI.textFormFieldStyle,
                                     cursorColor: SharedUI.red,
@@ -86,6 +86,12 @@ class _LoginState extends State<Login> {
                                     validator: (v) {
                                       if (v.length < 1) {
                                         return "please enter an email address";
+                                      }
+                                      bool emailValid = RegExp(
+                                              r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                                          .hasMatch(v);
+                                      if (!emailValid) {
+                                        return "please enter a valid email";
                                       }
                                       return null;
                                     },
@@ -143,8 +149,8 @@ class _LoginState extends State<Login> {
                                           });
 
                                           var b = await LoginAPI().loginUser(
-                                              _emailEditingController
-                                                  .value.text,
+                                              _emailEditingController.value.text
+                                                  .trim(),
                                               _passEditingController
                                                   .value.text);
                                           setState(() {

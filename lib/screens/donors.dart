@@ -18,12 +18,10 @@ class _DonorsState extends State<Donors> {
   static const _propertyTextStyle =
       TextStyle(fontSize: 18, color: SharedUI.lightGray);
   static const _infoTextStyle = TextStyle(fontSize: 18);
-  var avatars;
 
   @override
   void initState() {
     super.initState();
-    avatars = {};
   }
 
   @override

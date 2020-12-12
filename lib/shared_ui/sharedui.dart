@@ -50,6 +50,7 @@ class SharedUI {
     return InputDecoration(
         hintText: hint,
         suffixIcon: suffix,
+        counterText: "",
         errorStyle: TextStyle(fontSize: 16),
         hintStyle: TextStyle(
             fontWeight: FontWeight.w400,
