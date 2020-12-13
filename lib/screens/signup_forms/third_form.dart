@@ -219,7 +219,11 @@ class _MyThirdFormState extends State<MyThirdForm> {
                     if (bloodDropDownValue != null &&
                         stateDropDownValue != null &&
                         municipalDropDownValue != null) {
-                      widget.goNext();
+                      widget.goNext(data: {
+                        'bloodType': bloodDropDownValue,
+                        'state': stateDropDownValue,
+                        'municipal': municipalDropDownValue,
+                      });
                     }
                   })
                 ],

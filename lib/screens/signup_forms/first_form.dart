@@ -255,7 +255,11 @@ class _MyFirstFormState extends State<MyFirstForm> {
                       });
                       Scaffold.of(context).hideCurrentSnackBar();
                       if (!b) {
-                        widget.goNext();
+                        widget.goNext(data: {
+                          'fullName': _fullNameEditingController.value.text,
+                          'email': _emailEditingController.value.text,
+                          'password': _passEditingController.value.text,
+                        });
                       } else {
                         Scaffold.of(context).showSnackBar(SnackBar(
                           padding: EdgeInsets.only(left: width * 0.1),

@@ -127,9 +127,15 @@ class _MySecondFormState extends State<MySecondForm> {
                     },
                   ),
                   SharedUI.drawButton(width, height * 0.9, 'Next', event: () {
+                    print(_phoneFormKey.currentState.value);
                     if (_phoneFormKey.currentState.validate() &&
                         _dateTime != null) {
-                      widget.goNext();
+                      widget.goNext(data: {
+                        'phoneNumber': _phoneFormKey.currentState.value,
+                        'birthYear': _dateTime.year.toString(),
+                        'birthMonth': _dateTime.month.toString(),
+                        'birthDat': _dateTime.day.toString(),
+                      });
                     }
                   })
                 ],
