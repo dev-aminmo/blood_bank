@@ -58,25 +58,25 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
       duration: steperDuration,
       vsync: this,
     )..addListener(() {
-      setState(() {
-        if (_secondRedAnimationController.isCompleted) {
-          canAnimateThirdContainer = true;
-        }
+        setState(() {
+          if (_secondRedAnimationController.isCompleted) {
+            canAnimateThirdContainer = true;
+          }
+        });
       });
-    });
     _firstGrayAnimationController = AnimationController(
       duration: steperDuration,
       vsync: this,
     )..addListener(() {
-      setState(() {});
-    });
+        setState(() {});
+      });
 
     _secondGrayAnimationController = AnimationController(
       duration: steperDuration,
       vsync: this,
     )..addListener(() {
-      setState(() {});
-    });
+        setState(() {});
+      });
 
     _firstRedAnimation =
         IntTween(begin: 0, end: 10).animate(_firstRedAnimationController);

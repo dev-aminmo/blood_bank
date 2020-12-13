@@ -25,21 +25,17 @@ class UserApi {
 
   Future<dynamic> fetchUserInfo() async {
     var _url = API.kBASE_URL + "profile/info";
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    var token = sharedPreferences.getString("token");
+    var response =
+        await http.get(_url, headers: {HttpHeaders.authorizationHeader: token});
     try {
-      SharedPreferences sharedPreferences =
-          await SharedPreferences.getInstance();
-      var token = sharedPreferences.getString("token");
-      var response = await http
-          .get(_url, headers: {HttpHeaders.authorizationHeader: token});
-      try {
-        if (response.statusCode == 200) {
-          var jsonData = jsonDecode(response.body);
-          var data = jsonData["userData"];
-          return User.fromJson(data);
-        }
-      } catch (e) {
-        return null;
+      if (response.statusCode == 200) {
+        var jsonData = jsonDecode(response.body);
+        var data = jsonData["userData"];
+        return User.fromJson(data);
       }
+      return null;
     } catch (e) {
       return null;
     }

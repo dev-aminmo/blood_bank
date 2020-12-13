@@ -29,7 +29,7 @@ class SignUpAPI {
             await SharedPreferences.getInstance();
         sharedPreferences.setString("token", token);
         print(token);
-        return false;
+        return true;
       } catch (excpetion) {
         print(excpetion);
         return false;
