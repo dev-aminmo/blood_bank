@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -41,6 +42,19 @@ class UserApi {
     }
   }
 
+  Future<bool> updateInfo(Map<dynamic, dynamic> data) async {
+    var _url = API.kBASE_URL + "profile/updateInfo";
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    var token = sharedPreferences.getString("token");
+    var response = await http.put(_url,
+        headers: {HttpHeaders.authorizationHeader: token}, body: data);
+    if (response.statusCode == 201) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   Future<bool> updatePassword(String currentPass, String newPass) async {
     var _url = API.kBASE_URL + "profile/updatepassword";
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
@@ -52,10 +66,32 @@ class UserApi {
       "newPassword": newPass,
       "confirmNewPassword": newPass
     });
-
     if (response.statusCode == 201) {
       return true;
     } else {
+      return false;
+    }
+  }
+
+  Future<bool> updateProfileImage3(var pickedFile) async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    var token = sharedPreferences.getString("token");
+    Dio dio = Dio();
+    final File file = File(pickedFile.path);
+    String fileName = file.path.split('/').last;
+    dio.options.headers["authorization"] = token;
+    FormData formData = FormData.fromMap({
+      "profilePicture": await MultipartFile.fromFile(file.path),
+    });
+    try {
+      var response = await dio
+          .patch(API.kBASE_URL + "profile/uploadProfileImage", data: formData);
+      print(file.path);
+      print(response.statusCode);
+      print(response);
+      return true;
+    } catch (r) {
+      print(r.toString());
       return false;
     }
   }

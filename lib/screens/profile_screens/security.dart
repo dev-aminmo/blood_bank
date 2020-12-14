@@ -231,7 +231,7 @@ class _SecurityState extends State<Security> {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Text(
-                              "Updating password",
+                              "Updating password ",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,

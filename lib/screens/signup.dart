@@ -279,14 +279,14 @@ class MyCustomStepper extends StatelessWidget {
               duration: duration,
               child: (_currentStep >= 1)
                   ? Icon(
-                Icons.done,
-                color: SharedUI.white,
-                key: ValueKey<int>(_currentStep),
-              )
+                      Icons.done,
+                      color: SharedUI.white,
+                      key: ValueKey<int>(_currentStep),
+                    )
                   : Text(
-                "1",
-                style: SharedUI.textStyle(SharedUI.white),
-              ),
+                      "1",
+                      style: SharedUI.textStyle(SharedUI.white),
+                    ),
             )),
         Flexible(
             flex: _firstRedAnimation.value,
@@ -306,23 +306,23 @@ class MyCustomStepper extends StatelessWidget {
             duration: duration,
             decoration: BoxDecoration(
               color: // (_currentStep >= 1)
-              (canAnimateSecondContainer == true)
-                  ? SharedUI.red
-                  : SharedUI.gray,
+                  (canAnimateSecondContainer == true)
+                      ? SharedUI.red
+                      : SharedUI.gray,
               borderRadius: BorderRadius.circular(width * 0.05),
             ),
             child: AnimatedSwitcher(
               duration: duration,
               child: (canAnimateSecondContainer == true && _currentStep > 1)
                   ? Icon(
-                Icons.done,
-                color: SharedUI.white,
-                key: ValueKey<int>(_currentStep),
-              )
+                      Icons.done,
+                      color: SharedUI.white,
+                      key: ValueKey<int>(_currentStep),
+                    )
                   : Text(
-                "2",
-                style: SharedUI.textStyle(SharedUI.white),
-              ),
+                      "2",
+                      style: SharedUI.textStyle(SharedUI.white),
+                    ),
             )),
         Flexible(
             flex: _secondRedAnimation.value,
@@ -342,9 +342,9 @@ class MyCustomStepper extends StatelessWidget {
           duration: duration,
           decoration: BoxDecoration(
             color: // (_currentStep >= 1)
-            (canAnimateThirdContainer == true)
-                ? SharedUI.red
-                : SharedUI.gray,
+                (canAnimateThirdContainer == true)
+                    ? SharedUI.red
+                    : SharedUI.gray,
             borderRadius: BorderRadius.circular(width * 0.05),
           ),
           child: Center(

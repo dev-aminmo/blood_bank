@@ -33,7 +33,7 @@ dependencies:
   image_picker: ^0.6.7+14
   shared_preferences:
   animated_text_kit: ^3.0.1
-
+  dio: ^3.0.10
 
 
 dev_dependencies:

@@ -1,8 +1,11 @@
 import 'dart:io';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:blood_app/api/users_api.dart';
 import 'package:blood_app/models/user.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../api/api_endpoints.dart';
@@ -17,19 +20,37 @@ class EditProfile extends StatefulWidget {
 
 class _EditProfileState extends State<EditProfile> {
   double height;
-
   double width;
-
   var _image;
-  DateTime _dateTime = DateTime.now();
-  var name = "Moh";
   TextEditingController _fullNameEditingController;
   TextEditingController _phoneEditingController;
+  final GlobalKey<FormFieldState> _phoneFormKey = GlobalKey<FormFieldState>();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  var bloodDropDownValue;
+  var birthDate;
 
   @override
   void initState() {
     _fullNameEditingController = TextEditingController();
     _phoneEditingController = TextEditingController();
+    _fullNameEditingController.value = TextEditingValue(
+      text: widget.user.fullName,
+      selection: TextSelection.fromPosition(
+        TextPosition(offset: widget.user.fullName.length),
+      ),
+    );
+    _phoneEditingController.value = TextEditingValue(
+      text: widget.user.phoneNumber,
+      selection: TextSelection.fromPosition(
+        TextPosition(offset: widget.user.phoneNumber.length),
+      ),
+    );
+    bloodDropDownValue = widget.user.bloodType;
+    birthDate = DateTime(
+      int.parse(widget.user.birthYear),
+      int.parse(widget.user.birthMonth),
+      int.parse(widget.user.birthDay),
+    );
     super.initState();
   }
 
@@ -42,17 +63,22 @@ class _EditProfileState extends State<EditProfile> {
     return SingleChildScrollView(
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: width * 0.07),
-        height: height,
+        //height: height,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            //TODO try clipRRect with border Radius + child: ALign.center
+            SizedBox(
+              height: height * 0.05,
+            ),
             CircleAvatar(
               radius: width / 4,
               backgroundImage: (_image != null)
                   ? FileImage(File(_image.path))
                   : NetworkImage(API.kBASE_URL + user.profileImage),
               backgroundColor: SharedUI.lightGray,
+            ),
+            SizedBox(
+              height: height * 0.05,
             ),
             SizedBox(
               width: width * 0.65,
@@ -69,43 +95,148 @@ class _EditProfileState extends State<EditProfile> {
                     _imgFromGallery();
                   }),
             ),
+            SizedBox(
+              height: height * 0.05,
+            ),
             Form(
+              key: _formKey,
               child: Column(
                 children: [
                   TextFormField(
                     controller: _fullNameEditingController,
-                    //initialValue: name,
                     style: SharedUI.textFormFieldStyle,
                     cursorColor: SharedUI.red,
+                    validator: (v) {
+                      if (v.length < 1) {
+                        return "please enter your full name";
+                      }
+                      return null;
+                    },
                     decoration: SharedUI.profileInputDecoration("Full Name"),
                   ),
+                  SizedBox(height: height * 0.05),
                   TextFormField(
+                    key: _phoneFormKey,
+                    keyboardType: TextInputType.number,
                     controller: _phoneEditingController,
-                    // initialValue: user.phoneNumber,
                     style: SharedUI.textFormFieldStyle,
+                    inputFormatters: <TextInputFormatter>[
+                      FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+                    ],
+                    maxLength: 10,
                     cursorColor: SharedUI.red,
-                    decoration: SharedUI.profileInputDecoration("Phone Number"),
+                    decoration: SharedUI.profileInputDecoration("Phone number"),
+                    validator: (v) {
+                      if (v.length < 1) {
+                        return "please enter your phone number";
+                      } else if (v.length < 10) {
+                        return "please enter a valid phone number";
+                      }
+                      return null;
+                    },
                   ),
-                  buildDropdownButton(user.bloodType),
-                  IconButton(
-                      icon: Icon(Icons.add),
-                      onPressed: () {
-                        setState(() {
-                          //  name = "je picole mon";
-                          //  _fullNameEditingController.text = "name";
-                          final _newValue = "New value";
-                          _fullNameEditingController.value = TextEditingValue(
-                            text: _newValue,
-                            selection: TextSelection.fromPosition(
-                              TextPosition(offset: _newValue.length),
+                  buildDropdownButton(bloodDropDownValue),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  buildDatePicker(context),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  Divider(
+                    height: 2,
+                  ),
+                  SizedBox(
+                    height: height * 0.05,
+                  ),
+                  SharedUI.drawButton(width, height * 0.7, 'Update Info',
+                      event: () async {
+                    if (_formKey.currentState.validate()) {
+                      var data = {
+                        'fullName': _fullNameEditingController.value.text,
+                        'bloodType': bloodDropDownValue,
+                        'phoneNumber': _phoneEditingController.value.text,
+                        "state": widget.user.state,
+                        "municipal": widget.user.municipal,
+                        'birthDat': birthDate.day.toString(),
+                        'birthMonth': birthDate.month.toString(),
+                        'birthYear': birthDate.year.toString(),
+                      };
+                      Scaffold.of(context).showSnackBar(SnackBar(
+                        backgroundColor: SharedUI.lightGray,
+                        content: Container(
+                          height: height * 0.04,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                "Updating info ",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                    textBaseline: TextBaseline.alphabetic),
+                              ),
+                              TyperAnimatedTextKit(
+                                text: ['...'],
+                                speed: Duration(milliseconds: 100),
+                                textStyle: TextStyle(
+                                    fontSize: 30.0, color: SharedUI.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ));
+                      var response = await UserApi().updateInfo(data);
+                      if (response) {
+                        Scaffold.of(context).hideCurrentSnackBar();
+                        Scaffold.of(context).showSnackBar(SnackBar(
+                          backgroundColor: Colors.green.shade400,
+                          content: Container(
+                            height: height * 0.04,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "info updated successfully",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18.0,
+                                      textBaseline: TextBaseline.alphabetic),
+                                ),
+                              ],
                             ),
-                          );
-                        });
-                      }),
-                  Text(name),
-                  buildDatePicker(context, user),
+                          ),
+                          duration: const Duration(seconds: 2),
+                        ));
+                      } else {
+                        Scaffold.of(context).hideCurrentSnackBar();
+                        Scaffold.of(context).showSnackBar(SnackBar(
+                          backgroundColor: SharedUI.red,
+                          content: Container(
+                            height: height * 0.04,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "Can't update info",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18.0,
+                                      textBaseline: TextBaseline.alphabetic),
+                                ),
+                              ],
+                            ),
+                          ),
+                          duration: const Duration(seconds: 2),
+                        ));
+                      }
+                    }
+                  }),
                 ],
               ),
+            ),
+            SizedBox(
+              height: height * 0.1,
             )
           ],
         ),
@@ -114,8 +245,6 @@ class _EditProfileState extends State<EditProfile> {
   }
 
   DropdownButton<String> buildDropdownButton(String initialBloodType) {
-    var bloodDropDownValue;
-
     return DropdownButton<String>(
       itemHeight: height * 0.12,
       isExpanded: true,
@@ -158,21 +287,20 @@ class _EditProfileState extends State<EditProfile> {
     );
   }
 
-  SizedBox buildDatePicker(BuildContext context, User user) {
-    var initialDate = DateTime(
-      int.parse(user.birthYear),
-      int.parse(user.birthMonth),
-      int.parse(user.birthDay),
-    );
+  SizedBox buildDatePicker(BuildContext context) {
     return SizedBox(
       width: width * 0.85,
-      height: height * 0.1,
+      height: height * 0.08,
       child: RaisedButton(
         shape: RoundedRectangleBorder(
             side: BorderSide(width: 1.5, color: Color(0xffCBD5E0)),
             borderRadius: BorderRadius.circular(40)),
         child: Text(
-          user.birthDay + '/' + user.birthMonth + '/' + user.birthYear,
+          birthDate.day.toString() +
+              '/' +
+              birthDate.month.toString() +
+              '/' +
+              birthDate.year.toString(),
           style: TextStyle(
               fontWeight: FontWeight.w400, color: SharedUI.red, fontSize: 22),
         ),
@@ -180,9 +308,9 @@ class _EditProfileState extends State<EditProfile> {
         onPressed: () {
           showDatePicker(
             context: context,
-            initialDate: _dateTime == null ? DateTime.now() : _dateTime,
+            initialDate: birthDate,
             firstDate: DateTime(1920),
-            lastDate: DateTime(2020, 12, 31),
+            lastDate: DateTime(2005, 12, 31),
             initialEntryMode: DatePickerEntryMode.input,
             builder: (BuildContext context, Widget child) {
               return Theme(
@@ -191,14 +319,14 @@ class _EditProfileState extends State<EditProfile> {
                   accentColor: SharedUI.red,
                   colorScheme: ColorScheme.light(primary: SharedUI.red),
                   buttonTheme:
-                      ButtonThemeData(textTheme: ButtonTextTheme.primary),
+                  ButtonThemeData(textTheme: ButtonTextTheme.primary),
                 ),
                 child: child,
               );
             },
           ).then((date) {
             setState(() {
-              _dateTime = date;
+              birthDate = date;
             });
           });
         },
@@ -209,9 +337,15 @@ class _EditProfileState extends State<EditProfile> {
   _imgFromGallery() async {
     var image = await ImagePicker()
         .getImage(source: ImageSource.gallery, imageQuality: 50);
-
     setState(() {
       _image = image;
     });
+
+    var response = await UserApi().updateProfileImage3(image);
+    if (response) {
+      //print("success");
+    } else {
+      // print('failed');
+    }
   }
 }

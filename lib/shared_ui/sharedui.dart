@@ -67,6 +67,7 @@ class SharedUI {
 
   static InputDecoration profileInputDecoration(String helper) {
     return InputDecoration(
+        counterText: "",
         labelText: helper,
         labelStyle: TextStyle(
           color: Color(0xff8FA0B3),
