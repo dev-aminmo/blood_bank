@@ -94,15 +94,6 @@ class SharedUI {
     );
   }
 
-  static TextFormField profileInput(String label) {
-    return TextFormField(
-      initialValue: "Hello",
-      style: SharedUI.textFormFieldStyle,
-      cursorColor: SharedUI.red,
-      decoration: SharedUI.profileInputDecoration(label),
-    );
-  }
-
   static Widget myBackgroundImage = Stack(
     children: [
       SizedBox.expand(

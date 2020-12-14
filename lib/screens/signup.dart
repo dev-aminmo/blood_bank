@@ -228,7 +228,7 @@ class _SignupState extends State<Signup> with TickerProviderStateMixin {
                 height: height * 0.1,
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "An error has occured",
+                  "An error has occurred",
                   style: TextStyle(
                       color: SharedUI.white,
                       fontWeight: FontWeight.w400,
@@ -251,8 +251,7 @@ class MyCustomStepper extends StatelessWidget {
     @required Animation<int> secondRedAnimation,
     @required Animation<int> secondGrayAnimation,
     @required this.canAnimateThirdContainer,
-  })
-      : _currentStep = currentStep,
+  })  : _currentStep = currentStep,
         _firstRedAnimation = firstRedAnimation,
         _firstGrayAnimation = firstGrayAnimation,
         _secondRedAnimation = secondRedAnimation,

@@ -40,4 +40,23 @@ class UserApi {
       return null;
     }
   }
+
+  Future<bool> updatePassword(String currentPass, String newPass) async {
+    var _url = API.kBASE_URL + "profile/updatepassword";
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    var token = sharedPreferences.getString("token");
+    var response = await http.put(_url, headers: {
+      HttpHeaders.authorizationHeader: token
+    }, body: {
+      "password": currentPass,
+      "newPassword": newPass,
+      "confirmNewPassword": newPass
+    });
+
+    if (response.statusCode == 201) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

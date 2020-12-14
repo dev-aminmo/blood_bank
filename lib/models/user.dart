@@ -11,6 +11,7 @@ class User {
   String birthDay;
   String birthMonth;
   String birthYear;
+  String email;
 
   User(
       {this.profileImage,
@@ -22,7 +23,8 @@ class User {
       @required this.municipal,
       @required this.birthDay,
       @required this.birthMonth,
-      @required this.birthYear});
+      @required this.birthYear,
+      this.email});
 
   User.fromJson(Map<String, dynamic> json) {
     this.profileImage = json['profileImage'];
@@ -35,5 +37,6 @@ class User {
     this.birthDay = json['birthDat'];
     this.birthMonth = json['birthMonth'];
     this.birthYear = json['birthYear'];
+    this.email = json['email'];
   }
 }

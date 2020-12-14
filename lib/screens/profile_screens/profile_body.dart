@@ -1,3 +1,5 @@
+import 'package:blood_app/api/api_endpoints.dart';
+import 'package:blood_app/models/user.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +9,9 @@ const _infoTextStyle = TextStyle(fontSize: 18);
 class ProfileBody extends StatelessWidget {
   double height;
   double width;
+  User user;
+
+  ProfileBody(this.user);
 
   @override
   Widget build(BuildContext context) {
@@ -22,22 +27,32 @@ class ProfileBody extends StatelessWidget {
             CircleAvatar(
               radius: width / 4,
               backgroundColor: SharedUI.lightGray,
+              backgroundImage: NetworkImage(API.kBASE_URL + user.profileImage),
             ),
             _myCustomCard(
                 height,
                 width,
-                buildCardContent("Full name", "Meziane Khalil", "Email",
-                    "Meziane@khalil.com", height, width)),
+                buildCardContent("Full name", user.fullName, "Email",
+                    user.email, height, width)),
             _myCustomCard(
                 height,
                 width,
-                buildCardContent("Address", "Chettia Chlef", "Phone number",
-                    "0556096798", height, width)),
+                buildCardContent("Address", user.municipal + " " + user.state,
+                    "Phone number", user.phoneNumber, height, width)),
             _myCustomCard(
                 height,
                 width,
-                buildCardContent("Blood Type", "A+", "Birth date", "28/02/2000",
-                    height, width)),
+                buildCardContent(
+                    "Blood Type",
+                    user.bloodType,
+                    "Birth date",
+                    user.birthDay +
+                        "/" +
+                        user.birthMonth +
+                        "/" +
+                        user.birthYear,
+                    height,
+                    width)),
           ],
         ),
       ),
