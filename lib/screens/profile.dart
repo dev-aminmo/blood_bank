@@ -3,6 +3,7 @@ import 'package:blood_app/screens/donors.dart';
 import 'package:blood_app/screens/profile_screens/edit_profile.dart';
 import 'package:blood_app/screens/profile_screens/profile_body.dart';
 import 'package:blood_app/screens/profile_screens/security.dart';
+import 'package:blood_app/screens/welcome_screen.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,23 +17,40 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
   TabController _tabController;
   double height;
   double width;
-  var _userinfo;
+  var profileBodyUser;
+  var _initialUserInfo;
+  bool update;
+
+  _updateProfile() {
+    print("updated");
+    setState(() {
+      if (update == null) {
+        update = false;
+      }
+      update = !update;
+    });
+    print("update finish");
+  }
 
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return FutureBuilder(
-      future: _userinfo,
+      future: _initialUserInfo,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
+          if (snapshot.data == 401) {
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) => WelcomeScreen()));
+          }
           if (!snapshot.hasError && snapshot.data != null) {
             var user = snapshot.data;
+            profileBodyUser = snapshot.data;
             return Scaffold(
               backgroundColor: SharedUI.white,
-              resizeToAvoidBottomPadding: false,
-              resizeToAvoidBottomInset: false,
               appBar: AppBar(
+                automaticallyImplyLeading: false,
                 title: Text(
                   "Blood Bank",
                   style: TextStyle(
@@ -63,16 +81,24 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
               ),
               body: TabBarView(
                 children: [
-                  ProfileBody(user),
-                  EditProfile(user),
-                  Security(user)
+                  ProfileBody(
+                    user,
+                    update: update,
+                  ),
+                  EditProfile(
+                    user,
+                    updateCallback: _updateProfile,
+                  ),
+                  Security()
                 ],
                 controller: _tabController,
               ),
             );
           } else {
-            return Center(
-              child: Text("Error has occurred"),
+            return Scaffold(
+              body: Center(
+                child: Text("Check your network connection"),
+              ),
             );
           }
         }
@@ -112,8 +138,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     _tabController = TabController(length: 3, vsync: this);
-    _userinfo = UserApi().fetchUserInfo();
-
+    _initialUserInfo = UserApi().fetchUserInfo();
     super.initState();
   }
 }

@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:blood_app/api/auth/signup.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
@@ -221,30 +220,9 @@ class _MyFirstFormState extends State<MyFirstForm> {
                     if (_formKey.currentState.validate()) {
                       _formKey.currentState.save();
 
-                      Scaffold.of(context).showSnackBar(SnackBar(
-                        backgroundColor: SharedUI.lightGray,
-                        content: Container(
-                          height: height * 0.04,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                "Checking if email exists ",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18.0,
-                                    textBaseline: TextBaseline.alphabetic),
-                              ),
-                              TyperAnimatedTextKit(
-                                text: ['...'],
-                                speed: Duration(milliseconds: 100),
-                                textStyle: TextStyle(
-                                    fontSize: 30.0, color: SharedUI.white),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ));
+                      Scaffold.of(context).showSnackBar(
+                          SharedUI.updatingSnackBar(
+                              "Checking if email exists ", height));
                       setState(() {
                         _isLoading = true;
                       });
@@ -261,30 +239,9 @@ class _MyFirstFormState extends State<MyFirstForm> {
                           'password': _passEditingController.value.text,
                         });
                       } else {
-                        Scaffold.of(context).showSnackBar(SnackBar(
-                          padding: EdgeInsets.only(left: width * 0.1),
-                          content: Container(
-                            height: height * 0.04,
-                            alignment: Alignment.centerLeft,
-                            child: Row(
-                              children: [
-                                const Icon(
-                                  Icons.warning_amber_rounded,
-                                  color: Colors.white,
-                                ),
-                                const Text(
-                                  "  email exists before",
-                                  style: TextStyle(
-                                      color: SharedUI.white,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 18),
-                                ),
-                              ],
-                            ),
-                          ),
-                          duration: const Duration(seconds: 2),
-                          backgroundColor: SharedUI.red,
-                        ));
+                        Scaffold.of(context).showSnackBar(
+                            SharedUI.failedSnackBar(
+                                "email exists before", height));
                       }
                     }
                   }),

@@ -14,8 +14,9 @@ class EditProfile extends StatefulWidget {
   @override
   _EditProfileState createState() => _EditProfileState();
   User user;
+  Function updateCallback;
 
-  EditProfile(this.user);
+  EditProfile(this.user, {this.updateCallback});
 }
 
 class _EditProfileState extends State<EditProfile> {
@@ -57,13 +58,11 @@ class _EditProfileState extends State<EditProfile> {
   @override
   Widget build(BuildContext context) {
     User user = widget.user;
-
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: width * 0.07),
-        //height: height,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -74,8 +73,11 @@ class _EditProfileState extends State<EditProfile> {
               radius: width / 4,
               backgroundImage: (_image != null)
                   ? FileImage(File(_image.path))
-                  : NetworkImage(API.kBASE_URL + user.profileImage),
+                  : NetworkImage(user.profileImage),
               backgroundColor: SharedUI.lightGray,
+              onBackgroundImageError: (vb, t) {
+                print("err");
+              },
             ),
             SizedBox(
               height: height * 0.05,
@@ -162,73 +164,21 @@ class _EditProfileState extends State<EditProfile> {
                         'birthMonth': birthDate.month.toString(),
                         'birthYear': birthDate.year.toString(),
                       };
-                      Scaffold.of(context).showSnackBar(SnackBar(
-                        backgroundColor: SharedUI.lightGray,
-                        content: Container(
-                          height: height * 0.04,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                "Updating info ",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18.0,
-                                    textBaseline: TextBaseline.alphabetic),
-                              ),
-                              TyperAnimatedTextKit(
-                                text: ['...'],
-                                speed: Duration(milliseconds: 100),
-                                textStyle: TextStyle(
-                                    fontSize: 30.0, color: SharedUI.white),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ));
+                      Scaffold.of(context).showSnackBar(
+                        SharedUI.updatingSnackBar("Updating info ", height),
+                      );
                       var response = await UserApi().updateInfo(data);
                       if (response) {
+                        widget.updateCallback();
                         Scaffold.of(context).hideCurrentSnackBar();
-                        Scaffold.of(context).showSnackBar(SnackBar(
-                          backgroundColor: Colors.green.shade400,
-                          content: Container(
-                            height: height * 0.04,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  "info updated successfully",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18.0,
-                                      textBaseline: TextBaseline.alphabetic),
-                                ),
-                              ],
-                            ),
-                          ),
-                          duration: const Duration(seconds: 2),
-                        ));
+                        Scaffold.of(context).showSnackBar(
+                            SharedUI.successSnackBar(
+                                "info updated successfully", height));
                       } else {
                         Scaffold.of(context).hideCurrentSnackBar();
-                        Scaffold.of(context).showSnackBar(SnackBar(
-                          backgroundColor: SharedUI.red,
-                          content: Container(
-                            height: height * 0.04,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text(
-                                  "Can't update info",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18.0,
-                                      textBaseline: TextBaseline.alphabetic),
-                                ),
-                              ],
-                            ),
-                          ),
-                          duration: const Duration(seconds: 2),
-                        ));
+                        Scaffold.of(context).showSnackBar(
+                            SharedUI.failedSnackBar(
+                                "Can't update info", height));
                       }
                     }
                   }),
@@ -319,7 +269,7 @@ class _EditProfileState extends State<EditProfile> {
                   accentColor: SharedUI.red,
                   colorScheme: ColorScheme.light(primary: SharedUI.red),
                   buttonTheme:
-                  ButtonThemeData(textTheme: ButtonTextTheme.primary),
+                      ButtonThemeData(textTheme: ButtonTextTheme.primary),
                 ),
                 child: child,
               );
@@ -341,11 +291,20 @@ class _EditProfileState extends State<EditProfile> {
       _image = image;
     });
 
-    var response = await UserApi().updateProfileImage3(image);
+    Scaffold.of(context).showSnackBar(
+        SharedUI.updatingSnackBar("Updating profile image", height));
+
+    var response = await UserApi().updateProfileImage(image);
     if (response) {
-      //print("success");
+      Scaffold.of(context).hideCurrentSnackBar();
+      widget.updateCallback();
+      Scaffold.of(context).showSnackBar(
+        SharedUI.successSnackBar("profile image updated successfully", height),
+      );
     } else {
-      // print('failed');
+      Scaffold.of(context).hideCurrentSnackBar();
+      Scaffold.of(context)
+          .showSnackBar(SharedUI.failedSnackBar("Can't update image", height));
     }
   }
 }

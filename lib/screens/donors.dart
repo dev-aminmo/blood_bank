@@ -64,6 +64,40 @@ class _DonorsState extends State<Donors> {
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.done) {
                   var data = snapshot.data as List<User>;
+                  if (data == null) {
+                    return Align(
+                      alignment: Alignment(0, -0.5),
+                      child: Container(
+                        margin: EdgeInsets.symmetric(horizontal: width * 0.05),
+                        color: Color(0Xffefb003),
+                        height: height * 0.2,
+                        width: width,
+                        child: Column(
+                          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            SizedBox(
+                              height: height * 0.02,
+                            ),
+                            Icon(
+                              Icons.warning,
+                              color: SharedUI.white,
+                              size: 36,
+                            ),
+                            SizedBox(
+                              height: height * 0.02,
+                            ),
+                            Center(
+                              child: Text(
+                                "Sorry there are no donors",
+                                style: TextStyle(
+                                    color: SharedUI.white, fontSize: 22),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }
                   if (data.isEmpty) {
                     return Align(
                       alignment: Alignment(0, -0.5),
@@ -116,11 +150,8 @@ class _DonorsState extends State<Donors> {
                                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   CircleAvatar(
-                                    backgroundImage: NetworkImage(
-                                        API.kBASE_URL +
-                                            data[index]
-                                                .profileImage
-                                                .replaceFirst('/', "")),
+                                    backgroundImage:
+                                        NetworkImage(data[index].profileImage),
                                     radius: width * 0.1,
                                   ),
                                   Spacer(

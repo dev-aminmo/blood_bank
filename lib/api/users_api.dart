@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dio/dio.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -36,21 +36,35 @@ class UserApi {
         var data = jsonData["userData"];
         return User.fromJson(data);
       }
+      if (response.statusCode == 401) {
+        sharedPreferences.setString("token", null);
+        return 401;
+      }
       return null;
     } catch (e) {
       return null;
     }
   }
 
+  Future<bool> logOut() async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.setString("token", null);
+    return true;
+  }
+
   Future<bool> updateInfo(Map<dynamic, dynamic> data) async {
     var _url = API.kBASE_URL + "profile/updateInfo";
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     var token = sharedPreferences.getString("token");
-    var response = await http.put(_url,
-        headers: {HttpHeaders.authorizationHeader: token}, body: data);
-    if (response.statusCode == 201) {
-      return true;
-    } else {
+    try {
+      var response = await http.put(_url,
+          headers: {HttpHeaders.authorizationHeader: token}, body: data);
+      if (response.statusCode == 201) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
       return false;
     }
   }
@@ -73,25 +87,32 @@ class UserApi {
     }
   }
 
-  Future<bool> updateProfileImage3(var pickedFile) async {
+  Future<dynamic> updateProfileImage(var pickedFile) async {
+    var _url = API.kBASE_URL + "profile/uploadProfileImage";
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     var token = sharedPreferences.getString("token");
-    Dio dio = Dio();
-    final File file = File(pickedFile.path);
-    String fileName = file.path.split('/').last;
-    dio.options.headers["authorization"] = token;
-    FormData formData = FormData.fromMap({
-      "profilePicture": await MultipartFile.fromFile(file.path),
-    });
     try {
-      var response = await dio
-          .patch(API.kBASE_URL + "profile/uploadProfileImage", data: formData);
-      print(file.path);
-      print(response.statusCode);
-      print(response);
-      return true;
-    } catch (r) {
-      print(r.toString());
+      var filename = pickedFile.path.split("/").last;
+      final _storage = FirebaseStorage.instance;
+      var file = File(pickedFile.path);
+      var snapshot = await _storage
+          .ref()
+          .child('folderName/$filename')
+          .putFile(file)
+          .onComplete;
+
+      var downloadUrl = await snapshot.ref.getDownloadURL();
+      var response = await http.patch(_url, headers: {
+        HttpHeaders.authorizationHeader: token
+      }, body: {
+        "path": downloadUrl,
+      });
+      if (response.statusCode == 201) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
       return false;
     }
   }

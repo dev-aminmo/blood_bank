@@ -163,25 +163,10 @@ class _LoginState extends State<Login> {
                                                 MaterialPageRoute(
                                                     builder: (c) => Profile()));
                                           } else {
-                                            Scaffold.of(context)
-                                                .showSnackBar(SnackBar(
-                                              padding: EdgeInsets.only(
-                                                  left: width * 0.1),
-                                              content: Container(
-                                                height: height * 0.05,
-                                                alignment: Alignment.centerLeft,
-                                                child: Text(
-                                                  "Email or password invalid",
-                                                  style: TextStyle(
-                                                      color: SharedUI.white,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      fontSize: 22),
-                                                ),
-                                              ),
-                                              duration: Duration(seconds: 2),
-                                              backgroundColor: SharedUI.red,
-                                            ));
+                                            Scaffold.of(context).showSnackBar(
+                                                SharedUI.failedSnackBar(
+                                                    "Email or password invalid",
+                                                    height));
                                           }
                                         }
                                       }),
