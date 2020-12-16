@@ -68,10 +68,10 @@ class SharedUI {
     children: [
       SizedBox.expand(
           child: Image.asset(
-            'assets/images/stock.jpg',
-            fit: BoxFit.cover,
-            alignment: Alignment(-0.4, 0),
-          )),
+        'assets/images/stock.jpg',
+        fit: BoxFit.cover,
+        alignment: Alignment(-0.4, 0),
+      )),
       Opacity(
         opacity: 0.3,
         child: Container(
