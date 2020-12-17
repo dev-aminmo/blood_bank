@@ -123,6 +123,11 @@ class _MySecondFormState extends State<MySecondForm> {
                     } else if (v.length < 10) {
                       return "please enter a valid phone number";
                     }
+                    bool phonevalid =
+                        RegExp(r"^(00213|\+213|0)(5|6|7)[0-9]{8}$").hasMatch(v);
+                    if (!phonevalid) {
+                      return "please enter a valid phone number";
+                    }
                     return null;
                   },
                 ),
