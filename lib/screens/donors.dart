@@ -2,6 +2,7 @@ import 'package:blood_app/models/user.dart';
 import 'package:blood_app/shared_ui/dropDowns.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
+
 import '../api/users_api.dart';
 
 class Donors extends StatefulWidget {
@@ -156,7 +157,7 @@ class _DonorsState extends State<Donors> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                    NetworkImage(data[index].profileImage),
+                                        NetworkImage(data[index].profileImage),
                                     radius: width * 0.1,
                                   ),
                                   Spacer(
@@ -178,7 +179,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     "BloodType",
@@ -195,7 +196,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
                                     Icons.phone_rounded,
@@ -212,7 +213,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
                                     Icons.location_on,
