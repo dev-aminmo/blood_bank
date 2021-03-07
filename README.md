@@ -8,7 +8,7 @@ In This project, I have practiced on Rest API, UI, and form validation.
 ## Screenshots
 
 <p align="center">
-  <img src="repo_assets/pic1.png"/>
+  <img src="repo_assets/pic1.gif"/>
 </p>
 
 <p align="center">
