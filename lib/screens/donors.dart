@@ -2,8 +2,6 @@ import 'package:blood_app/models/user.dart';
 import 'package:blood_app/shared_ui/dropDowns.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
-
-import '../api/api_endpoints.dart';
 import '../api/users_api.dart';
 
 class Donors extends StatefulWidget {
@@ -64,6 +62,8 @@ class _DonorsState extends State<Donors> {
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.done) {
                   var data = snapshot.data as List<User>;
+                  /**
+                   * case that there is no data is found display a message**/
                   if (data == null) {
                     return Align(
                       alignment: Alignment(0, -0.5),
@@ -98,6 +98,8 @@ class _DonorsState extends State<Donors> {
                       ),
                     );
                   }
+                  /**
+                   * case that there is no donors is found display a message**/
                   if (data.isEmpty) {
                     return Align(
                       alignment: Alignment(0, -0.5),
@@ -132,10 +134,13 @@ class _DonorsState extends State<Donors> {
                       ),
                     );
                   }
+                  /**
+                   * else display the list of the donors*/
                   return ListView.builder(
                     shrinkWrap: true,
                     physics: ClampingScrollPhysics(),
                     itemBuilder: (ctx, index) {
+                      print(data[index].profileImage);
                       return Card(
                         margin: EdgeInsets.symmetric(
                             vertical: height * 0.01, horizontal: width * 0.07),
@@ -151,7 +156,7 @@ class _DonorsState extends State<Donors> {
                                 children: [
                                   CircleAvatar(
                                     backgroundImage:
-                                        NetworkImage(data[index].profileImage),
+                                    NetworkImage(data[index].profileImage),
                                     radius: width * 0.1,
                                   ),
                                   Spacer(
@@ -173,7 +178,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     "BloodType",
@@ -190,7 +195,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
                                     Icons.phone_rounded,
@@ -207,7 +212,7 @@ class _DonorsState extends State<Donors> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
                                     Icons.location_on,

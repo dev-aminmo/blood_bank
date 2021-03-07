@@ -1,14 +1,11 @@
 import 'dart:io';
 
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:blood_app/api/users_api.dart';
 import 'package:blood_app/models/user.dart';
 import 'package:blood_app/shared_ui/sharedui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
-
-import '../../api/api_endpoints.dart';
 
 class EditProfile extends StatefulWidget {
   @override

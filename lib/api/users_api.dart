@@ -12,7 +12,7 @@ class UserApi {
   Future<List<User>> fetchUsers(String queryString) async {
     var query = (queryString != null) ? queryString : "";
     String _url = API.kBASE_URL + "search" + query;
-    List<User> usersList = List<User>();
+    List<User> usersList = [];
     var response = await http.get(_url);
     if (response.statusCode == 200) {
       var jsonData = jsonDecode(response.body);

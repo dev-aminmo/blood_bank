@@ -1,16 +1,13 @@
-# blood_app
+# Blood Bank
 
-A new Flutter application.
+A flutter application which can blood donors register themselves in and people who are
+in need of blood can find them
 
-## Getting Started
+In This project, I have practiced on Rest API, UI, and form validation.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="repo_assets/pic1.png" width="350"/>
+    <img src="https://github.com/kaparray/NewsApp/blob/master/assetss/NewsAppFlutterAsset_4.jpeg"/>
+</p>
